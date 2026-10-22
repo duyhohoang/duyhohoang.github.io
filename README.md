@@ -31,7 +31,11 @@ The contact form validates fields and composes a safely encoded `mailto:` draft.
 
 Set `NEXT_PUBLIC_SITE_URL` to your real HTTPS Pages origin or custom domain and rebuild before enabling search indexing. Without it, the local preview intentionally emits noindex/disallow and localhost canonical/sitemap URLs.
 
-## Cloudflare deployment
+## GitHub Pages production
+
+The selected address is **https://duyhohoang.github.io/**, published from repository `duyhohoang.github.io`. The included GitHub Actions workflow builds and deploys only `out/` on main pushes. Enable **Settings → Pages → Source: GitHub Actions** in that repository. See [DEPLOY.md](DEPLOY.md) for setup and validation.
+
+## Alternative Cloudflare deployment
 
 For the current Workers project, `wrangler.jsonc` explicitly serves static files from `out/`; build with `pnpm build` and deploy with `npx wrangler@4.151.3 deploy`. No OpenNext migration or runtime server is needed.
 

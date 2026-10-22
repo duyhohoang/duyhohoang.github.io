@@ -1,4 +1,28 @@
-# Cloudflare Pages deployment
+# Portfolio deployment
+
+## GitHub Pages: selected production address
+
+Target: **https://duyhohoang.github.io/**. The publishing repository must be named exactly `duyhohoang.github.io` on account `duyhohoang`. The root domain means existing root-relative fonts, images and navigation need no basePath changes.
+
+The workflow `.github/workflows/pages.yml` installs the pinned Node/pnpm versions, runs lint/tests/build/export checks, uploads only `out/`, then deploys through GitHub Pages. It sets NEXT_PUBLIC_SITE_URL to the selected HTTPS origin at build time, enabling correct canonical/Open Graph/robots/sitemap URLs. No personal access token belongs in workflow files; deployment uses the repository GITHUB_TOKEN and OIDC permissions. Jobs are restricted to the exact publishing repository so they do not accidentally publish a project site from the original Cloudflare repository.
+
+Repository setup: use a Public repository for GitHub Free, and select **Settings → Pages → Build and deployment → Source: GitHub Actions**. Push main to trigger publishing; subsequent main pushes automatically update the site. Actions → Deploy portfolio to GitHub Pages shows progress and the deployment URL.
+
+Local production verification:
+
+```powershell
+$env:NEXT_PUBLIC_SITE_URL='https://duyhohoang.github.io'
+pnpm build
+pnpm check:export
+```
+
+The original `hoangduyportfolio` repository and Cloudflare configuration can remain as a backup. GitHub Pages does not apply Cloudflare's `_headers` file; hosted headers are controlled by GitHub. No server or email backend is added. The form still opens an email draft.
+
+Official guide: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+
+---
+
+# Alternative Cloudflare deployment
 
 Prepared for static Git integration; no public deployment has been created. Publish only `out/`, never project sources or reference evidence as the output folder. No Worker adapter, Pages Functions, API or runtime Node server is needed.
 
