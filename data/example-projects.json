@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "stm32-industrial-iot-controller",
+    "name": "STM32 Industrial IoT Controller",
+    "status": "in-progress",
+    "category": "industrial-iot",
+    "published": true,
+    "disclaimer": "Illustrative project entry; specifications require verification"
+  },
+  {
+    "slug": "esp32-connected-io-platform",
+    "name": "ESP32 Connected I/O Platform",
+    "status": "concept",
+    "category": "embedded",
+    "published": true,
+    "disclaimer": "Illustrative project entry; specifications require verification"
+  },
+  {
+    "slug": "six-channel-fan-controller",
+    "name": "Six-Channel Fan Controller",
+    "status": "concept",
+    "category": "power",
+    "published": true,
+    "disclaimer": "Illustrative project entry; specifications require verification"
+  }
+]

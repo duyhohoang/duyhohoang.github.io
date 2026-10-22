@@ -1,0 +1,934 @@
+{
+  "date": "2026-10-22T03:56:00.497Z",
+  "errors": [],
+  "failedResponses": [],
+  "overflow": [],
+  "captures": 12,
+  "interactions": "project expand/collapse, workflow images, experience/education tabs, keyboard FAQ open/close, form validation/demo submit, mobile navigation passed",
+  "metrics": [
+    {
+      "name": "01-hero",
+      "width": 1479,
+      "height": 952,
+      "geometry": {
+        ".brand": {
+          "x": 62.5,
+          "y": 22.203125,
+          "width": 140.71875,
+          "height": 33.59375,
+          "font": "\"Portfolio Script\", cursive",
+          "fontSize": "24px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-hero h1": {
+          "x": 71.5,
+          "y": 269,
+          "width": 734.796875,
+          "height": 97.90625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "48px",
+          "weight": "900",
+          "objectFit": "fill"
+        },
+        ".ref-circle": {
+          "x": 846.890625,
+          "y": 406.515625,
+          "width": 520,
+          "height": 520,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-portrait-window": {
+          "x": 806.296875,
+          "y": 226.515625,
+          "width": 601.1875,
+          "height": 608,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-projects img": {
+          "x": 87.5,
+          "y": 3809.53125,
+          "width": 398.65625,
+          "height": 249.15625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        },
+        ".ref-services h3": {
+          "x": 107.5,
+          "y": 4640.65625,
+          "width": 358.65625,
+          "height": 22.75,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "17.5px",
+          "weight": "700",
+          "objectFit": "fill"
+        },
+        ".ref-about figure img": {
+          "x": 192.8359375,
+          "y": 5256.65625,
+          "width": 389.328125,
+          "height": 584,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        }
+      }
+    },
+    {
+      "name": "02-trust",
+      "width": 1633,
+      "height": 859,
+      "geometry": {
+        ".brand": {
+          "x": 139.5,
+          "y": -934.796875,
+          "width": 140.71875,
+          "height": 33.59375,
+          "font": "\"Portfolio Script\", cursive",
+          "fontSize": "24px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-hero h1": {
+          "x": 148.5,
+          "y": -688,
+          "width": 734.796875,
+          "height": 97.90625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "48px",
+          "weight": "900",
+          "objectFit": "fill"
+        },
+        ".ref-circle": {
+          "x": 923.890625,
+          "y": -550.484375,
+          "width": 520,
+          "height": 520,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-portrait-window": {
+          "x": 883.296875,
+          "y": -730.484375,
+          "width": 601.1875,
+          "height": 608,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-projects img": {
+          "x": 164.5,
+          "y": 2852.53125,
+          "width": 398.65625,
+          "height": 249.15625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        },
+        ".ref-services h3": {
+          "x": 184.5,
+          "y": 3683.65625,
+          "width": 358.65625,
+          "height": 22.75,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "17.5px",
+          "weight": "700",
+          "objectFit": "fill"
+        },
+        ".ref-about figure img": {
+          "x": 269.8359375,
+          "y": 4299.65625,
+          "width": 389.328125,
+          "height": 584,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        }
+      }
+    },
+    {
+      "name": "03-featured",
+      "width": 1336,
+      "height": 880,
+      "geometry": {
+        ".brand": {
+          "x": 43,
+          "y": -1791.796875,
+          "width": 140.71875,
+          "height": 33.59375,
+          "font": "\"Portfolio Script\", cursive",
+          "fontSize": "24px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-hero h1": {
+          "x": 40,
+          "y": -1545,
+          "width": 690.796875,
+          "height": 97.90625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "48px",
+          "weight": "900",
+          "objectFit": "fill"
+        },
+        ".ref-circle": {
+          "x": 753.390625,
+          "y": -1407.484375,
+          "width": 520,
+          "height": 520,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-portrait-window": {
+          "x": 730.796875,
+          "y": -1587.484375,
+          "width": 565.1875,
+          "height": 608,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-projects img": {
+          "x": 56,
+          "y": 1995.53125,
+          "width": 372,
+          "height": 232.5,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        },
+        ".ref-services h3": {
+          "x": 76,
+          "y": 2810,
+          "width": 332,
+          "height": 22.75,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "17.5px",
+          "weight": "700",
+          "objectFit": "fill"
+        },
+        ".ref-about figure img": {
+          "x": 141.3359375,
+          "y": 3428.96875,
+          "width": 389.328125,
+          "height": 584,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        }
+      }
+    },
+    {
+      "name": "04-secondary",
+      "width": 1250,
+      "height": 718,
+      "geometry": {
+        ".brand": {
+          "x": 43,
+          "y": -2730.796875,
+          "width": 140.71875,
+          "height": 33.59375,
+          "font": "\"Portfolio Script\", cursive",
+          "fontSize": "24px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-hero h1": {
+          "x": 40,
+          "y": -2484,
+          "width": 643.5,
+          "height": 97.90625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "48px",
+          "weight": "900",
+          "objectFit": "fill"
+        },
+        ".ref-circle": {
+          "x": 686.75,
+          "y": -2346.484375,
+          "width": 520,
+          "height": 520,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-portrait-window": {
+          "x": 683.5,
+          "y": -2526.484375,
+          "width": 526.5,
+          "height": 608,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-projects img": {
+          "x": 56,
+          "y": 1056.53125,
+          "width": 343.328125,
+          "height": 214.578125,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        },
+        ".ref-services h3": {
+          "x": 76,
+          "y": 1877.125,
+          "width": 303.328125,
+          "height": 22.75,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "17.5px",
+          "weight": "700",
+          "objectFit": "fill"
+        },
+        ".ref-about figure img": {
+          "x": 119.8359375,
+          "y": 2518.84375,
+          "width": 389.328125,
+          "height": 584,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        }
+      }
+    },
+    {
+      "name": "05-projects",
+      "width": 1282,
+      "height": 769,
+      "geometry": {
+        ".brand": {
+          "x": 43,
+          "y": -3558.796875,
+          "width": 140.71875,
+          "height": 33.59375,
+          "font": "\"Portfolio Script\", cursive",
+          "fontSize": "24px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-hero h1": {
+          "x": 40,
+          "y": -3312,
+          "width": 661.09375,
+          "height": 97.90625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "48px",
+          "weight": "900",
+          "objectFit": "fill"
+        },
+        ".ref-circle": {
+          "x": 711.53125,
+          "y": -3174.484375,
+          "width": 520,
+          "height": 520,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-portrait-window": {
+          "x": 701.09375,
+          "y": -3354.484375,
+          "width": 540.890625,
+          "height": 608,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-projects img": {
+          "x": 56,
+          "y": 228.53125,
+          "width": 354,
+          "height": 221.25,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        },
+        ".ref-services h3": {
+          "x": 76,
+          "y": 1055.796875,
+          "width": 314,
+          "height": 22.75,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "17.5px",
+          "weight": "700",
+          "objectFit": "fill"
+        },
+        ".ref-about figure img": {
+          "x": 127.8359375,
+          "y": 1674.765625,
+          "width": 389.328125,
+          "height": 584,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        }
+      }
+    },
+    {
+      "name": "06-services",
+      "width": 1302,
+      "height": 874,
+      "geometry": {
+        ".brand": {
+          "x": 43,
+          "y": -4282.796875,
+          "width": 140.71875,
+          "height": 33.59375,
+          "font": "\"Portfolio Script\", cursive",
+          "fontSize": "24px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-hero h1": {
+          "x": 40,
+          "y": -4036,
+          "width": 672.09375,
+          "height": 97.90625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "48px",
+          "weight": "900",
+          "objectFit": "fill"
+        },
+        ".ref-circle": {
+          "x": 727.03125,
+          "y": -3898.484375,
+          "width": 520,
+          "height": 520,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-portrait-window": {
+          "x": 712.09375,
+          "y": -4078.484375,
+          "width": 549.890625,
+          "height": 608,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-projects img": {
+          "x": 56,
+          "y": -495.46875,
+          "width": 360.65625,
+          "height": 225.40625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        },
+        ".ref-services h3": {
+          "x": 76,
+          "y": 311.90625,
+          "width": 320.65625,
+          "height": 22.75,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "17.5px",
+          "weight": "700",
+          "objectFit": "fill"
+        },
+        ".ref-about figure img": {
+          "x": 132.8359375,
+          "y": 930.875,
+          "width": 389.328125,
+          "height": 584,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        }
+      }
+    },
+    {
+      "name": "07-about",
+      "width": 1293,
+      "height": 715,
+      "geometry": {
+        ".brand": {
+          "x": 43,
+          "y": -5156.796875,
+          "width": 140.71875,
+          "height": 33.59375,
+          "font": "\"Portfolio Script\", cursive",
+          "fontSize": "24px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-hero h1": {
+          "x": 40,
+          "y": -4910,
+          "width": 667.140625,
+          "height": 97.90625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "48px",
+          "weight": "900",
+          "objectFit": "fill"
+        },
+        ".ref-circle": {
+          "x": 720.0625,
+          "y": -4772.484375,
+          "width": 520,
+          "height": 520,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-portrait-window": {
+          "x": 707.140625,
+          "y": -4952.484375,
+          "width": 545.84375,
+          "height": 608,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-projects img": {
+          "x": 56,
+          "y": -1369.46875,
+          "width": 357.65625,
+          "height": 223.53125,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        },
+        ".ref-services h3": {
+          "x": 76,
+          "y": -539.921875,
+          "width": 317.65625,
+          "height": 22.75,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "17.5px",
+          "weight": "700",
+          "objectFit": "fill"
+        },
+        ".ref-about figure img": {
+          "x": 130.5859375,
+          "y": 79.046875,
+          "width": 389.328125,
+          "height": 584,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        }
+      }
+    },
+    {
+      "name": "08-capabilities",
+      "width": 1297,
+      "height": 856,
+      "geometry": {
+        ".brand": {
+          "x": 43,
+          "y": -5907.796875,
+          "width": 140.71875,
+          "height": 33.59375,
+          "font": "\"Portfolio Script\", cursive",
+          "fontSize": "24px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-hero h1": {
+          "x": 40,
+          "y": -5661,
+          "width": 669.34375,
+          "height": 97.90625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "48px",
+          "weight": "900",
+          "objectFit": "fill"
+        },
+        ".ref-circle": {
+          "x": 723.15625,
+          "y": -5523.484375,
+          "width": 520,
+          "height": 520,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-portrait-window": {
+          "x": 709.34375,
+          "y": -5703.484375,
+          "width": 547.640625,
+          "height": 608,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-projects img": {
+          "x": 56,
+          "y": -2120.46875,
+          "width": 359,
+          "height": 224.375,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        },
+        ".ref-services h3": {
+          "x": 76,
+          "y": -1290.078125,
+          "width": 319,
+          "height": 22.75,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "17.5px",
+          "weight": "700",
+          "objectFit": "fill"
+        },
+        ".ref-about figure img": {
+          "x": 131.5859375,
+          "y": -671.109375,
+          "width": 389.328125,
+          "height": 584,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        }
+      }
+    },
+    {
+      "name": "09-career",
+      "width": 1251,
+      "height": 867,
+      "geometry": {
+        ".brand": {
+          "x": 43,
+          "y": -6843.796875,
+          "width": 140.71875,
+          "height": 33.59375,
+          "font": "\"Portfolio Script\", cursive",
+          "fontSize": "24px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-hero h1": {
+          "x": 40,
+          "y": -6597,
+          "width": 644.046875,
+          "height": 97.90625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "48px",
+          "weight": "900",
+          "objectFit": "fill"
+        },
+        ".ref-circle": {
+          "x": 687.515625,
+          "y": -6459.484375,
+          "width": 520,
+          "height": 520,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-portrait-window": {
+          "x": 684.046875,
+          "y": -6639.484375,
+          "width": 526.9375,
+          "height": 608,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-projects img": {
+          "x": 56,
+          "y": -3056.46875,
+          "width": 343.65625,
+          "height": 214.78125,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        },
+        ".ref-services h3": {
+          "x": 76,
+          "y": -2235.671875,
+          "width": 303.65625,
+          "height": 22.75,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "17.5px",
+          "weight": "700",
+          "objectFit": "fill"
+        },
+        ".ref-about figure img": {
+          "x": 120.0859375,
+          "y": -1593.953125,
+          "width": 389.328125,
+          "height": 584,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        }
+      }
+    },
+    {
+      "name": "10-work",
+      "width": 1284,
+      "height": 760,
+      "geometry": {
+        ".brand": {
+          "x": 43,
+          "y": -8279.796875,
+          "width": 140.71875,
+          "height": 33.59375,
+          "font": "\"Portfolio Script\", cursive",
+          "fontSize": "24px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-hero h1": {
+          "x": 40,
+          "y": -8033,
+          "width": 662.1875,
+          "height": 97.90625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "48px",
+          "weight": "900",
+          "objectFit": "fill"
+        },
+        ".ref-circle": {
+          "x": 713.078125,
+          "y": -7895.484375,
+          "width": 520,
+          "height": 520,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-portrait-window": {
+          "x": 702.1875,
+          "y": -8075.484375,
+          "width": 541.796875,
+          "height": 608,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-projects img": {
+          "x": 56,
+          "y": -4492.46875,
+          "width": 354.65625,
+          "height": 221.65625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        },
+        ".ref-services h3": {
+          "x": 76,
+          "y": -3664.796875,
+          "width": 314.65625,
+          "height": 22.75,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "17.5px",
+          "weight": "700",
+          "objectFit": "fill"
+        },
+        ".ref-about figure img": {
+          "x": 128.3359375,
+          "y": -3045.828125,
+          "width": 389.328125,
+          "height": 584,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        }
+      }
+    },
+    {
+      "name": "11-faq",
+      "width": 1413,
+      "height": 666,
+      "geometry": {
+        ".brand": {
+          "x": 43,
+          "y": -9087.796875,
+          "width": 140.71875,
+          "height": 33.59375,
+          "font": "\"Portfolio Script\", cursive",
+          "fontSize": "24px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-hero h1": {
+          "x": 40,
+          "y": -8841,
+          "width": 733.140625,
+          "height": 97.90625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "48px",
+          "weight": "900",
+          "objectFit": "fill"
+        },
+        ".ref-circle": {
+          "x": 813.0625,
+          "y": -8703.484375,
+          "width": 520,
+          "height": 520,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-portrait-window": {
+          "x": 773.140625,
+          "y": -8883.484375,
+          "width": 599.84375,
+          "height": 608,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-projects img": {
+          "x": 56,
+          "y": -5300.46875,
+          "width": 397.65625,
+          "height": 248.53125,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        },
+        ".ref-services h3": {
+          "x": 76,
+          "y": -4469.96875,
+          "width": 357.65625,
+          "height": 22.75,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "17.5px",
+          "weight": "700",
+          "objectFit": "fill"
+        },
+        ".ref-about figure img": {
+          "x": 160.5859375,
+          "y": -3853.96875,
+          "width": 389.328125,
+          "height": 584,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        }
+      }
+    },
+    {
+      "name": "12-contact",
+      "width": 1326,
+      "height": 628,
+      "geometry": {
+        ".brand": {
+          "x": 43,
+          "y": -9766.796875,
+          "width": 140.71875,
+          "height": 33.59375,
+          "font": "\"Portfolio Script\", cursive",
+          "fontSize": "24px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-hero h1": {
+          "x": 40,
+          "y": -9520,
+          "width": 685.296875,
+          "height": 97.90625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "48px",
+          "weight": "900",
+          "objectFit": "fill"
+        },
+        ".ref-circle": {
+          "x": 745.640625,
+          "y": -9382.484375,
+          "width": 520,
+          "height": 520,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-portrait-window": {
+          "x": 725.296875,
+          "y": -9562.484375,
+          "width": 560.6875,
+          "height": 608,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "fill"
+        },
+        ".ref-projects img": {
+          "x": 56,
+          "y": -5979.46875,
+          "width": 368.65625,
+          "height": 230.40625,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        },
+        ".ref-services h3": {
+          "x": 76,
+          "y": -5167.09375,
+          "width": 328.65625,
+          "height": 22.75,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "17.5px",
+          "weight": "700",
+          "objectFit": "fill"
+        },
+        ".ref-about figure img": {
+          "x": 138.8359375,
+          "y": -4548.125,
+          "width": 389.328125,
+          "height": 584,
+          "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+          "fontSize": "16px",
+          "weight": "400",
+          "objectFit": "contain"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { existsSync } from 'node:fs';
+import { boards, boardSchema, filterBoards, getBoard } from '../../src/lib/projects';
+test('seed collection validates and has unique published slugs', () => { assert.equal(boards.length, 3); assert.equal(new Set(boards.map(board => board.slug)).size, boards.length); boards.forEach(board => assert(boardSchema.safeParse(board).success)); });
+test('search is case-insensitive and trims whitespace', () => { assert.equal(filterBoards(boards, '  ESP32 ').length, 1); assert.equal(filterBoards(boards, 'tachometer')[0].slug, 'six-channel-fan-controller'); });
+test('category, status and query compose', () => { assert.equal(filterBoards(boards, '', 'power', 'concept').length, 1); assert.equal(filterBoards(boards, 'ESP32', 'power', '').length, 0); assert.equal(filterBoards(boards, '', '', 'validated').length, 0); assert.equal(filterBoards(boards).length, 3); });
+test('unknown slug is absent and all provided assets exist', () => { assert.equal(getBoard('unknown-board'), undefined); boards.forEach(board => { board.gallery.forEach(media => assert(existsSync(`public${media.src}`))); (board.files || []).forEach(file => assert(existsSync(`public${file.href}`))); }); });
+test('schema rejects unsafe assets, invalid categories and false quantities', () => { assert(!boardSchema.safeParse({ ...boards[0], category: 'fake' }).success); assert(!boardSchema.safeParse({ ...boards[0], heroImage: { ...boards[0].heroImage, src: '/assets/../secret' } }).success); assert(!boardSchema.safeParse({ ...boards[0], components: [{ designator: 'U1', quantity: 0, description: 'invalid' }] }).success); });
+test('illustrative content contains no invented specification or download claims', () => { boards.forEach(board => { assert.equal(board.specs.length, 0); assert.equal(board.files, undefined); assert.equal(board.components, undefined); assert.equal(board.stackup, undefined); assert.match(board.disclaimer, /Illustrative/); }); });

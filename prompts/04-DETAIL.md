@@ -1,0 +1,2 @@
+# PHASE 4 — Technical project pages
+Implement `/boards/[slug]` with static generation, metadata, 404, breadcrumb, responsive gallery with optional render/photo modes, verified specs, feature tabs, optional BOM, optional stackup, optional block diagram, conditional download list, related projects. Use accessible tabs, table overflow, image alt and safe external links. Never display fake file links or unverified stackup values. Add detail smoke tests. Acceptance: all seed projects render and optional fields degrade gracefully.

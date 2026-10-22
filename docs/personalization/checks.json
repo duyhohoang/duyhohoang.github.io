@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "width": 1479,
+      "noOverflow": true,
+      "portraitLoaded": true,
+      "wordmarkVerified": true
+    },
+    {
+      "width": 390,
+      "noOverflow": true,
+      "portraitLoaded": true,
+      "wordmarkVerified": true
+    },
+    {
+      "width": 375,
+      "noOverflow": true,
+      "portraitLoaded": true,
+      "wordmarkVerified": true
+    }
+  ],
+  "errors": [],
+  "portraitFrameGeometryPreserved": true
+}

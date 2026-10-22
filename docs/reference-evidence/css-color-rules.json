@@ -1,0 +1,891 @@
+[
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": "@charset \"UTF-8\";.footer.svelte-w04r77",
+    "property": "border-top",
+    "value": "1px solid var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".footer__logo__icon .svg__to-stroke",
+    "property": "stroke",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".footer__logo__icon .svg__to-fill",
+    "property": "fill",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".footer__copyright.svelte-w04r77",
+    "property": "color",
+    "value": "var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".hamburgerMenu__flex.svelte-1twcjb1",
+    "property": "color",
+    "value": "var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".hamburgerMenu__flex.svelte-1twcjb1 .svg__to-stroke",
+    "property": "stroke",
+    "value": "var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".hamburgerMenu__flex.svelte-1twcjb1 .svg__to-fill",
+    "property": "fill",
+    "value": "var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".hamburgerMenu__section.svelte-1twcjb1",
+    "property": "background",
+    "value": "#282b30",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".hamburgerMenu__section.svelte-1twcjb1",
+    "property": "border-top",
+    "value": "1px solid #8b8b8b",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".hamburgerMenu__button.svelte-1twcjb1",
+    "property": "border-bottom",
+    "value": "1px solid #a7a7a7",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".hamburgerMenu__button.svelte-1twcjb1:last-child",
+    "property": "background",
+    "value": "#ffffff1a",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".hamburgerMenu__button.svelte-1twcjb1:last-child",
+    "property": "border-bottom",
+    "value": "1px solid #a7a7a7",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".hamburgerMenu__button__text.svelte-1twcjb1",
+    "property": "color",
+    "value": "#a7a7a7",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".hamburgerMenu__overlay.svelte-1twcjb1",
+    "property": "background",
+    "value": "#17191bcc",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar.svelte-10w19o5",
+    "property": "border-bottom",
+    "value": "1px solid var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable",
+    "property": "color",
+    "value": "var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable.navbar__item--clickable--logo .svg__to-stroke",
+    "property": "stroke",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable.navbar__item--clickable--logo .svg__to-fill",
+    "property": "fill",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable .svg__to-stroke",
+    "property": "stroke",
+    "value": "var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable .svg__to-fill",
+    "property": "fill",
+    "value": "var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable:hover",
+    "property": "color",
+    "value": "var(--white)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable:hover .svg__to-stroke",
+    "property": "stroke",
+    "value": "var(--white)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable:hover .svg__to-fill",
+    "property": "fill",
+    "value": "var(--white)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable:active",
+    "property": "color",
+    "value": "var(--gray-2)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable:active .svg__to-stroke",
+    "property": "stroke",
+    "value": "var(--gray-2)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable:active .svg__to-fill",
+    "property": "fill",
+    "value": "var(--gray-2)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable.navbar__item--clickable--active",
+    "property": "color",
+    "value": "var(--white)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable.navbar__item--clickable--active .svg__to-stroke",
+    "property": "stroke",
+    "value": "var(--white)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__item.navbar__item--clickable.navbar__item--clickable--active .svg__to-fill",
+    "property": "fill",
+    "value": "var(--white)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".navbar__separator.svelte-10w19o5",
+    "property": "background-color",
+    "value": "var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".black-header-bg",
+    "property": "background",
+    "value": "linear-gradient(0deg,#0003,#0003),url(./noise.Ca_4zuW8.png),#17181b",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".black-page-bg",
+    "property": "--black-page-bg-provider-width",
+    "value": "0px",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".black-page-bg",
+    "property": "--black-page-bg-provider-height",
+    "value": "0px",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".black-page-bg",
+    "property": "--black-page-bg-provider-min-dimension",
+    "value": "var(--black-page-bg-provider-width)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".black-page-bg",
+    "property": "--black-page-bg-provider-half-min-dimension",
+    "value": "calc( var(--black-page-bg-provider-min-dimension) / 2 )",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".black-page-bg",
+    "property": "background",
+    "value": "url(\"data:image/svg+xml,%3csvg%20width='84'%20height='84'%20viewBox='0%200%2084%2084'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0'%20y='0'%20width='84'%20height='84'%20stroke='%23D9D9D9'%20stroke-width='1'%20stroke-opacity='0.1'/%3e%3c/svg%3e\") repeat,url(./noise.Ca_4zuW8.png) repeat,radial-gradient(calc(var(--black-page-bg-provider-width) / 2) calc(var(--black-page-bg-provider-height) / 2) at calc(var(--black-page-bg-provider-width) / 2) calc(var(--black-page-bg-provider-height) / 2),#323539,#323539) no-repeat,radial-gradient(var(--black-page-bg-provider-half-min-dimension) var(--black-page-bg-provider-half-min-dimension) at var(--black-page-bg-provider-half-min-dimension) var(--black-page-bg-provider-half-min-dimension),#323539 0%,#16181b 100%) no-repeat,linear-gradient(to bottom,#16181b,#323539) no-repeat,radial-gradient(var(--black-page-bg-provider-half-min-dimension) var(--black-page-bg-provider-half-min-dimension) at 0 var(--black-page-bg-provider-half-min-dimension),#323539 0%,#16181b 100%) no-repeat,linear-gradient(to right,#16181b,#323539) no-repeat,linear-gradient(to left,#16181b,#323539) no-repeat,radial-gradient(50% 50% at 50% 50%,#323539,#16181b) no-repeat,#24272a",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--browser",
+    "value": "\"unknown\"",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--mobile",
+    "value": "\"false\"",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--browser",
+    "value": "\"chromium\"",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--browser",
+    "value": "\"ie\"",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--browser",
+    "value": "\"edge\"",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--browser",
+    "value": "\"firefox\"",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": "_::-webkit-full-page-media,_:future,:root",
+    "property": "--browser",
+    "value": "\"safari\"",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--mobile",
+    "value": "\"true\"",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--white",
+    "value": "#ffffff",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--gray-1",
+    "value": "#d9d9d9",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--gray-2",
+    "value": "#a7a7a7",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--gray-3-rgb",
+    "value": "139, 139, 139",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--gray-3",
+    "value": "rgb(var(--gray-3-rgb))",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--gray-4",
+    "value": "#79797c",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--dark-1",
+    "value": "#3f4043",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--dark-2",
+    "value": "#282b30",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--dark-3",
+    "value": "#2e2e2e",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--dark-4",
+    "value": "#141618",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ":root",
+    "property": "--red",
+    "value": "#ffa3a3",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": "a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible",
+    "property": "outline",
+    "value": "2px solid #b4fdb1",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".light-transparent-bg",
+    "property": "background",
+    "value": "#ffffff05",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".dark-transparent-bg",
+    "property": "background",
+    "value": "#282b301a",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".dark-transparent-bg-2",
+    "property": "background",
+    "value": "#17191bcc",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".light-transparent-bg-2",
+    "property": "background",
+    "value": "#ffffff0d",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".light-transparent-bg-3",
+    "property": "background",
+    "value": "#ffffff1a",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".black-header-bg",
+    "property": "background",
+    "value": "linear-gradient(0deg,#0003,#0003),url(./noise.Ca_4zuW8.png),#17181b",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".black-page-bg",
+    "property": "--black-page-bg-provider-width",
+    "value": "0px",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".black-page-bg",
+    "property": "--black-page-bg-provider-height",
+    "value": "0px",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".black-page-bg",
+    "property": "--black-page-bg-provider-min-dimension",
+    "value": "var(--black-page-bg-provider-width)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".black-page-bg",
+    "property": "--black-page-bg-provider-half-min-dimension",
+    "value": "calc( var(--black-page-bg-provider-min-dimension) / 2 )",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": ".black-page-bg",
+    "property": "background",
+    "value": "url(\"data:image/svg+xml,%3csvg%20width='84'%20height='84'%20viewBox='0%200%2084%2084'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0'%20y='0'%20width='84'%20height='84'%20stroke='%23D9D9D9'%20stroke-width='1'%20stroke-opacity='0.1'/%3e%3c/svg%3e\") repeat,url(./noise.Ca_4zuW8.png) repeat,radial-gradient(calc(var(--black-page-bg-provider-width) / 2) calc(var(--black-page-bg-provider-height) / 2) at calc(var(--black-page-bg-provider-width) / 2) calc(var(--black-page-bg-provider-height) / 2),#323539,#323539) no-repeat,radial-gradient(var(--black-page-bg-provider-half-min-dimension) var(--black-page-bg-provider-half-min-dimension) at var(--black-page-bg-provider-half-min-dimension) var(--black-page-bg-provider-half-min-dimension),#323539 0%,#16181b 100%) no-repeat,linear-gradient(to bottom,#16181b,#323539) no-repeat,radial-gradient(var(--black-page-bg-provider-half-min-dimension) var(--black-page-bg-provider-half-min-dimension) at 0 var(--black-page-bg-provider-half-min-dimension),#323539 0%,#16181b 100%) no-repeat,linear-gradient(to right,#16181b,#323539) no-repeat,linear-gradient(to left,#16181b,#323539) no-repeat,radial-gradient(50% 50% at 50% 50%,#323539,#16181b) no-repeat,#24272a",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/0.BzCzEfB7.css",
+    "selector": "body",
+    "property": "background-color",
+    "value": "var(--dark-2)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".welcome-screen__panel.svelte-kw8ykq",
+    "property": "color",
+    "value": "var(--white)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".welcome-screen__panel.svelte-kw8ykq",
+    "property": "border",
+    "value": "1px solid var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".welcome-screen__panel__heading.svelte-kw8ykq",
+    "property": "color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".welcome-screen__panel__paragraph.svelte-kw8ykq",
+    "property": "color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".card.svelte-ee93iu",
+    "property": "background",
+    "value": "#ffffff05",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".card.svelte-ee93iu",
+    "property": "border",
+    "value": "1px solid var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".header.svelte-ee93iu",
+    "property": "color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".description.svelte-ee93iu",
+    "property": "color",
+    "value": "var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".card_long.svelte-1t3eu1a",
+    "property": "background",
+    "value": "#ffffff05",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".card_long.svelte-1t3eu1a",
+    "property": "border",
+    "value": "1px solid var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".header.svelte-1t3eu1a",
+    "property": "color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".description.svelte-1t3eu1a",
+    "property": "color",
+    "value": "var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".header__subtitle.svelte-tizidi",
+    "property": "color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".title.svelte-tizidi",
+    "property": "color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".description.svelte-tizidi",
+    "property": "color",
+    "value": "var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".landing-page__hardware-library-section__row__description__heading.svelte-1lrtl7d",
+    "property": "color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".landing-page__hardware-library-section__row__description__paragraph.svelte-1lrtl7d",
+    "property": "color",
+    "value": "var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".landing-page__hardware-library-section__row__image.svelte-1lrtl7d",
+    "property": "border",
+    "value": "1px solid var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/4.DEza4-CX.css",
+    "selector": ".contact-section.svelte-1vskhwy",
+    "property": "border",
+    "value": "1px solid var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ":where(.button.svelte-1f5tebo)",
+    "property": "background",
+    "value": "none",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ":where(.button.svelte-1f5tebo)",
+    "property": "border",
+    "value": "none",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ":where(.button.svelte-1f5tebo)",
+    "property": "color",
+    "value": "var(--gray-2)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ":where(.button.svelte-1f5tebo) .svg__to-stroke",
+    "property": "stroke",
+    "value": "var(--gray-2)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ":where(.button.svelte-1f5tebo) .svg__to-fill",
+    "property": "fill",
+    "value": "var(--gray-2)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(.button:where(.svelte-1f5tebo)):hover",
+    "property": "color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(.button:where(.svelte-1f5tebo)):hover .svg__to-stroke",
+    "property": "stroke",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(.button:where(.svelte-1f5tebo)):hover .svg__to-fill",
+    "property": "fill",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--without-border:where(.svelte-1f5tebo)):hover:not(:active)",
+    "property": "color",
+    "value": "var(--white)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--without-border:where(.svelte-1f5tebo)):hover:not(:active) .svg__to-stroke",
+    "property": "stroke",
+    "value": "var(--white)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--without-border:where(.svelte-1f5tebo)):hover:not(:active) .svg__to-fill",
+    "property": "fill",
+    "value": "var(--white)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--without-border:where(.svelte-1f5tebo)):active",
+    "property": "color",
+    "value": "var(--white)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--without-border:where(.svelte-1f5tebo)):active",
+    "property": "opacity",
+    "value": ".8",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--without-border:where(.svelte-1f5tebo)):active .svg__to-stroke",
+    "property": "stroke",
+    "value": "var(--white)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--without-border:where(.svelte-1f5tebo)):active .svg__to-fill",
+    "property": "fill",
+    "value": "var(--white)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ":where(:where(.button:where(.svelte-1f5tebo)).button--with-border.svelte-1f5tebo)",
+    "property": "border",
+    "value": "1px solid",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--with-border:where(.svelte-1f5tebo)):not(:active):not(:hover)",
+    "property": "background",
+    "value": "#282b301a",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--with-border:where(.svelte-1f5tebo)):not(:active):not(:hover)",
+    "property": "border-color",
+    "value": "var(--gray-2)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--with-border:where(.svelte-1f5tebo)):hover:not(:active)",
+    "property": "border-color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--with-border:where(.svelte-1f5tebo)):hover:not(:active)",
+    "property": "background-color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--with-border:where(.svelte-1f5tebo)):hover:not(:active)",
+    "property": "color",
+    "value": "var(--dark-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--with-border:where(.svelte-1f5tebo)):hover:not(:active)",
+    "property": "box-shadow",
+    "value": "0 0 .875rem #d2d2d240",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--with-border:where(.svelte-1f5tebo)):hover:not(:active) .svg__to-stroke",
+    "property": "stroke",
+    "value": "var(--dark-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--with-border:where(.svelte-1f5tebo)):hover:not(:active) .svg__to-fill",
+    "property": "fill",
+    "value": "var(--dark-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--with-border:where(.svelte-1f5tebo)):active",
+    "property": "border-color",
+    "value": "var(--gray-2)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--with-border:where(.svelte-1f5tebo)):active",
+    "property": "background-color",
+    "value": "var(--gray-2)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--with-border:where(.svelte-1f5tebo)):active",
+    "property": "color",
+    "value": "var(--gray-4)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--with-border:where(.svelte-1f5tebo)):active .svg__to-stroke",
+    "property": "stroke",
+    "value": "var(--gray-4)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".svelte-1f5tebo:where(:where(.button:where(.svelte-1f5tebo)).button--with-border:where(.svelte-1f5tebo)):active .svg__to-fill",
+    "property": "fill",
+    "value": "var(--gray-4)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/Button.CuPZovLP.css",
+    "selector": ".button--disabled.svelte-1f5tebo",
+    "property": "opacity",
+    "value": ".5",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/ContactForm.DzvSimMa.css",
+    "selector": ".contact-form__paragraph.svelte-13e8ts4",
+    "property": "color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/ContactForm.DzvSimMa.css",
+    "selector": ".contact-form__heading.svelte-13e8ts4",
+    "property": "color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/ContactForm.DzvSimMa.css",
+    "selector": ".contact-form__gray-text.svelte-13e8ts4",
+    "property": "color",
+    "value": "var(--gray-3)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/ContactForm.DzvSimMa.css",
+    "selector": ".contact-form__paragraph__contact-mail.svelte-13e8ts4",
+    "property": "color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/ContactForm.DzvSimMa.css",
+    "selector": ".contact-form__field.svelte-12l6om1",
+    "property": "border",
+    "value": "1px solid var(--gray-2)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/ContactForm.DzvSimMa.css",
+    "selector": ".contact-form__field__label.svelte-12l6om1",
+    "property": "color",
+    "value": "var(--gray-2)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/ContactForm.DzvSimMa.css",
+    "selector": ".contact-form__field__input.svelte-12l6om1",
+    "property": "background-color",
+    "value": "inherit",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/ContactForm.DzvSimMa.css",
+    "selector": ".contact-form__field__input.svelte-12l6om1",
+    "property": "border",
+    "value": "0",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/ContactForm.DzvSimMa.css",
+    "selector": ".contact-form.svelte-12l6om1 input:where(.svelte-12l6om1),.contact-form.svelte-12l6om1 textarea:where(.svelte-12l6om1)",
+    "property": "color",
+    "value": "var(--gray-1)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  },
+  {
+    "source": "https://openhardware.antmicro.com/_app/immutable/assets/ContactForm.DzvSimMa.css",
+    "selector": ".error.svelte-12l6om1",
+    "property": "color",
+    "value": "var(--red)",
+    "status": "CSS_SOURCE_VERIFIED_COMPUTED_UNVERIFIED"
+  }
+]

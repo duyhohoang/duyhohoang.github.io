@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-10-15T14:12:08.775Z",
+  "browserTests": {
+    "startTime": "2026-10-15T14:08:58.001Z",
+    "duration": 114986.68599999999,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "exportCheck": {
+    "date": "2026-10-15T14:09:17.574Z",
+    "pages": 13,
+    "internalReferences": 466,
+    "images": 18,
+    "passed": true
+  },
+  "mobile": {
+    "performance": 81,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 69,
+    "lcpMs": 3148.3049999999994,
+    "cls": 0,
+    "tbtMs": 461.1390000000001,
+    "warnings": [
+      "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+    ],
+    "measurement": "Compressed local production preview before final accessible-label-only refinement"
+  },
+  "desktop": {
+    "performance": 98,
+    "accessibility": 100,
+    "bestPractices": 96,
+    "seo": 69,
+    "lcpMs": 1157.9169516473148,
+    "cls": 0.00006232590716302208,
+    "tbtMs": 21.5,
+    "warnings": [],
+    "measurement": "Earlier build; final desktop rerun declined and not retried"
+  },
+  "notes": [
+    "Local simulated mobile LCP remains above 2.5s target.",
+    "SEO score reflects intentional noindex and robots disallow until an approved public launch.",
+    "Final full browser suite passed the explicit mobile label-in-name check after the label refinement.",
+    "No public deployment performed."
+  ]
+}

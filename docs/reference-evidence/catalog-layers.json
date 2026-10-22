@@ -1,0 +1,285 @@
+{
+  "items": [
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(217, 217, 217)",
+      "color": "rgb(217, 217, 217)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "input.p1.search__input.svelte-7h3oy5"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0.1)",
+      "border": "rgb(139, 139, 139)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(217, 217, 217) rgb(217, 217, 217) rgb(217, 217, 217) rgb(139, 139, 139)",
+      "color": "rgb(217, 217, 217)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__heading-zone.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(139, 139, 139) rgb(255, 255, 255) rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__zone-separator.svelte-rjt119"
+    },
+    {
+      "background": "rgb(24, 26, 28)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__image-zone.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.board-card-a__thumbnail_container.svelte-19w5q64"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.board-card-a__thumbnail.svelte-19w5q64"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(139, 139, 139) rgb(158, 158, 255) rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__zone-separator.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__description-zone.text-paragraph.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0.1)",
+      "border": "rgb(139, 139, 139)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(217, 217, 217) rgb(217, 217, 217) rgb(217, 217, 217) rgb(139, 139, 139)",
+      "color": "rgb(217, 217, 217)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__heading-zone.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(139, 139, 139) rgb(255, 255, 255) rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__zone-separator.svelte-rjt119"
+    },
+    {
+      "background": "rgb(24, 26, 28)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__image-zone.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.board-card-a__thumbnail_container.svelte-19w5q64"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.board-card-a__thumbnail.svelte-19w5q64"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(139, 139, 139) rgb(158, 158, 255) rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__zone-separator.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__description-zone.text-paragraph.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0.1)",
+      "border": "rgb(139, 139, 139)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(217, 217, 217) rgb(217, 217, 217) rgb(217, 217, 217) rgb(139, 139, 139)",
+      "color": "rgb(217, 217, 217)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__heading-zone.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(139, 139, 139) rgb(255, 255, 255) rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__zone-separator.svelte-rjt119"
+    },
+    {
+      "background": "rgb(24, 26, 28)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__image-zone.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.board-card-a__thumbnail_container.svelte-19w5q64"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.board-card-a__thumbnail.svelte-19w5q64"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(139, 139, 139) rgb(158, 158, 255) rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__zone-separator.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__description-zone.text-paragraph.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0.1)",
+      "border": "rgb(139, 139, 139)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(217, 217, 217) rgb(217, 217, 217) rgb(217, 217, 217) rgb(139, 139, 139)",
+      "color": "rgb(217, 217, 217)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__heading-zone.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(139, 139, 139) rgb(255, 255, 255) rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__zone-separator.svelte-rjt119"
+    },
+    {
+      "background": "rgb(24, 26, 28)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__image-zone.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.board-card-a__thumbnail_container.svelte-19w5q64"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.board-card-a__thumbnail.svelte-19w5q64"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(139, 139, 139) rgb(158, 158, 255) rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__zone-separator.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(158, 158, 255)",
+      "color": "rgb(158, 158, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__description-zone.text-paragraph.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0.1)",
+      "border": "rgb(139, 139, 139)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card.svelte-rjt119"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(217, 217, 217) rgb(217, 217, 217) rgb(217, 217, 217) rgb(139, 139, 139)",
+      "color": "rgb(217, 217, 217)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.card__heading-zone.svelte-rjt119"
+    }
+  ],
+  "url": "https://openhardware.antmicro.com/boards/"
+}

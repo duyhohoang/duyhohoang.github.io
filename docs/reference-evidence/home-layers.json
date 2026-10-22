@@ -1,0 +1,93 @@
+{
+  "items": [
+    {
+      "background": "rgb(36, 39, 42)",
+      "border": "rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "url(\"data:image/svg+xml,%3csvg%20width='84'%20height='84'%20viewBox='0%200%2084%2084'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0'%20y='0'%20width='84'%20height='84'%20stroke='%23D9D9D9'%20stroke-width='1'%20stroke-opacity='0.1'/%3e%3c/svg%3e\"), url(\"https://openhardware.antmicro.com/_app/immutable/assets/noise.Ca_4zuW8.png\"), radial-gradient(712.328px 2940.44px at 712.328px 2940.44px, rgb(50, 53, 57), rgb(50, 53, 57)), radial-gradient(712.328px 712.328px at 712.328px 712.328px, rgb(50, 53, 57) 0%, rgb(22, 24, 27) 100%), linear-gradient(rgb(22, 24, 27), rgb(50, 53, 57)), radial-gradient(712.328px 712.328px at 0px 712.328px, rgb(50, 53, 57) 0%, rgb(22, 24, 27) 100%), linear-gradient(to right, rgb(22, 24, 27), rgb(50, 53, 57)), linear-gradient(to left, rgb(22, 24, 27), rgb(50, 53, 57)), radial-gradient(50% 50%, rgb(50, 53, 57), rgb(22, 24, 27)), none",
+      "opacity": "1",
+      "selector": "div.black-page-bg-provider.black-page-bg.layout__black-page-bg-provider"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.welcome-screen.svelte-kw8ykq"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.electronics-globe-background-provider.svelte-az912z"
+    },
+    {
+      "background": "rgb(0, 0, 0)",
+      "border": "rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.electronics-globe-background-provider__background.svelte-az912z"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.electronics-globe-background-provider__background__content.svelte-az912z"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.electronics-globe-background-provider__content.svelte-az912z"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.welcome-screen__layout.content-margin.svelte-kw8ykq"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.welcome-screen__panel-wrapper.svelte-kw8ykq"
+    },
+    {
+      "background": "rgba(23, 25, 27, 0.8)",
+      "border": "rgb(217, 217, 217)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.welcome-screen__panel.dark-transparent-bg-2.svelte-kw8ykq"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.welcome-screen__panel__button-wrapper.svelte-kw8ykq"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "image": "none",
+      "opacity": "1",
+      "selector": "div.welcome-screen__scroll-down-button-wrapper.svelte-kw8ykq"
+    }
+  ],
+  "url": "https://openhardware.antmicro.com/"
+}

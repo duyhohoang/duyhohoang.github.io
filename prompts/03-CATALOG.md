@@ -1,0 +1,2 @@
+# PHASE 3 — Boards catalog
+Read MASTER and content model. Implement typed Zod board schema, seed data with clearly labeled illustrative projects, server-side data loading, `/boards` listing, featured area, search, category/status filters, counts, empty state and responsive cards. Do not assert prototype validation or release files without proof. Add unit tests for filtering and slug uniqueness. Run all checks. Acceptance: functional catalog, keyboard nav, direct URL and refresh work.

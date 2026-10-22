@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-22T05:17:01.746Z",
+  "directEmail": true,
+  "encodedComposition": true,
+  "emailDeliveryTested": false,
+  "offscreenPause": true,
+  "visibilityPauseSimulated": true,
+  "reducedMotion": true,
+  "mobileNoPulses": true,
+  "frames": {
+    "samples": 120,
+    "meanMs": 16.66501666666667,
+    "maxMs": 17.199999999999818,
+    "over34ms": 0
+  }
+}

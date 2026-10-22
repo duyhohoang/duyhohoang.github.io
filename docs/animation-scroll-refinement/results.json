@@ -1,0 +1,166 @@
+{
+  "base": "http://127.0.0.1:3001",
+  "date": "2026-10-22T09:40:05.617Z",
+  "errors": [],
+  "checks": [
+    {
+      "heroActive": 0
+    },
+    {
+      "counterIntermediate": "0 channels",
+      "counterFinal": "6 channels",
+      "existingStatLabelsPreserved": true
+    },
+    {
+      "scrollReveals": 4,
+      "hover": {
+        "transform": "matrix(1, 0, 0, 1, 0, -4)",
+        "background": "rgb(35, 35, 35)"
+      }
+    },
+    {
+      "projectHeight": {
+        "intermediate": 443.484375,
+        "expanded": 450.046875,
+        "collapsed": 0
+      }
+    },
+    {
+      "faqHeight": {
+        "closed": 61,
+        "intermediate": 86.890625,
+        "opened": 115
+      },
+      "faqKeyboardAndRapidToggle": true
+    },
+    {
+      "careerTabsAndKeyboard": true
+    },
+    {
+      "formFocusAndEmailComposition": true
+    },
+    {
+      "responsiveWidths": [
+        1440,
+        1280,
+        1024,
+        768,
+        390,
+        375
+      ],
+      "mobileFocusEscapeAndNavigation": true
+    },
+    {
+      "reducedMotionFunctional": true,
+      "livePreferenceChange": true,
+      "restingGeometryPreserved": true
+    },
+    {
+      "routeCleanupAndRemount": true,
+      "observerBaseline": {
+        "active": 6,
+        "detached": 0
+      }
+    },
+    {
+      "noJavaScriptContentAndFAQ": true
+    }
+  ],
+  "geometry": [
+    {
+      "selector": ".ref-lead",
+      "before": {
+        "x": 63.5,
+        "y": 456.390625,
+        "width": 743.59375,
+        "height": 53.625,
+        "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+        "fontSize": "18.5px",
+        "weight": "400",
+        "objectFit": "fill"
+      },
+      "after": {
+        "x": 63.5,
+        "y": 456.390625,
+        "width": 743.59375,
+        "height": 53.625
+      }
+    },
+    {
+      "selector": ".ref-hero h1",
+      "before": {
+        "x": 63.5,
+        "y": 289.984375,
+        "width": 743.59375,
+        "height": 97.90625,
+        "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+        "fontSize": "48px",
+        "weight": "900",
+        "objectFit": "fill"
+      },
+      "after": {
+        "x": 63.5,
+        "y": 289.984375,
+        "width": 743.59375,
+        "height": 97.90625
+      }
+    },
+    {
+      "selector": ".ref-circle",
+      "before": {
+        "x": 804.28125,
+        "y": 406,
+        "width": 520,
+        "height": 520,
+        "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+        "fontSize": "16px",
+        "weight": "400",
+        "objectFit": "fill"
+      },
+      "after": {
+        "x": 804.28125,
+        "y": 406,
+        "width": 520,
+        "height": 520
+      }
+    },
+    {
+      "selector": ".ref-portrait-window",
+      "before": {
+        "x": 760.09375,
+        "y": 226,
+        "width": 608.390625,
+        "height": 608,
+        "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+        "fontSize": "16px",
+        "weight": "400",
+        "objectFit": "fill"
+      },
+      "after": {
+        "x": 760.09375,
+        "y": 226,
+        "width": 608.390625,
+        "height": 608
+      }
+    },
+    {
+      "selector": ".ref-projects img",
+      "before": {
+        "x": 87.5,
+        "y": 3808.484375,
+        "width": 398.65625,
+        "height": 249.15625,
+        "font": "\"Reference Sans\", Lato, Arial, sans-serif",
+        "fontSize": "16px",
+        "weight": "400",
+        "objectFit": "contain"
+      },
+      "after": {
+        "x": 87.5,
+        "y": 3808.484375,
+        "width": 398.65625,
+        "height": 249.15625
+      }
+    }
+  ]
+}

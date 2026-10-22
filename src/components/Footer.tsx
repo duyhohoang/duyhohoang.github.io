@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export function Footer(){return <footer className="site-footer"><div className="container footer-top"><span>Copyright © 2026, <em>Hoàng Duy.</em> All Rights Reserved</span><nav aria-label="Footer navigation">{['About','Case Studies','Projects','Services','Resume','FAQ'].map(name=><Link key={name} href={'/#'+name.toLowerCase().replace(' ','-')}>{name}</Link>)}</nav></div></footer>}

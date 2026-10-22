@@ -1,0 +1,2 @@
+# PHASE 5 — Visual parity and optional 3D
+Compare screenshots to reference at fixed viewports; write `VISUAL-AUDIT.md` with ranked discrepancies. Improve section proportions, typography, cards, motion, nav, mobile. Implement lazy-loaded GLB viewer ONLY if a valid original GLB asset is provided; otherwise keep a static render with no fake interactive viewer. Respect reduced motion and WebGL fallback. Run accessibility and performance checks; document measured outcomes.

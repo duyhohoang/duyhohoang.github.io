@@ -1,0 +1,41 @@
+{
+  "name": "hardware-lab",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1",
+    "build": "next build --webpack && node scripts/fix-static-export.mjs",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/unit/*.test.ts tests/unit/*.test.tsx",
+    "test:e2e": "playwright test",
+    "audit:colors": "node scripts/audit-colors.mjs",
+    "check:export": "node scripts/verify-export.mjs",
+    "preview": "node scripts/serve-export.mjs"
+  },
+  "packageManager": "pnpm@11.25.0",
+  "dependencies": {
+    "motion": "14.2.0",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.64.1",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "10.12.0",
+    "eslint-config-next": "16.4.0",
+    "lighthouse": "13.5.0",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": ">=24.19.0 <25"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "repeatReveal": true,
+  "hiddenAfterScrollingUp": true,
+  "noNestedCardReveals": true,
+  "portraitClip": true,
+  "reducedMotionVisible": true,
+  "noOverflow375": true,
+  "borders": [
+    {
+      "text": "PCBLayout & Schematic Design",
+      "border": "rgb(255, 0, 85)",
+      "width": 434.65625
+    },
+    {
+      "text": "STM32 / ESP32Embedded Development",
+      "border": "rgb(255, 0, 85)",
+      "width": 434.671875
+    },
+    {
+      "text": "CAN / RS485Interface Integration",
+      "border": "rgb(255, 0, 85)",
+      "width": 434.65625
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,6 @@
+import { ContactCTA } from '@/components/ui';
+import { pageMetadata } from '@/lib/metadata';
+export const metadata = pageMetadata('About', 'Hardware Lab is a personal hardware and software workspace, built around clear and thoughtful design.', '/about/');
+export default function About() { return <><div className="page-heading container"><p className="eyebrow">HARDWARE LAB / PERSONAL WORKSPACE</p><h1>THOUGHTFUL DESIGN.<br />VISIBLE DECISIONS.</h1></div><article className="prose container"><p>Hardware engineering connects an idea with a physical system. Every interface, component choice and layout decision contributes to the result.</p><h2>A considered approach</h2><p>This personal workspace explores understandable electronics: clear requirements, practical architecture, readable documentation and a deliberate review process.</p><h2>A workspace in progress</h2><p>This site currently presents three illustrative project studies. They show areas of exploration rather than released or validated products. The drawings are original abstract illustrations; exact specifications, project status and publication rights require confirmation.</p><div className="notice">HARDWARE LAB is the provisional workspace identity. Final branding, project assets and public contact details will be added before launch.</div></article><ContactCTA /></>; }
+
+

@@ -1,0 +1,97 @@
+{
+  "platform": "win32",
+  "aliases": [
+    {
+      "from": "about\\__next.about\\__PAGE__.txt",
+      "to": "about\\__next.about.__PAGE__.txt"
+    },
+    {
+      "from": "boards\\esp32-connected-io-platform\\__next.boards\\$d$slug\\__PAGE__.txt",
+      "to": "boards\\esp32-connected-io-platform\\__next.boards.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "boards\\six-channel-fan-controller\\__next.boards\\$d$slug\\__PAGE__.txt",
+      "to": "boards\\six-channel-fan-controller\\__next.boards.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "boards\\stm32-industrial-iot-controller\\__next.boards\\$d$slug\\__PAGE__.txt",
+      "to": "boards\\stm32-industrial-iot-controller\\__next.boards.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "boards\\__next.boards\\__PAGE__.txt",
+      "to": "boards\\__next.boards.__PAGE__.txt"
+    },
+    {
+      "from": "capabilities\\__next.capabilities\\__PAGE__.txt",
+      "to": "capabilities\\__next.capabilities.__PAGE__.txt"
+    },
+    {
+      "from": "contact\\__next.contact\\__PAGE__.txt",
+      "to": "contact\\__next.contact.__PAGE__.txt"
+    },
+    {
+      "from": "dashboard\\esp32-connected-io-platform\\__next.dashboard\\$d$slug\\__PAGE__.txt",
+      "to": "dashboard\\esp32-connected-io-platform\\__next.dashboard.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "dashboard\\six-channel-fan-controller\\__next.dashboard\\$d$slug\\__PAGE__.txt",
+      "to": "dashboard\\six-channel-fan-controller\\__next.dashboard.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "dashboard\\stm32-industrial-iot-controller\\__next.dashboard\\$d$slug\\__PAGE__.txt",
+      "to": "dashboard\\stm32-industrial-iot-controller\\__next.dashboard.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "dashboard\\__next.dashboard\\__PAGE__.txt",
+      "to": "dashboard\\__next.dashboard.__PAGE__.txt"
+    },
+    {
+      "from": "firmware\\__next.firmware\\__PAGE__.txt",
+      "to": "firmware\\__next.firmware.__PAGE__.txt"
+    },
+    {
+      "from": "portfolio\\altium\\__next.portfolio\\$d$area\\__PAGE__.txt",
+      "to": "portfolio\\altium\\__next.portfolio.$d$area.__PAGE__.txt"
+    },
+    {
+      "from": "portfolio\\bom\\__next.portfolio\\$d$area\\__PAGE__.txt",
+      "to": "portfolio\\bom\\__next.portfolio.$d$area.__PAGE__.txt"
+    },
+    {
+      "from": "portfolio\\dashboard\\__next.portfolio\\$d$area\\__PAGE__.txt",
+      "to": "portfolio\\dashboard\\__next.portfolio.$d$area.__PAGE__.txt"
+    },
+    {
+      "from": "portfolio\\firmware\\__next.portfolio\\$d$area\\__PAGE__.txt",
+      "to": "portfolio\\firmware\\__next.portfolio.$d$area.__PAGE__.txt"
+    },
+    {
+      "from": "portfolio\\kicad\\__next.portfolio\\$d$area\\__PAGE__.txt",
+      "to": "portfolio\\kicad\\__next.portfolio.$d$area.__PAGE__.txt"
+    },
+    {
+      "from": "portfolio\\layout\\__next.portfolio\\$d$area\\__PAGE__.txt",
+      "to": "portfolio\\layout\\__next.portfolio.$d$area.__PAGE__.txt"
+    },
+    {
+      "from": "portfolio\\schematics\\__next.portfolio\\$d$area\\__PAGE__.txt",
+      "to": "portfolio\\schematics\\__next.portfolio.$d$area.__PAGE__.txt"
+    },
+    {
+      "from": "privacy\\__next.privacy\\__PAGE__.txt",
+      "to": "privacy\\__next.privacy.__PAGE__.txt"
+    },
+    {
+      "from": "workflow\\__next.workflow\\__PAGE__.txt",
+      "to": "workflow\\__next.workflow.__PAGE__.txt"
+    },
+    {
+      "from": "workspace\\__next.workspace\\__PAGE__.txt",
+      "to": "workspace\\__next.workspace.__PAGE__.txt"
+    },
+    {
+      "from": "_not-found\\__next._not-found\\__PAGE__.txt",
+      "to": "_not-found\\__next._not-found.__PAGE__.txt"
+    }
+  ]
+}
