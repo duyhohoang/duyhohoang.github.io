@@ -12,16 +12,16 @@
     "noHydrationRestart": true
   },
   "featured": [
+    "ESP32 Devkit",
     "IoT Board",
-    "ESP32 PLC",
     "ESP32 Datalogger"
   ],
   "totalProjects": 5,
   "detailPagesVerified": [
-    "/boards/iot-board/",
-    "/boards/esp32-plc/",
-    "/boards/esp32-datalogger/",
     "/boards/esp32-devkit/",
+    "/boards/iot-board/",
+    "/boards/esp32-datalogger/",
+    "/boards/esp32-plc/",
     "/boards/6-fan-control/"
   ],
   "principlesRemoved": true,

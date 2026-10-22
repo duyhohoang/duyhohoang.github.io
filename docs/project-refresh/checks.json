@@ -1,0 +1,12 @@
+{
+  "base": "http://127.0.0.1:3001",
+  "errors": [],
+  "sharedCardStyles": {
+    "background": "rgb(17, 17, 17)",
+    "border": "rgb(36, 36, 36)",
+    "radius": "7px"
+  },
+  "marqueeRTL": true,
+  "resumePDF": true,
+  "responsive": true
+}

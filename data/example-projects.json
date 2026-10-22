@@ -1,5 +1,31 @@
 [
   {
+    "slug": "esp32-devkit",
+    "name": "ESP32 Devkit",
+    "status": "design",
+    "category": "embedded",
+    "published": true,
+    "featured": true,
+    "personal": true,
+    "summary": "My personal ESP32 development-board design.",
+    "description": "My personal ESP32 development-board design. The supplied project image documents my board design. Detailed specifications and measured test results are not published here.",
+    "disclaimer": "Personal project by Hoàng Duy; test results and manufacturing status are not published",
+    "scope": [
+      "ESP32",
+      "Development Board",
+      "PCB Layout"
+    ],
+    "techStack": [
+      "ESP32",
+      "PCB Design"
+    ],
+    "features": [
+      "Personal hardware project",
+      "PCB design and component integration",
+      "Original project image supplied by Hoàng Duy"
+    ]
+  },
+  {
     "slug": "iot-board",
     "name": "IoT Board",
     "status": "design",
@@ -18,32 +44,6 @@
     "techStack": [
       "PCB Design",
       "Embedded Hardware"
-    ],
-    "features": [
-      "Personal hardware project",
-      "PCB design and component integration",
-      "Original project image supplied by Hoàng Duy"
-    ]
-  },
-  {
-    "slug": "esp32-plc",
-    "name": "ESP32 PLC",
-    "status": "design",
-    "category": "embedded",
-    "published": true,
-    "featured": true,
-    "personal": true,
-    "summary": "My personal ESP32-based PLC hardware design.",
-    "description": "My personal ESP32-based PLC hardware design. The supplied project image documents my board design. Detailed specifications and measured test results are not published here.",
-    "disclaimer": "Personal project by Hoàng Duy; test results and manufacturing status are not published",
-    "scope": [
-      "ESP32",
-      "PLC Hardware",
-      "PCB Layout"
-    ],
-    "techStack": [
-      "ESP32",
-      "PCB Design"
     ],
     "features": [
       "Personal hardware project",
@@ -78,19 +78,19 @@
     ]
   },
   {
-    "slug": "esp32-devkit",
-    "name": "ESP32 Devkit",
+    "slug": "esp32-plc",
+    "name": "ESP32 PLC",
     "status": "design",
     "category": "embedded",
     "published": true,
     "featured": false,
     "personal": true,
-    "summary": "My personal ESP32 development-board design.",
-    "description": "My personal ESP32 development-board design. The supplied project image documents my board design. Detailed specifications and measured test results are not published here.",
+    "summary": "My personal ESP32-based PLC hardware design.",
+    "description": "My personal ESP32-based PLC hardware design. The supplied project image documents my board design. Detailed specifications and measured test results are not published here.",
     "disclaimer": "Personal project by Hoàng Duy; test results and manufacturing status are not published",
     "scope": [
       "ESP32",
-      "Development Board",
+      "PLC Hardware",
       "PCB Layout"
     ],
     "techStack": [

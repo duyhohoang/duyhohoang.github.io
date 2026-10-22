@@ -33,14 +33,14 @@ try{
  await expect(page.getByText('ENGINEERING PRINCIPLES',{exact:true})).toHaveCount(0);
  await expect(page.locator('.ref-quotes')).toHaveCount(0);
  const featured=page.locator('.ref-projects:not(.ref-extra) h3');
- await expect(featured).toHaveText(['IoT Board','ESP32 PLC','ESP32 Datalogger']);
+ await expect(featured).toHaveText(['ESP32 Devkit','IoT Board','ESP32 Datalogger']);
  await page.locator('#projects').scrollIntoViewIfNeeded();
  await page.locator('#projects img').evaluateAll(images=>Promise.all(images.map(image=>{image.loading='eager';return image.decode();})));
  await expect(page.locator('#projects .ref-heading')).toHaveCSS('opacity','1');
  await expect(page.locator('.ref-projects:not(.ref-extra)>a').first()).toHaveCSS('opacity','1');
  await page.screenshot({path:output+'/featured.png'});
  await page.getByRole('button',{name:'View 2 more projects'}).click();
- await expect(page.locator('.ref-extra h3')).toHaveText(['ESP32 Devkit','6 Fan Control']);
+ await expect(page.locator('.ref-extra h3')).toHaveText(['ESP32 PLC','6 Fan Control']);
  await page.waitForTimeout(600);
  await page.screenshot({path:output+'/five-projects.png'});
  const links=await page.locator('#projects .ref-projects>a').evaluateAll(anchors=>anchors.map(a=>a.getAttribute('href')));
@@ -61,6 +61,6 @@ try{
   if(width===375)await page.screenshot({path:output+'/portrait-mobile.png'});
  }
  expect(overflow).toEqual([]);expect(errors).toEqual([]);expect(failed).toEqual([]);
- const result={base,coldStart:{before,after,noHydrationRestart:true},featured:['IoT Board','ESP32 PLC','ESP32 Datalogger'],totalProjects:links.length,detailPagesVerified:links,principlesRemoved:true,widths:[1440,1280,1024,768,390,375],overflow,errors,failed};
+ const result={base,coldStart:{before,after,noHydrationRestart:true},featured:['ESP32 Devkit','IoT Board','ESP32 Datalogger'],totalProjects:links.length,detailPagesVerified:links,principlesRemoved:true,widths:[1440,1280,1024,768,390,375],overflow,errors,failed};
  fs.writeFileSync(output+'/checks.json',JSON.stringify(result,null,2));console.log(result);
 }finally{await browser.close();}

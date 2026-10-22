@@ -1,18 +1,13 @@
 {
   "base": "http://127.0.0.1:3001",
-  "date": "2026-10-22T04:36:15.748Z",
+  "date": "2026-10-22T15:41:57.251Z",
   "errors": [],
   "checks": [
     {
-      "heroActive": 12
+      "heroActive": 0
     },
     {
-      "counterIntermediate": "1 channels",
-      "counterFinal": "6 channels",
-      "existingStatLabelsPreserved": true
-    },
-    {
-      "scrollReveals": 6,
+      "scrollReveals": 4,
       "hover": {
         "transform": "matrix(1, 0, 0, 1, 0, -4)",
         "background": "rgb(35, 35, 35)"
@@ -20,15 +15,15 @@
     },
     {
       "projectHeight": {
-        "intermediate": 197.109375,
-        "expanded": 450.046875,
+        "intermediate": 342.8125,
+        "expanded": 426,
         "collapsed": 0
       }
     },
     {
       "faqHeight": {
         "closed": 61,
-        "intermediate": 92.296875,
+        "intermediate": 92.328125,
         "opened": 115
       },
       "faqKeyboardAndRapidToggle": true
@@ -37,7 +32,7 @@
       "careerTabsAndKeyboard": true
     },
     {
-      "formFocusAndDemo": true
+      "formFocusAndEmailComposition": true
     },
     {
       "responsiveWidths": [
@@ -45,7 +40,8 @@
         1280,
         1024,
         768,
-        390
+        390,
+        375
       ],
       "mobileFocusEscapeAndNavigation": true
     },
@@ -57,7 +53,7 @@
     {
       "routeCleanupAndRemount": true,
       "observerBaseline": {
-        "active": 3,
+        "active": 5,
         "detached": 0
       }
     },
@@ -66,25 +62,6 @@
     }
   ],
   "geometry": [
-    {
-      "selector": ".brand",
-      "before": {
-        "x": 62.5,
-        "y": 20.796875,
-        "width": 153.140625,
-        "height": 36.390625,
-        "font": "\"Portfolio Script\", cursive",
-        "fontSize": "26px",
-        "weight": "400",
-        "objectFit": "fill"
-      },
-      "after": {
-        "x": 62.5,
-        "y": 20.796875,
-        "width": 153.140625,
-        "height": 36.390625
-      }
-    },
     {
       "selector": ".ref-lead",
       "before": {
@@ -159,25 +136,6 @@
         "y": 226,
         "width": 608.390625,
         "height": 608
-      }
-    },
-    {
-      "selector": ".ref-projects img",
-      "before": {
-        "x": 87.5,
-        "y": 3808.484375,
-        "width": 398.65625,
-        "height": 249.15625,
-        "font": "\"Reference Sans\", Lato, Arial, sans-serif",
-        "fontSize": "16px",
-        "weight": "400",
-        "objectFit": "contain"
-      },
-      "after": {
-        "x": 87.5,
-        "y": 3808.484375,
-        "width": 398.65625,
-        "height": 249.15625
       }
     }
   ]
