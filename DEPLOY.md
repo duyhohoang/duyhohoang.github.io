@@ -2,7 +2,7 @@
 
 ## GitHub Pages: selected production address
 
-Target: **https://duyhohoang.github.io/**. The publishing repository must be named exactly `duyhohoang.github.io` on account `duyhohoang`. The root domain means existing root-relative fonts, images and navigation need no basePath changes.
+Live website: **https://duyhohoang.github.io/**. Initial GitHub Actions deployment succeeded and the public site passed HTTP 200, canonical URL, portrait loading, mobile menu, project navigation and overflow checks at 1440, 390 and 375px. The publishing repository must be named exactly `duyhohoang.github.io` on account `duyhohoang`. The root domain means existing root-relative fonts, images and navigation need no basePath changes.
 
 The workflow `.github/workflows/pages.yml` installs the pinned Node/pnpm versions, runs lint/tests/build/export checks, uploads only `out/`, then deploys through GitHub Pages. It sets NEXT_PUBLIC_SITE_URL to the selected HTTPS origin at build time, enabling correct canonical/Open Graph/robots/sitemap URLs. No personal access token belongs in workflow files; deployment uses the repository GITHUB_TOKEN and OIDC permissions. Jobs are restricted to the exact publishing repository so they do not accidentally publish a project site from the original Cloudflare repository.
 
