@@ -2,7 +2,28 @@
 
 Prepared for static Git integration; no public deployment has been created. Publish only `out/`, never project sources or reference evidence as the output folder. No Worker adapter, Pages Functions, API or runtime Node server is needed.
 
-## Build settings
+## Existing Workers project: deploy static assets
+
+For the existing Cloudflare Worker named `hoangduyportfolio`, the repository now includes `wrangler.jsonc`. It explicitly deploys only `out/`, with directory-index HTML handling and the exported 404 page. There is no Worker script, OpenNext adapter or runtime Next.js server.
+
+In **Settings → Build**, use:
+
+| Setting | Value |
+|---|---|
+| Build command | pnpm build |
+| Deploy command | npx wrangler@4.151.3 deploy |
+| Root directory | repository root |
+| Production branch | main |
+
+Disable preview builds until needed; do not use `npx wrangler preview`. If preview versions are later configured, use the documented `wrangler versions upload` workflow.
+
+A plain `wrangler deploy` without configuration previously detected Next.js, chose `.next`, and attempted an OpenNext migration. That led to the ignored `workerd` install script failure. The explicit assets-only configuration avoids this migration entirely; do not add OpenNext or change pnpm's project build-script permissions to work around that unrelated failure. Keep the committed lockfile unchanged.
+
+Push the configuration, then deploy the latest main commit (retrying an old commit will not include it). Confirm the build log reads assets from `out` and does not run `@opennextjs/cloudflare migrate`. The assigned public URL must be read from Cloudflare; it is not known locally. Set NEXT_PUBLIC_SITE_URL to that actual origin and rebuild before search indexing.
+
+Official references: [static-site routing](https://developers.cloudflare.com/workers/static-assets/routing/static-site-generation/) and [Workers Builds commands](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/).
+
+## Pages build settings
 
 | Setting | Value |
 |---|---|
@@ -21,7 +42,7 @@ Cloudflare build image v3 allows version overrides; it does not infer pnpm versi
 
 ## Push to GitHub
 
-Create an empty repository in your GitHub account, then run these commands from this project folder, substituting your actual repository URL. The current folder has not been initialized as a Git repository.
+Create an empty repository in your GitHub account, then run these commands from this project folder, substituting your actual repository URL. This project is already initialized and pushed to https://github.com/duyhohoang/hoangduyportfolio; these commands are only for setting up a fresh copy.
 
 ```sh
 git init -b main
@@ -74,3 +95,7 @@ node scripts/test-phase4.mjs
 - [Custom domains](https://developers.cloudflare.com/pages/configuration/custom-domains/)
 
 Contact composition opens an email application, not a delivery service. No email transmission is claimed by local or deployment tests.
+
+## Static Workers configuration verification (2026-10-22)
+
+The exported site passed verification for 26 HTML pages, 1,069 internal references and 42 images. Parsed wrangler.jsonc and verified the assets directory, absence of a Worker script and required index/404/deep-link HTML files. The application and lockfile were unchanged. A Wrangler 4.151.3 dry-run was attempted in an isolated pnpm dlx environment but failed before configuration processing because miniflare could not resolve undici on this Windows setup; dry-run success and hosted deployment are not claimed. The actual Cloudflare build must still be retried on the new commit.

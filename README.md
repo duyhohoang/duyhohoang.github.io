@@ -31,9 +31,11 @@ The contact form validates fields and composes a safely encoded `mailto:` draft.
 
 Set `NEXT_PUBLIC_SITE_URL` to your real HTTPS Pages origin or custom domain and rebuild before enabling search indexing. Without it, the local preview intentionally emits noindex/disallow and localhost canonical/sitemap URLs.
 
-## Cloudflare Pages
+## Cloudflare deployment
 
-See [DEPLOY.md](DEPLOY.md) for GitHub connection, build settings, free Pages address, custom domain and automatic deploys. Use the **Next.js (Static HTML Export)** preset, `pnpm build`, output `out`, production branch `main`. This is prepared locally, not publicly deployed.
+For the current Workers project, `wrangler.jsonc` explicitly serves static files from `out/`; build with `pnpm build` and deploy with `npx wrangler@4.151.3 deploy`. No OpenNext migration or runtime server is needed.
+
+For the alternative Pages workflow, see [DEPLOY.md](DEPLOY.md) for GitHub connection, build settings, free Pages address, custom domain and automatic deploys. Use the **Next.js (Static HTML Export)** preset, `pnpm build`, output `out`, production branch `main`. This is prepared locally, not publicly deployed.
 
 ## Implementation and validation
 
