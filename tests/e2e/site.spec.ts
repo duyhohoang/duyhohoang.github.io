@@ -5,24 +5,23 @@ test('catalog filters compose and survive hard refresh', async ({ page }) => {
   await page.getByRole('navigation', { name: 'Main navigation', exact: true }).getByRole('link', { name: 'Boards', exact: true }).click();
   await expect(page).toHaveURL(/\/boards\/$/);
   await page.getByRole('searchbox').fill('ESP32');
-  await expect(page.getByRole('status')).toHaveText('1 of 3 boards');
+  await expect(page.getByRole('status')).toHaveText('3 of 5 boards');
   await page.getByRole('combobox', { name: 'Category', exact: true }).selectOption('power');
   await expect(page.getByRole('heading', { name: 'No matching boards' })).toBeVisible();
   await page.getByRole('button', { name: 'Clear filters', exact: true }).click();
-  await page.getByRole('combobox', { name: 'Status', exact: true }).selectOption('concept');
+  await page.getByRole('combobox', { name: 'Status', exact: true }).selectOption('design');
   await page.reload();
-  await expect(page.getByRole('status')).toHaveText('2 of 3 boards');
-  await expect(page).toHaveURL(/status=concept/);
+  await expect(page.getByRole('status')).toHaveText('5 of 5 boards');
+  await expect(page).toHaveURL(/status=design/);
 });
 test('detail gallery, keyboard tabs and missing data are truthful', async ({ page }) => {
-  for (const slug of ['stm32-industrial-iot-controller', 'esp32-connected-io-platform', 'six-channel-fan-controller']) {
+  for (const slug of ['iot-board', 'esp32-plc', '6-fan-control']) {
     const response = await page.goto(`/boards/${slug}/`); expect(response?.status()).toBe(200);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
     await expect(page.getByRole('tab', { name: 'Components', exact: true })).toHaveCount(0);
     await expect(page.getByRole('tab', { name: 'Stackup', exact: true })).toHaveCount(0);
   }
-  await page.getByRole('button', { name: 'Architecture study', exact: true }).click();
-  await expect(page.getByRole('button', { name: 'Architecture study' })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('.gallery figcaption')).toContainText('PERSONAL PROJECT');
   await page.getByRole('tab', { name: 'Overview', exact: true }).focus();
   await page.keyboard.press('ArrowRight');
   await expect(page.getByRole('tab', { name: 'Features', exact: true })).toBeFocused();
@@ -48,10 +47,10 @@ test('all routes have no overflow or broken images across required widths', asyn
   page.on('console', message => { if (message.type() === 'error') failures.push(message.text()); });
   for (const width of [1440, 1024, 390, 375, 320]) {
     await page.setViewportSize({ width, height: width < 600 ? 844 : 900 });
-    for (const route of ['/', '/boards/', '/boards/stm32-industrial-iot-controller/', '/capabilities/', '/workflow/', '/about/', '/contact/', '/privacy/']) {
+    for (const route of ['/', '/boards/', '/boards/iot-board/', '/capabilities/', '/workflow/', '/about/', '/contact/', '/privacy/']) {
       const response = await page.goto(route); expect(response?.status()).toBe(200);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${route} at ${width}`).toBe(true);
-      if (['/', '/boards/', '/boards/stm32-industrial-iot-controller/'].includes(route)) {
+      if (['/', '/boards/', '/boards/iot-board/'].includes(route)) {
         await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
         await page.screenshot({ path: `docs/implementation-evidence/production-${width}-${route === '/' ? 'home' : route.replace(/\//g, '-').replace(/^-|-$/g, '')}.jpg`, type: 'jpeg', quality: 85 });
       }
@@ -62,7 +61,7 @@ test('all routes have no overflow or broken images across required widths', asyn
   expect(failures).toEqual([]);
 });
 test('automated accessibility checks on key routes', async ({ page }) => {
-  for (const route of ['/', '/boards/', '/boards/stm32-industrial-iot-controller/', '/contact/']) {
+  for (const route of ['/', '/boards/', '/boards/iot-board/', '/contact/']) {
     await page.goto(route);
     const result = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']).analyze();
     expect(result.violations, route).toEqual([]);

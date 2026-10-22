@@ -31,7 +31,7 @@ export function CircuitBackground({variant='hero'}:{variant?:'hero'|'transition'
     preference.addEventListener('change',update);mobile.addEventListener('change',update);
     return ()=>{observer.disconnect();document.removeEventListener('visibilitychange',update);preference.removeEventListener('change',update);mobile.removeEventListener('change',update);};
   },[]);
-  return <aside ref={ref} className={`circuit-background circuit-${variant}`} aria-hidden="true" data-running="false">
+  return <aside ref={ref} className={`circuit-background circuit-${variant}`} aria-hidden="true" data-running={variant==='hero'?'true':'false'}>
     <svg viewBox="0 0 1000 400" preserveAspectRatio="none" focusable="false">
       <defs><pattern id={`${id}-grid`} width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#aaa" strokeOpacity=".025" strokeWidth=".5"/></pattern></defs>
       <rect width="1000" height="400" fill={`url(#${id}-grid)`}/>

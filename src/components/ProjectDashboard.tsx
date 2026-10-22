@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 export function ProjectDashboard({slug,name,projects}:{slug:string;name:string;projects:{slug:string;name:string}[]}){
  const [running,setRunning]=useState(false),[tick,setTick]=useState(0),[duty,setDuty]=useState([45,60,35,50,70,40]),[outputs,setOutputs]=useState([false,false,true,false]);
- const fan=slug==='six-channel-fan-controller',io=slug==='esp32-connected-io-platform';
+ const fan=slug==='6-fan-control',io=slug==='esp32-plc';
  useEffect(()=>{if(!running)return;const timer=setInterval(()=>setTick(value=>value+1),1500);return()=>clearInterval(timer)},[running]);
  function reset(){setRunning(false);setTick(0);setDuty([45,60,35,50,70,40]);setOutputs([false,false,true,false]);}
  const value=(base:number,scale:number)=>base+Math.round(Math.sin(tick*.7)*scale*10)/10;

@@ -6,16 +6,24 @@
       "to": "about\\__next.about.__PAGE__.txt"
     },
     {
-      "from": "boards\\esp32-connected-io-platform\\__next.boards\\$d$slug\\__PAGE__.txt",
-      "to": "boards\\esp32-connected-io-platform\\__next.boards.$d$slug.__PAGE__.txt"
+      "from": "boards\\6-fan-control\\__next.boards\\$d$slug\\__PAGE__.txt",
+      "to": "boards\\6-fan-control\\__next.boards.$d$slug.__PAGE__.txt"
     },
     {
-      "from": "boards\\six-channel-fan-controller\\__next.boards\\$d$slug\\__PAGE__.txt",
-      "to": "boards\\six-channel-fan-controller\\__next.boards.$d$slug.__PAGE__.txt"
+      "from": "boards\\esp32-datalogger\\__next.boards\\$d$slug\\__PAGE__.txt",
+      "to": "boards\\esp32-datalogger\\__next.boards.$d$slug.__PAGE__.txt"
     },
     {
-      "from": "boards\\stm32-industrial-iot-controller\\__next.boards\\$d$slug\\__PAGE__.txt",
-      "to": "boards\\stm32-industrial-iot-controller\\__next.boards.$d$slug.__PAGE__.txt"
+      "from": "boards\\esp32-devkit\\__next.boards\\$d$slug\\__PAGE__.txt",
+      "to": "boards\\esp32-devkit\\__next.boards.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "boards\\esp32-plc\\__next.boards\\$d$slug\\__PAGE__.txt",
+      "to": "boards\\esp32-plc\\__next.boards.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "boards\\iot-board\\__next.boards\\$d$slug\\__PAGE__.txt",
+      "to": "boards\\iot-board\\__next.boards.$d$slug.__PAGE__.txt"
     },
     {
       "from": "boards\\__next.boards\\__PAGE__.txt",
@@ -30,16 +38,24 @@
       "to": "contact\\__next.contact.__PAGE__.txt"
     },
     {
-      "from": "dashboard\\esp32-connected-io-platform\\__next.dashboard\\$d$slug\\__PAGE__.txt",
-      "to": "dashboard\\esp32-connected-io-platform\\__next.dashboard.$d$slug.__PAGE__.txt"
+      "from": "dashboard\\6-fan-control\\__next.dashboard\\$d$slug\\__PAGE__.txt",
+      "to": "dashboard\\6-fan-control\\__next.dashboard.$d$slug.__PAGE__.txt"
     },
     {
-      "from": "dashboard\\six-channel-fan-controller\\__next.dashboard\\$d$slug\\__PAGE__.txt",
-      "to": "dashboard\\six-channel-fan-controller\\__next.dashboard.$d$slug.__PAGE__.txt"
+      "from": "dashboard\\esp32-datalogger\\__next.dashboard\\$d$slug\\__PAGE__.txt",
+      "to": "dashboard\\esp32-datalogger\\__next.dashboard.$d$slug.__PAGE__.txt"
     },
     {
-      "from": "dashboard\\stm32-industrial-iot-controller\\__next.dashboard\\$d$slug\\__PAGE__.txt",
-      "to": "dashboard\\stm32-industrial-iot-controller\\__next.dashboard.$d$slug.__PAGE__.txt"
+      "from": "dashboard\\esp32-devkit\\__next.dashboard\\$d$slug\\__PAGE__.txt",
+      "to": "dashboard\\esp32-devkit\\__next.dashboard.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "dashboard\\esp32-plc\\__next.dashboard\\$d$slug\\__PAGE__.txt",
+      "to": "dashboard\\esp32-plc\\__next.dashboard.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "dashboard\\iot-board\\__next.dashboard\\$d$slug\\__PAGE__.txt",
+      "to": "dashboard\\iot-board\\__next.dashboard.$d$slug.__PAGE__.txt"
     },
     {
       "from": "dashboard\\__next.dashboard\\__PAGE__.txt",

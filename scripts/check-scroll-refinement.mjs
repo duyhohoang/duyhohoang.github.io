@@ -8,7 +8,7 @@ try{
  await page.goto('http://127.0.0.1:3001',{waitUntil:'networkidle'});
  await expect(page.locator('.reference-home')).toHaveAttribute('data-motion-ready','true');
  await expect(page.locator('.ref-hero [data-motion-active]')).toHaveCount(0);
- expect(await page.locator('.ref-portrait-window').evaluate(e=>getComputedStyle(e).clipPath)).not.toBe('none');
+ expect(await page.locator('.ref-portrait-window').evaluate(e=>getComputedStyle(e).maskImage)).not.toBe('none');
  await page.screenshot({path:'docs/scroll-refinement/hero.png'});
  const card=page.locator('.ref-services article').first();
  await expect(card).toHaveAttribute('data-scroll-state','hidden');

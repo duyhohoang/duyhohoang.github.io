@@ -1,0 +1,39 @@
+{
+  "base": "http://127.0.0.1:3001",
+  "coldStart": {
+    "before": {
+      "starts": 11,
+      "enhanced": null
+    },
+    "after": {
+      "starts": 11,
+      "active": 0
+    },
+    "noHydrationRestart": true
+  },
+  "featured": [
+    "IoT Board",
+    "ESP32 PLC",
+    "ESP32 Datalogger"
+  ],
+  "totalProjects": 5,
+  "detailPagesVerified": [
+    "/boards/iot-board/",
+    "/boards/esp32-plc/",
+    "/boards/esp32-datalogger/",
+    "/boards/esp32-devkit/",
+    "/boards/6-fan-control/"
+  ],
+  "principlesRemoved": true,
+  "widths": [
+    1440,
+    1280,
+    1024,
+    768,
+    390,
+    375
+  ],
+  "overflow": [],
+  "errors": [],
+  "failed": []
+}

@@ -1,26 +1,132 @@
 [
   {
-    "slug": "stm32-industrial-iot-controller",
-    "name": "STM32 Industrial IoT Controller",
-    "status": "in-progress",
+    "slug": "iot-board",
+    "name": "IoT Board",
+    "status": "design",
     "category": "industrial-iot",
     "published": true,
-    "disclaimer": "Illustrative project entry; specifications require verification"
+    "featured": true,
+    "personal": true,
+    "summary": "My personal IoT hardware and PCB design project.",
+    "description": "My personal IoT hardware and PCB design project. The supplied project image documents my board design. Detailed specifications and measured test results are not published here.",
+    "disclaimer": "Personal project by Hoàng Duy; test results and manufacturing status are not published",
+    "scope": [
+      "IoT Hardware",
+      "PCB Layout",
+      "System Integration"
+    ],
+    "techStack": [
+      "PCB Design",
+      "Embedded Hardware"
+    ],
+    "features": [
+      "Personal hardware project",
+      "PCB design and component integration",
+      "Original project image supplied by Hoàng Duy"
+    ]
   },
   {
-    "slug": "esp32-connected-io-platform",
-    "name": "ESP32 Connected I/O Platform",
-    "status": "concept",
+    "slug": "esp32-plc",
+    "name": "ESP32 PLC",
+    "status": "design",
     "category": "embedded",
     "published": true,
-    "disclaimer": "Illustrative project entry; specifications require verification"
+    "featured": true,
+    "personal": true,
+    "summary": "My personal ESP32-based PLC hardware design.",
+    "description": "My personal ESP32-based PLC hardware design. The supplied project image documents my board design. Detailed specifications and measured test results are not published here.",
+    "disclaimer": "Personal project by Hoàng Duy; test results and manufacturing status are not published",
+    "scope": [
+      "ESP32",
+      "PLC Hardware",
+      "PCB Layout"
+    ],
+    "techStack": [
+      "ESP32",
+      "PCB Design"
+    ],
+    "features": [
+      "Personal hardware project",
+      "PCB design and component integration",
+      "Original project image supplied by Hoàng Duy"
+    ]
   },
   {
-    "slug": "six-channel-fan-controller",
-    "name": "Six-Channel Fan Controller",
-    "status": "concept",
+    "slug": "esp32-datalogger",
+    "name": "ESP32 Datalogger",
+    "status": "design",
+    "category": "embedded",
+    "published": true,
+    "featured": true,
+    "personal": true,
+    "summary": "My personal ESP32 Datalogger hardware project, shown in Altium Designer.",
+    "description": "My personal ESP32 Datalogger hardware project, shown in Altium Designer. The supplied project image documents my board design. Detailed specifications and measured test results are not published here.",
+    "disclaimer": "Personal project by Hoàng Duy; test results and manufacturing status are not published",
+    "scope": [
+      "ESP32",
+      "Data Logging",
+      "PCB Layout"
+    ],
+    "techStack": [
+      "ESP32",
+      "PCB Design"
+    ],
+    "features": [
+      "Personal hardware project",
+      "PCB design and component integration",
+      "Original project image supplied by Hoàng Duy"
+    ]
+  },
+  {
+    "slug": "esp32-devkit",
+    "name": "ESP32 Devkit",
+    "status": "design",
+    "category": "embedded",
+    "published": true,
+    "featured": false,
+    "personal": true,
+    "summary": "My personal ESP32 development-board design.",
+    "description": "My personal ESP32 development-board design. The supplied project image documents my board design. Detailed specifications and measured test results are not published here.",
+    "disclaimer": "Personal project by Hoàng Duy; test results and manufacturing status are not published",
+    "scope": [
+      "ESP32",
+      "Development Board",
+      "PCB Layout"
+    ],
+    "techStack": [
+      "ESP32",
+      "PCB Design"
+    ],
+    "features": [
+      "Personal hardware project",
+      "PCB design and component integration",
+      "Original project image supplied by Hoàng Duy"
+    ]
+  },
+  {
+    "slug": "6-fan-control",
+    "name": "6 Fan Control",
+    "status": "design",
     "category": "power",
     "published": true,
-    "disclaimer": "Illustrative project entry; specifications require verification"
+    "featured": false,
+    "personal": true,
+    "summary": "My personal six-fan control board and PCB design.",
+    "description": "My personal six-fan control board and PCB design. The supplied project image documents my board design. Detailed specifications and measured test results are not published here.",
+    "disclaimer": "Personal project by Hoàng Duy; test results and manufacturing status are not published",
+    "scope": [
+      "6 Fan Outputs",
+      "Control Hardware",
+      "PCB Layout"
+    ],
+    "techStack": [
+      "PCB Design",
+      "Embedded Hardware"
+    ],
+    "features": [
+      "Personal hardware project",
+      "PCB design and component integration",
+      "Original project image supplied by Hoàng Duy"
+    ]
   }
 ]

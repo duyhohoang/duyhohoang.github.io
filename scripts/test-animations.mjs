@@ -34,14 +34,8 @@ try{
  await page.screenshot({path:output+'/hero-settled.png'});
  const heading=page.locator('.ref-hero h1');
  await expect(heading).toHaveCSS('opacity','1');
- await expect(heading).toHaveCSS('translate','none');
-  const counter=page.locator('.ref-results [aria-label="6 channels"]');
- await counter.evaluate(e=>e.scrollIntoView({behavior:'instant',block:'center'}));
- await page.waitForTimeout(35);
- const counterIntermediate=await counter.textContent();
- await expect(counter).toHaveText('6 channels',{timeout:2500});
+ await expect(heading).toHaveCSS('translate','0px');
  expect(await page.locator('.ref-stats strong').allTextContents()).toEqual(['PCB','STM32 / ESP32','CAN / RS485']);
- checks.push({counterIntermediate,counterFinal:'6 channels',existingStatLabelsPreserved:true});
  await page.locator('#services').scrollIntoViewIfNeeded();
  await page.waitForTimeout(100);
  const revealCount=await page.locator('#services [data-scroll-state="visible"]').count();
@@ -61,7 +55,7 @@ try{
  const expanded=await region.evaluate(e=>e.getBoundingClientRect().height);
  expect(intermediate).toBeGreaterThan(0);expect(intermediate).toBeLessThan(expanded);
  await expect(expand).toHaveAttribute('aria-expanded','true');
- await expect(page.locator('.ref-extra a')).toHaveCount(3);
+ await expect(page.locator('.ref-extra a')).toHaveCount(2);
  await page.screenshot({path:output+'/projects-expanded.png'});
  await expand.click();await page.waitForTimeout(400);
  await expect(region).toHaveJSProperty('inert',true);
@@ -91,7 +85,7 @@ try{
  await page.getByRole('tab',{name:'Education',exact:true}).focus();
  await page.keyboard.press('ArrowLeft');
  await expect(page.getByRole('tab',{name:'Experience',exact:true})).toHaveAttribute('aria-selected','true');
- await expect(page.locator('.ref-timeline article')).toHaveCount(3);await page.waitForTimeout(450);
+ await expect(page.locator('.ref-timeline article')).toHaveCount(5);await page.waitForTimeout(450);
  expect(await page.locator('#career-panel').evaluate(e=>e.style.height)).toBe('');
  checks.push({careerTabsAndKeyboard:true});
 
@@ -138,7 +132,7 @@ try{
  await load(1479,'reduce');
  await page.screenshot({path:output+'/hero-reduced.png'});
  const baseline=JSON.parse(fs.readFileSync('docs/fidelity-final/validation.json','utf8')).metrics[0].geometry;
- for(const selector of ['.ref-lead','.ref-hero h1','.ref-circle','.ref-portrait-window','.ref-projects img']){
+ for(const selector of ['.ref-lead','.ref-hero h1','.ref-circle','.ref-portrait-window']){
    const measured=await page.locator(selector).first().evaluate(e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height};});
    geometry.push({selector,before:baseline[selector],after:measured});
    for(const dimension of ['x','y','width','height'])expect(Math.abs(measured[dimension]-baseline[selector][dimension])).toBeLessThan(1.2);

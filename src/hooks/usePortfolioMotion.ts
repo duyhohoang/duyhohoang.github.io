@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useRef } from 'react';
-import { reveal } from '@/lib/animations';
 import { useReducedMotion } from './useReducedMotion';
 
 export function usePortfolioMotion(){
@@ -15,11 +14,6 @@ export function usePortfolioMotion(){
   useEffect(()=>{
     const root=scope.current;
     if(!root||reduced)return;
-    const cleanups=new Set<()=>void>();
-    function run(element:HTMLElement,options:Parameters<typeof reveal>[1]){
-      const stop=reveal(element,{...options,onComplete:()=>cleanups.delete(stop)});
-      cleanups.add(stop);
-    }
     // Only group-level targets: avoid simultaneous parent/child transforms and
     // repeated WAAPI allocations while scrolling. CSS handles interpolation.
     const targets=new Set<HTMLElement>();
@@ -38,7 +32,7 @@ export function usePortfolioMotion(){
         if(!element.isConnected){observer.unobserve(element);targets.delete(element);}
       }
       const siblings=new Map<Element|null,number>();
-      const selector='.ref-heading,.ref-trust > p,.ref-tools,.ref-stats > div,.ref-quotes article,.ref-case,.ref-projects:not(.ref-extra) > a,.ref-services article,.ref-about > figure,.ref-about > div,.ref-capabilities article,.ref-tabs,.ref-timeline article,.ref-work article,.ref-faq details,.ref-contact > div,.ref-contact > form';
+      const selector='.ref-heading,.ref-trust > p,.ref-tools,.ref-stats > div,.ref-case,.ref-projects:not(.ref-extra) > a,.ref-services article,.ref-about > figure,.ref-about > div,.ref-capabilities article,.ref-tabs,.ref-timeline article,.ref-work article,.ref-faq details,.ref-contact > div,.ref-contact > form';
       root!.querySelectorAll<HTMLElement>(selector).forEach(element=>{
         const index=siblings.get(element.parentElement)||0;
         siblings.set(element.parentElement,index+1);
@@ -53,19 +47,6 @@ export function usePortfolioMotion(){
       (event.target as HTMLElement).closest<HTMLElement>('[data-scroll-reveal]')?.setAttribute('data-scroll-state','visible');
     };
     root.addEventListener('focusin',focus);
-    const header=document.querySelector<HTMLElement>('.site-header');
-    if(header)run(header,{y:0});
-    const hero=root.querySelector('.ref-hero > div:first-child');
-    hero?.querySelectorAll<HTMLElement>(':scope > :not(.ref-socials)').forEach((element,index)=>{
-      run(element,{y:22,delay:.08+index*.08});
-    });
-    root.querySelectorAll<HTMLElement>('.ref-hero .ref-socials a').forEach((element,index)=>{
-      run(element,{y:12,delay:.82+index*.08});
-    });
-    const portrait=root.querySelector<HTMLElement>('.ref-portrait-window');
-    const circle=root.querySelector<HTMLElement>('.ref-circle');
-    if(portrait)run(portrait,{y:0,scale:true,delay:.72});
-    if(circle)run(circle,{y:0,delay:.72});
     register();
     const mutations=new MutationObserver(records=>{if(records.some(record=>Array.from(record.addedNodes).some(node=>node.nodeType===Node.ELEMENT_NODE)))register();});
     mutations.observe(root,{childList:true,subtree:true});
@@ -80,7 +61,6 @@ export function usePortfolioMotion(){
         element.style.removeProperty('--reveal-delay');
       }
       targets.clear();
-      for(const cleanup of cleanups)cleanup();
       delete root.dataset.motionReady;
     };
   },[reduced]);

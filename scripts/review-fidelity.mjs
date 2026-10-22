@@ -48,15 +48,15 @@ try{
   }
   await page.setViewportSize({width:1440,height:900});await page.goto(baseURL);await ready();
   await page.screenshot({path:output+'/desktop-full.png',fullPage:true});
-  await page.getByRole('button',{name:'View 3 more studies'}).click();
-  await expect(page.locator('.ref-extra a')).toHaveCount(3);
-  await expect(page.locator('.ref-extra img')).toHaveCount(3);
+  await page.getByRole('button',{name:'View 2 more projects'}).click();
+  await expect(page.locator('.ref-extra a')).toHaveCount(2);
+  await expect(page.locator('.ref-extra img')).toHaveCount(2);
   await page.getByRole('button',{name:'Show fewer projects'}).click();
   await expect(page.locator('#additional-projects')).toHaveJSProperty('inert',true);
   await page.getByRole('tab',{name:'Education',exact:true}).click();
   await expect(page.getByRole('tabpanel').getByRole('heading',{name:'Education details'})).toBeVisible();
   await page.getByRole('tab',{name:'Experience',exact:true}).click();
-  await expect(page.locator('.ref-timeline article')).toHaveCount(3);
+  await expect(page.locator('.ref-timeline article')).toHaveCount(5);
   const question=page.locator('.ref-faq summary').first(), answer=page.locator('.ref-faq details').first();
   await question.focus();await question.press('Enter');await expect(answer).toHaveAttribute('open','');
   await question.press('Enter');await expect(answer).not.toHaveAttribute('open','');

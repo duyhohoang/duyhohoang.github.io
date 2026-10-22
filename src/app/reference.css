@@ -111,3 +111,17 @@ html{color-scheme:dark}body{background:#111;color:#f5f5f5;font-family:'Reference
  .motion-collapse,.motion-collapse-inner,.ref-faq summary>span,.ref-form-grid input,.ref-form-grid textarea{transition:none!important}
  .ref-quotes article:hover,.ref-case:hover,.ref-projects>a:hover,.ref-services article:hover,.ref-capabilities article:hover,.ref-work article:hover,.ref-projects>a:hover .ref-project-image img,.ref-projects>a:hover .project-arrow,.ref-socials a:hover,.ref-button:hover,.ref-button:active,.ref-expand:active{transform:none!important}
 }
+
+/* First-paint entrance: CSS owns startup, hydration never hides the hero again. */
+.ref-hero-art{container-type:inline-size;--art-height:700px}
+.ref-portrait-window{clip-path:none;--ring-radius:min(50cqw,260px);--ring-center:calc(var(--art-height) - var(--ring-radius));mask-image:linear-gradient(#000,#000),radial-gradient(circle at 50% var(--ring-center),#000 calc(var(--ring-radius) - 5px),transparent calc(var(--ring-radius) - 4px));mask-size:100% var(--ring-center),100% 100%;mask-repeat:no-repeat}
+@keyframes hero-first-paint{from{opacity:0;translate:0 18px}to{opacity:1;translate:0 0}}
+@keyframes portrait-first-paint{from{opacity:.3}to{opacity:1}}
+@media(prefers-reduced-motion:no-preference){
+ .ref-hero>div:first-child>:not(.ref-socials){animation:hero-first-paint .55s cubic-bezier(.22,1,.36,1) both}
+ .ref-hero .ref-socials{animation:hero-first-paint .55s cubic-bezier(.22,1,.36,1) .08s both}
+ .ref-hero-art{animation:portrait-first-paint .6s ease-out both}
+}
+@media(max-width:1100px) and (min-width:800px){.ref-hero-art{--art-height:580px}}
+@media(max-width:799px){.ref-hero-art{--art-height:calc(100cqw * 700 / 520)}}
+.ref-stats{margin-bottom:0}
