@@ -19,6 +19,7 @@ page.on('pageerror',error=>errors.push(error.message));
 page.on('response',response=>{if(response.status()>=400)failed.push(response.url());});
 try{
  await page.goto(base,{waitUntil:'commit'});
+ await expect(page.locator('.ref-hero-art')).toHaveCSS('animation-name','portrait-first-paint');
  await expect(page.locator('.ref-hero-art')).toHaveCSS('opacity','1');
  const before=await page.evaluate(()=>({starts:window.__heroStarts.length,enhanced:document.querySelector('.reference-home').dataset.enhanced||null}));
  expect(before.enhanced).toBe(null);releaseScripts();

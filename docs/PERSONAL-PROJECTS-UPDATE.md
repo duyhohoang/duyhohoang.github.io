@@ -13,3 +13,7 @@ Production browser evidence is stored in docs/personal-projects/. The cold-start
 ## Verification results
 
 Production build and lint passed. All 12 unit tests passed. Export verification passed for 30 HTML pages, 1,471 internal references and 66 images. Cold-start check recorded 11 CSS animation starts before hydration and the same 11 after hydration, with no hero WAAPI animations. All five project detail pages loaded, and the removed section was absent. Browser regression checks passed for project expansion/collapse, FAQ/rapid toggles, career tabs, email composition, hover/focus, mobile menu/history, six widths, live reduced-motion changes, repeated client navigation cleanup and no-JS content. No runtime/hydration errors, broken responses or horizontal overflow were detected. Screenshots were visually reviewed, including the CSS portrait mask on mobile.
+
+## Public deployment verification
+
+The application update was deployed successfully by GitHub Pages. The same browser checks passed against https://duyhohoang.github.io/: 11 first-paint animation starts before hydration and the same 11 afterward, all five project details and original images loaded, section removal confirmed, six widths without overflow and no JavaScript errors or failed responses. The cold-start check explicitly waits for the stylesheet animation name before sampling, so network CSS arrival is not mistaken for an animation restart.
