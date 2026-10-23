@@ -10,7 +10,7 @@ try{
  await expect(page.locator('.ref-hero [data-motion-active]')).toHaveCount(0);
  expect(await page.locator('.ref-portrait-window').evaluate(e=>getComputedStyle(e).maskImage)).not.toBe('none');
  await page.screenshot({path:'docs/scroll-refinement/hero.png'});
- const card=page.locator('.ref-services article').first();
+ const card=page.locator('.technical-skills-grid article').first();
  await expect(card).toHaveAttribute('data-scroll-state','hidden');
  await card.evaluate(e=>window.scrollTo({top:e.getBoundingClientRect().top+scrollY-innerHeight+150,behavior:'instant'}));
  await expect(card).toHaveAttribute('data-scroll-state','visible');
@@ -28,7 +28,7 @@ try{
  await page.locator('#about figure img').evaluate(e=>e.decode());
  await page.screenshot({path:'docs/scroll-refinement/about.png'});
  const borders=[];
- for(const stat of await page.locator('.ref-stats>div').all()){
+ for(const stat of await page.locator('.ref-domain-grid article').all()){
   await stat.hover();await expect(stat).toHaveCSS('border-top-color','rgb(255, 0, 85)');
   borders.push(await stat.evaluate(e=>({text:e.textContent,border:getComputedStyle(e).borderTopColor,width:e.getBoundingClientRect().width})));
  }

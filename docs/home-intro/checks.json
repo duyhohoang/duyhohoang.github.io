@@ -1,0 +1,18 @@
+{
+  "base": "http://127.0.0.1:3001",
+  "heroUpdated": true,
+  "socialLinksAndTooltips": true,
+  "domainCards": 4,
+  "technicalSkillCards": 6,
+  "servicesRemoved": true,
+  "widths": [
+    1479,
+    1280,
+    1024,
+    800,
+    768,
+    390,
+    375
+  ],
+  "errors": []
+}

@@ -5,7 +5,7 @@ export function useActiveSection(enabled:boolean){
   useEffect(()=>{
     if(!enabled)return;
     const sections=Array.from(document.querySelectorAll<HTMLElement>(
-      '#case-studies,#projects,#services,#about,#resume,#contact'));
+      '#case-studies,#projects,#about,#resume,#contact'));
     let frame=0;
     const update=()=>{
       frame=0;

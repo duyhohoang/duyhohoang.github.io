@@ -35,13 +35,13 @@ try{
  const heading=page.locator('.ref-hero h1');
  await expect(heading).toHaveCSS('opacity','1');
  await expect(heading).toHaveCSS('translate','0px');
- expect(await page.locator('.ref-stats strong').allTextContents()).toEqual(['PCB','STM32 / ESP32','CAN / RS485']);
- await page.locator('#services').scrollIntoViewIfNeeded();
+ expect(await page.locator('.ref-domain-grid h3').allTextContents()).toEqual(['Hardware design','Firmware integration','Software interfaces','Connected systems']);
+ await page.locator('#technical-skills').scrollIntoViewIfNeeded();
  await page.waitForTimeout(100);
- const revealCount=await page.locator('#services [data-scroll-state="visible"]').count();
+ const revealCount=await page.locator('#technical-skills [data-scroll-state="visible"]').count();
  expect(revealCount).toBeGreaterThan(0);
  await page.waitForTimeout(1000);
- const service=page.locator('.ref-services article').first();
+ const service=page.locator('.technical-skills-grid article').first();
  await service.hover();await page.waitForTimeout(400);
  const hover=await service.evaluate(e=>({transform:getComputedStyle(e).transform,background:getComputedStyle(e).backgroundColor}));
  expect(hover.transform).toContain('-4');
@@ -132,7 +132,7 @@ try{
  await load(1479,'reduce');
  await page.screenshot({path:output+'/hero-reduced.png'});
  const baseline=JSON.parse(fs.readFileSync('docs/fidelity-final/validation.json','utf8')).metrics[0].geometry;
- for(const selector of ['.ref-lead','.ref-hero h1','.ref-circle','.ref-portrait-window']){
+ for(const selector of ['.ref-circle','.ref-portrait-window']){
    const measured=await page.locator(selector).first().evaluate(e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height};});
    geometry.push({selector,before:baseline[selector],after:measured});
    for(const dimension of ['x','y','width','height'])expect(Math.abs(measured[dimension]-baseline[selector][dimension])).toBeLessThan(1.2);

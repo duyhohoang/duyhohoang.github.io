@@ -6,7 +6,7 @@ import { transientAnimation, motionTiming } from '@/lib/animations';
 import { useActiveSection } from '@/hooks/useActiveSection';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
 
-const navigation=['About','Case Studies','Projects','Boards','Services','Resume','Contact'];
+const navigation=['About','Case Studies','Projects','Boards','Resume','Contact'];
 const sectionId=(name:string)=>name.toLowerCase().replace(' ','-');
 const sectionHref=(name:string)=>name==='Boards'?'/boards/':'/#'+sectionId(name);
 

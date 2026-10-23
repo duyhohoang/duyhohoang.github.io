@@ -148,3 +148,39 @@ html{color-scheme:dark}body{background:#111;color:#f5f5f5;font-family:'Reference
 .resume-download{display:inline-flex;flex-direction:column;align-items:center;gap:6px}.resume-download small{font-size:10px;color:#999fa9;font-weight:400}
 .board-catalog .filters input,.board-catalog .filters select{background:#1f1f1f;color:#f5f5f5;border:1px solid #363636;border-radius:5px}.board-catalog .filters input::placeholder{color:#999fa9}.board-catalog .filters select option{background:#1f1f1f;color:#f5f5f5}
 .resume-download{position:relative}.resume-download small{position:absolute;top:calc(100% + 5px);left:0;right:0;white-space:nowrap}
+
+/* Owner's revised introduction and skill cards. */
+.ref-hero h1{font-size:28px;line-height:1.32;letter-spacing:-.5px;font-weight:700;margin-top:18px;margin-bottom:14px}
+.ref-hero .ref-available{padding:0;border:0;background:none;font-size:12px;color:#c5c7cd}
+.ref-hero .ref-title{font-size:16px;font-weight:700;line-height:1.5;margin-bottom:14px}
+.ref-hero .ref-lead{font-size:14px;line-height:1.55;letter-spacing:0;margin-bottom:14px}
+.ref-hero .ref-highlights{font-size:12px;margin-bottom:14px;flex-wrap:wrap;row-gap:8px}
+.ref-hero .ref-highlights b{font-size:13px}
+.ref-hero blockquote{padding:14px 12px;margin-bottom:14px}
+.ref-hero blockquote em{font-size:13px;font-style:normal;font-weight:600}
+.ref-hero blockquote small{font-size:11px;margin-top:4px}
+.ref-hero .ref-actions{gap:8px;align-items:flex-start}
+.ref-hero .ref-button{padding:12px;font-size:13px;min-height:46px}
+.ref-socials a{position:relative;overflow:visible;display:inline-flex;align-items:center;justify-content:center}
+.social-tooltip{position:absolute;bottom:calc(100% + 9px);left:50%;transform:translate(-50%,4px);padding:5px 10px;border:1px solid #ff0055;border-radius:4px;background:#181818;color:#eee;font-size:12px;font-weight:400;line-height:1.4;white-space:nowrap;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .15s,transform .15s,visibility .15s}
+.ref-socials a:hover,.ref-socials a:focus-visible{background:#ff0055;color:white;transform:translateY(-2px)}
+.ref-socials a:hover .social-tooltip,.ref-socials a:focus-visible .social-tooltip{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.ref-domain-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;text-align:left}
+.ref-domain-grid article,.technical-skills-grid article{background:#201b1e;border:1px solid #53303d;border-radius:6px;padding:24px}
+.ref-domain-grid article>span{display:block;color:#ff0055;font-size:10px;letter-spacing:1.8px;font-weight:600;margin-bottom:14px}
+.ref-domain-grid h3{font-size:16px;line-height:1.4;margin:0 0 8px;font-weight:700}
+.ref-domain-grid p{font-size:13px;line-height:1.55;margin:0;color:#999fa9}
+.technical-skills-grid{gap:24px}
+.technical-skills-grid article{padding:24px;min-width:0}
+.technical-skills-grid .ref-icon{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:#ff005515;border-radius:7px;color:#ff0055;margin-bottom:18px}
+.technical-skills-grid .ref-icon svg{width:22px;height:22px}
+.technical-skills-grid h3{font-size:16px;line-height:1.4;margin:0 0 12px}
+.technical-skills-grid p{font-size:13px;line-height:1.7;margin-bottom:18px;color:#999fa9}
+.skill-tags{display:flex;flex-wrap:wrap;gap:6px}
+.skill-tags span{font-size:10px;color:#b9adb2;border:1px solid #53303d;background:#181417;border-radius:5px;padding:4px 7px}
+@media(hover:hover) and (pointer:fine){.ref-domain-grid article,.technical-skills-grid article{transition:transform .25s,border-color .25s,background-color .25s}.ref-domain-grid article:hover,.technical-skills-grid article:hover{border-color:#ff0055;background:#282025;transform:translateY(-4px)}}
+@media(max-width:1024px){.ref-domain-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:799px){.ref-hero h1{font-size:24px}.technical-skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.ref-domain-grid,.technical-skills-grid{grid-template-columns:1fr}.ref-domain-grid{gap:12px}.ref-hero .ref-title{font-size:14px}.ref-hero .ref-highlights span+span{padding-left:0;border-left:0}.ref-hero .ref-highlights{column-gap:12px}}
+@media(prefers-reduced-motion:reduce){.ref-socials a,.social-tooltip,.ref-domain-grid article,.technical-skills-grid article{transition:none!important}.ref-domain-grid article:hover,.technical-skills-grid article:hover{transform:none}}
+.ref-hero .ref-available{margin-bottom:0}.ref-hero h1{font-size:24px}.ref-hero blockquote{max-width:100%}

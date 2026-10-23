@@ -1,21 +1,21 @@
 {
   "base": "http://127.0.0.1:3001",
-  "date": "2026-10-22T15:41:57.251Z",
+  "date": "2026-10-23T14:52:11.988Z",
   "errors": [],
   "checks": [
     {
       "heroActive": 0
     },
     {
-      "scrollReveals": 4,
+      "scrollReveals": 7,
       "hover": {
         "transform": "matrix(1, 0, 0, 1, 0, -4)",
-        "background": "rgb(35, 35, 35)"
+        "background": "rgb(40, 32, 37)"
       }
     },
     {
       "projectHeight": {
-        "intermediate": 342.8125,
+        "intermediate": 369.8125,
         "expanded": 426,
         "collapsed": 0
       }
@@ -23,7 +23,7 @@
     {
       "faqHeight": {
         "closed": 61,
-        "intermediate": 92.328125,
+        "intermediate": 97.3125,
         "opened": 115
       },
       "faqKeyboardAndRapidToggle": true
@@ -62,44 +62,6 @@
     }
   ],
   "geometry": [
-    {
-      "selector": ".ref-lead",
-      "before": {
-        "x": 63.5,
-        "y": 456.390625,
-        "width": 743.59375,
-        "height": 53.625,
-        "font": "\"Reference Sans\", Lato, Arial, sans-serif",
-        "fontSize": "18.5px",
-        "weight": "400",
-        "objectFit": "fill"
-      },
-      "after": {
-        "x": 63.5,
-        "y": 456.390625,
-        "width": 743.59375,
-        "height": 53.625
-      }
-    },
-    {
-      "selector": ".ref-hero h1",
-      "before": {
-        "x": 63.5,
-        "y": 289.984375,
-        "width": 743.59375,
-        "height": 97.90625,
-        "font": "\"Reference Sans\", Lato, Arial, sans-serif",
-        "fontSize": "48px",
-        "weight": "900",
-        "objectFit": "fill"
-      },
-      "after": {
-        "x": 63.5,
-        "y": 289.984375,
-        "width": 743.59375,
-        "height": 97.90625
-      }
-    },
     {
       "selector": ".ref-circle",
       "before": {

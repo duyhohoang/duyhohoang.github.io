@@ -32,7 +32,7 @@ export function usePortfolioMotion(){
         if(!element.isConnected){observer.unobserve(element);targets.delete(element);}
       }
       const siblings=new Map<Element|null,number>();
-      const selector='.ref-heading,.ref-trust > p,.ref-tools,.ref-stats > div,.ref-case,.ref-projects:not(.ref-extra) > a,.ref-services article,.ref-about > figure,.ref-about > div,.ref-capabilities article,.ref-tabs,.ref-timeline article,.ref-work article,.ref-faq details,.ref-contact > div,.ref-contact > form';
+      const selector='.ref-domain-grid article,.technical-skills-grid article,.ref-heading,.ref-trust > p,.ref-tools,.ref-stats > div,.ref-case,.ref-projects:not(.ref-extra) > a,.ref-services article,.ref-about > figure,.ref-about > div,.ref-capabilities article,.ref-tabs,.ref-timeline article,.ref-work article,.ref-faq details,.ref-contact > div,.ref-contact > form';
       root!.querySelectorAll<HTMLElement>(selector).forEach(element=>{
         const index=siblings.get(element.parentElement)||0;
         siblings.set(element.parentElement,index+1);

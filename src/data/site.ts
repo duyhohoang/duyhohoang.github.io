@@ -7,7 +7,8 @@ export const site = {
   email: isContactEmail(contactConfig.email) ? contactConfig.email : '',
   contactPlaceholder: 'Contact email coming soon',
   location: '',
-  githubUrl: '',
+  githubUrl: 'https://github.com/duyhohoang',
+  facebookUrl: 'https://www.facebook.com/hoang.duy.72806/',
   linkedinUrl: '',
 };
 export const navigation = ['Workspace', 'Boards', 'Firmware', 'Dashboard', 'About', 'Contact'];
