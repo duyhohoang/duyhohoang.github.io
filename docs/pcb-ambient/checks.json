@@ -1,0 +1,65 @@
+{
+  "base": "http://127.0.0.1:3001",
+  "styles": {
+    "grid": {
+      "duration": "25s",
+      "delay": "0s",
+      "timing": "linear",
+      "direction": "normal",
+      "dash": "none"
+    },
+    "glow": {
+      "duration": "9s",
+      "delay": "0s",
+      "timing": "ease-in-out",
+      "direction": "alternate",
+      "dash": "none"
+    },
+    "pulse": {
+      "duration": "5s",
+      "delay": "0s",
+      "timing": "linear",
+      "direction": "normal",
+      "dash": "8px, 290px"
+    },
+    "pulse-second": {
+      "duration": "7s",
+      "delay": "-2.5s",
+      "timing": "linear",
+      "direction": "normal",
+      "dash": "8px, 290px"
+    }
+  },
+  "movement": {
+    "before": {
+      "grid": "matrix(1, 0, 0, 1, 2.6236, 2.6236)",
+      "glow": "matrix(1, 0, 0, 1, 11.7327, 8.53287)",
+      "pulses": [
+        "-122.161px",
+        "-193.687px"
+      ]
+    },
+    "after": {
+      "grid": "matrix(1, 0, 0, 1, 2.94347, 2.94347)",
+      "glow": "matrix(1, 0, 0, 1, 14.8569, 10.805)",
+      "pulses": [
+        "-137.055px",
+        "-204.325px"
+      ]
+    }
+  },
+  "widths": [
+    1479,
+    1280,
+    1024,
+    800,
+    768,
+    390,
+    375
+  ],
+  "continuousAcrossRoutes": true,
+  "hiddenTabPaused": true,
+  "reducedMotion": true,
+  "removedSections": true,
+  "errors": []
+}

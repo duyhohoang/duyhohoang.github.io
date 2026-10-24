@@ -1,0 +1,25 @@
+/* One viewport-sized PCB surface behind the entire application. */
+:root{--background:#111116;--page-base:#111116}
+body{background:#111116;isolation:isolate}
+.pcb-ambient{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:#111116;contain:paint}
+.pcb-ambient-grid{position:absolute;inset:-32px;background-image:linear-gradient(to right,rgba(255,0,85,.065) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,0,85,.065) 1px,transparent 1px);background-size:32px 32px;animation:pcb-grid-drift 25s linear infinite;will-change:transform}
+.pcb-ambient-glow{position:absolute;width:260px;height:260px;top:-65px;left:40%;border-radius:50%;background:radial-gradient(circle,rgba(255,0,85,.18),transparent 70%);animation:pcb-glow-drift 9s ease-in-out infinite alternate;will-change:transform}
+.pcb-ambient-circuits{position:absolute;inset:0;width:100%;height:100%;display:block}
+.pcb-ambient-traces{stroke:#ff0055;stroke-opacity:.19;stroke-width:1.4;fill:none}
+.pcb-ambient-signals{stroke:#ff0055;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:8 290;fill:none}
+.pcb-ambient-pulse{animation:pcb-signal-travel 5s linear infinite}
+.pcb-ambient-pulse-second{animation-duration:7s;animation-delay:-2.5s}
+.pcb-ambient-nodes{fill:#ff0055;opacity:.65}
+.pcb-ambient[data-paused="true"] *{animation-play-state:paused!important}
+.site-header{background:transparent}
+.site-footer{background:rgba(31,31,31,.78)}
+@keyframes pcb-grid-drift{from{transform:translate(0,0)}to{transform:translate(32px,32px)}}
+@keyframes pcb-glow-drift{from{transform:translate(0,0)}to{transform:translate(110px,80px)}}
+@keyframes pcb-signal-travel{from{stroke-dashoffset:0}to{stroke-dashoffset:-298}}
+
+/* Compact technical ticker, with identical groups for a seamless loop. */
+.vision-marquee{padding:14px 0;border-block:1px solid #ff00551a;background:#17131a88;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+.vision-marquee-group span{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;line-height:1.5;font-weight:500;letter-spacing:1px;color:#b98c9c;text-shadow:none;gap:32px;padding-right:32px}
+.vision-marquee-group i{font-size:12px;color:#ff0055;opacity:.6}
+@media(max-width:799px){.pcb-ambient-grid,.pcb-ambient-glow,.pcb-ambient-circuits{opacity:.72}}
+@media(prefers-reduced-motion:reduce){.pcb-ambient-grid,.pcb-ambient-glow,.pcb-ambient-pulse{animation:none;will-change:auto}}
