@@ -2,11 +2,11 @@
 :root{--background:#111116;--page-base:#111116}
 body{background:#111116;isolation:isolate}
 .pcb-ambient{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:#111116;contain:paint}
-.pcb-ambient-grid{position:absolute;inset:-32px;background-image:linear-gradient(to right,rgba(255,0,85,.065) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,0,85,.065) 1px,transparent 1px);background-size:32px 32px;animation:pcb-grid-drift 64s linear infinite;will-change:transform}
+.pcb-ambient-grid{position:absolute;inset:-64px;background-image:linear-gradient(to right,rgba(255,0,85,.10) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,0,85,.10) 1px,transparent 1px);background-size:32px 32px;animation:pcb-grid-drift 24s linear infinite;will-change:transform}
 .pcb-ambient[data-paused="true"] *{animation-play-state:paused!important}
 .site-header{background:transparent}
 .site-footer{background:rgba(31,31,31,.78)}
-@keyframes pcb-grid-drift{from{transform:translate(0,0)}to{transform:translate(32px,32px)}}
+@keyframes pcb-grid-drift{from{transform:translate(0,0)}to{transform:translate(64px,64px)}}
 
 /* Compact technical ticker, with identical groups for a seamless loop. */
 .vision-marquee{padding:14px 0;border-block:1px solid #ff00551a;background:#17131a88;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
