@@ -1,4 +1,4 @@
 import { defineConfig, globalIgnores } from 'eslint/config';
 import nextVitals from 'eslint-config-next/core-web-vitals';
 import nextTs from 'eslint-config-next/typescript';
-export default defineConfig([...nextVitals, ...nextTs, globalIgnores(['out/**', '.next/**', 'node_modules/**', 'test-results/**', 'playwright-report/**'])]);
+export default defineConfig([...nextVitals, ...nextTs, globalIgnores(['.wrangler/**', 'public/assets/vendor/**', 'out/**', '.next/**', 'node_modules/**', 'test-results/**', 'playwright-report/**'])]);

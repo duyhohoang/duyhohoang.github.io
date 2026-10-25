@@ -27,6 +27,10 @@
     "interactiveBom": {
       "src": "/assets/projects/personal/esp32-devkit/ibom.html",
       "title": "ESP32 Devkit · MP1 Interactive BOM"
+    },
+    "pcbSource": {
+      "src": "/assets/projects/personal/esp32-devkit/MP1.kicad_pcb",
+      "title": "ESP32 Devkit · MP1"
     }
   },
   {

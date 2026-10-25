@@ -12,6 +12,7 @@ export const boardSchema = z.object({
   components: z.array(z.object({ designator: z.string(), quantity: z.number().int().positive(), manufacturer: z.string().optional(), mpn: z.string().optional(), description: z.string() })).optional(),
   stackup: z.array(z.object({ layer: z.string(), type: z.string(), thicknessMm: z.number().positive().optional(), material: z.string().optional() })).optional(),
   files: z.array(z.object({ label: z.string(), href: localAsset, kind: z.enum(['pdf', 'zip', 'step', 'gerber', 'other']) })).optional(),
+  pcbSource: z.object({ src: localAsset.regex(/\.kicad_pcb$/), title: z.string().min(3) }).optional(),
   interactiveBom: z.object({ src: localAsset.regex(/\.html$/), title: z.string().min(3) }).optional(),
   repoUrl: z.url().refine(url => url.startsWith('https://')).optional(),
 });

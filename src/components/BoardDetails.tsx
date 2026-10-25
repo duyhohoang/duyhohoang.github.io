@@ -1,7 +1,10 @@
 'use client';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { useEffect, useId, useRef, useState, type KeyboardEvent } from 'react';
 import { label, type Board } from '@/lib/projects';
+
+const PCBViewer=dynamic(()=>import('./pcb-viewer/PCBViewer'),{ssr:false,loading:()=> <p className="pcb-viewer-notice" role="status">Loading PCB viewer…</p>});
 
 export function BoardGallery({ board }: { board: Board }) {
   const [selected, setSelected] = useState(0);
@@ -84,20 +87,22 @@ export function FeatureTabs({ board }: { board: Board }) {
   const id = useId();
   const tabs = ['Key Features', 'Block Diagram', 'Stackup', 'Preview', 'BOM'];
   const [active, setActive] = useState(0);
+  const [previewVisited,setPreviewVisited]=useState(false);
+  function selectTab(index:number){setActive(index);if(index===3)setPreviewVisited(true);}
   const buttons = useRef<(HTMLButtonElement | null)[]>([]);
   function keyboard(event: KeyboardEvent<HTMLButtonElement>, index: number) {
     const next = event.key === 'ArrowRight' ? (index + 1) % tabs.length : event.key === 'ArrowLeft' ? (index - 1 + tabs.length) % tabs.length : event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : undefined;
-    if (next !== undefined) { event.preventDefault(); setActive(next); buttons.current[next]?.focus(); }
+    if (next !== undefined) { event.preventDefault(); selectTab(next); buttons.current[next]?.focus(); }
   }
   const title = tabs[active];
   const diagram=board.gallery.find(image=>image.type==='diagram');
   const layers=board.stackup?.length?board.stackup:demoStackup;
-  return <section className="project-documentation" aria-label="Project documentation"><div className="tablist" role="tablist" aria-label="Engineering sections">{tabs.map((tab,index)=><button ref={element=>{buttons.current[index]=element;}} key={tab} role="tab" id={id+'-tab-'+index} aria-controls={id+'-panel-'+index} aria-selected={active===index} tabIndex={active===index?0:-1} onClick={()=>setActive(index)} onKeyDown={event=>keyboard(event,index)}>{tab}</button>)}</div><div className="tabpanel" role="tabpanel" tabIndex={0} id={id+'-panel-'+active} aria-labelledby={id+'-tab-'+active}>
+  return <section className="project-documentation" aria-label="Project documentation"><div className="tablist" role="tablist" aria-label="Engineering sections">{tabs.map((tab,index)=><button ref={element=>{buttons.current[index]=element;}} key={tab} role="tab" id={id+'-tab-'+index} aria-controls={id+'-panel-'+index} aria-selected={active===index} tabIndex={active===index?0:-1} onClick={()=>selectTab(index)} onKeyDown={event=>keyboard(event,index)}>{tab}</button>)}</div><div className="tabpanel" role="tabpanel" tabIndex={0} id={id+'-panel-'+active} aria-labelledby={id+'-tab-'+active}>
     <h2>{title}</h2>
     {title==='Key Features'&&<ul className="board-feature-list">{board.features.map(feature=><li key={feature}>{feature}</li>)}</ul>}
     {title==='Block Diagram'&&(diagram?<figure className="board-diagram"><Image src={diagram.src} width={1000} height={600} alt={diagram.alt}/><figcaption>{diagram.alt}</figcaption></figure>:<DemoBlockDiagram board={board}/>)}
     {title==='Stackup'&&<>{!board.stackup?.length&&<DemoNote>Example 4-layer stackup for layout preview. Actual layer count, materials and thickness are not specified yet.</DemoNote>}<div className="stackup">{layers.map(layer=><div key={layer.layer}><span><b>{layer.layer}</b> · {layer.type}</span><span>{[layer.material,'thicknessMm' in layer&&layer.thicknessMm!==undefined?String(layer.thicknessMm)+' mm':undefined].filter(Boolean).join(' / ')}</span></div>)}</div></>}
-    {title==='Preview'&&<div className="board-preview"><BoardGallery board={board}/>{!!board.files?.length&&<div className="board-file-links">{board.files.map(file=><a key={file.href} className="button" href={file.href} download>{file.label} ↓</a>)}</div>}</div>}
+    {(title==='Preview'||previewVisited)&&<div className="pcb-preview-panel" hidden={title!=='Preview'}>{board.pcbSource?<PCBViewer source={board.pcbSource} active={title==='Preview'}/>:<div className="pcb-source-missing"><h3>PCB source not available yet</h3><p>A KiCad PCB file has not been supplied for this project.</p></div>}{!!board.files?.length&&<div className="board-file-links">{board.files.map(file=><a key={file.href} className="button" href={file.href} download>{file.label} ↓</a>)}</div>}</div>}
     {title==='BOM'&&(board.interactiveBom?<InteractiveBom bom={board.interactiveBom}/>:<>{!board.components?.length&&<DemoNote>Sample parts for layout preview. These are not the project’s actual components or purchasing quantities.</DemoNote>}<BomTable components={board.components?.length?board.components:demoBom}/></>)}
   </div></section>;
 }
