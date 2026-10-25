@@ -28,7 +28,7 @@ for(const file of pages){
   }
   for(const match of html.matchAll(/<img\b[^>]*>/g)){assert(/\balt="[^"]+"/.test(match[0]),file+' image alt');images++;}
 }
-for(const route of ['','boards','about','capabilities','workflow','contact','privacy','boards/iot-board','boards/esp32-plc','boards/6-fan-control','boards/esp32-datalogger','boards/esp32-devkit'])assert(fs.existsSync(path.join(root,route,'index.html')),'Missing route '+route);
+for(const route of ['','about','capabilities','workflow','contact','privacy','projects/iot-board','projects/esp32-plc','projects/6-fan-control','projects/esp32-datalogger','projects/esp32-devkit'])assert(fs.existsSync(path.join(root,route,'index.html')),'Missing route '+route);
 for(const name of ['sitemap.xml','robots.txt','404.html','assets/social.png'])assert(fs.existsSync(path.join(root,name)),'Missing '+name);
 const report={date:new Date().toISOString(),pages:pages.length,internalReferences:links,images,passed:true};
 fs.writeFileSync('docs/export-check.json',JSON.stringify(report,null,2)+'\n');

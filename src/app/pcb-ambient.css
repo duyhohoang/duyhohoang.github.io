@@ -2,7 +2,7 @@
 :root{--background:#111116;--page-base:#111116}
 body{background:#111116;isolation:isolate}
 .pcb-ambient{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:#111116;contain:paint}
-.pcb-ambient-grid{position:absolute;inset:-32px;background-image:linear-gradient(to right,rgba(255,0,85,.065) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,0,85,.065) 1px,transparent 1px);background-size:32px 32px;animation:pcb-grid-drift 40s linear infinite;will-change:transform}
+.pcb-ambient-grid{position:absolute;inset:-32px;background-image:linear-gradient(to right,rgba(255,0,85,.065) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,0,85,.065) 1px,transparent 1px);background-size:32px 32px;animation:pcb-grid-drift 64s linear infinite;will-change:transform}
 .pcb-ambient[data-paused="true"] *{animation-play-state:paused!important}
 .site-header{background:transparent}
 .site-footer{background:rgba(31,31,31,.78)}
@@ -14,3 +14,9 @@ body{background:#111116;isolation:isolate}
 .vision-marquee-group i{font-size:12px;color:#ff0055;opacity:.6}
 @media(max-width:799px){.pcb-ambient-grid{opacity:.72}}
 @media(prefers-reduced-motion:reduce){.pcb-ambient-grid{animation:none;will-change:auto}}
+
+.embedded-catalog{padding:0;margin-top:32px}.embedded-catalog .catalog-top{margin-bottom:24px}
+
+.vision-marquee.ref-container{width:calc(100% - 80px);max-width:1336px;margin-inline:auto;padding-inline:0}
+@media(max-width:1100px){.vision-marquee.ref-container{width:calc(100% - 64px)}}
+@media(max-width:799px){.vision-marquee.ref-container{width:calc(100% - 40px)}}

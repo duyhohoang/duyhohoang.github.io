@@ -27,7 +27,7 @@ test('workspace navigation, responsive theme and project dashboards',async({page
  await page.getByRole('button',{name:'Reset',exact:true}).click();await expect(page.getByText('Simulation paused',{exact:true})).toBeVisible();
  await page.goto('/dashboard/esp32-plc/');const output=page.getByRole('button',{name:/Output 01/});await expect(output).toHaveAttribute('aria-pressed','false');await output.click();await expect(output).toHaveAttribute('aria-pressed','true');
  await page.goto('/dashboard/6-fan-control/');await page.getByRole('slider',{name:'Fan 1',exact:false}).fill('80');await expect(page.getByText('2560 RPM · simulated',{exact:true})).toBeVisible();await page.getByRole('button',{name:'Reset',exact:true}).click();await expect(page.getByRole('slider',{name:'Fan 1',exact:false})).toHaveValue('45');
- for(const route of ['/','/firmware/','/dashboard/','/dashboard/6-fan-control/','/boards/','/portfolio/kicad/']){
+ for(const route of ['/','/firmware/','/dashboard/','/dashboard/6-fan-control/','/#projects','/portfolio/kicad/']){
   await page.goto(route);const results=await new AxeBuilder({page}).analyze();expect(results.violations,route).toEqual([]);
  }
  expect(errors).toEqual([]);

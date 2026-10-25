@@ -4,6 +4,6 @@ import { boards } from '@/lib/projects';
 import { portfolio } from '@/data/portfolio';
 export const dynamic = 'force-static';
 export default function sitemap(): MetadataRoute.Sitemap {
-  return ['/', '/workspace/', '/firmware/', '/dashboard/', ...boards.map(board=>"/dashboard/"+board.slug+"/"), '/boards/', '/capabilities/', '/workflow/', '/about/', '/contact/', '/privacy/', ...boards.map(board=>`/boards/${board.slug}/`), ...portfolio.map(item=>`/portfolio/${item.slug}/`)].map(path=>({url:new URL(path,site.url).href}));
+  return ['/', '/workspace/', '/firmware/', '/dashboard/', ...boards.map(board=>"/dashboard/"+board.slug+"/"), '/capabilities/', '/workflow/', '/about/', '/contact/', '/privacy/', ...boards.map(board=>`/projects/${board.slug}/`), ...portfolio.map(item=>`/portfolio/${item.slug}/`)].map(path=>({url:new URL(path,site.url).href}));
 }
 

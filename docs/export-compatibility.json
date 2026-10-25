@@ -6,30 +6,6 @@
       "to": "about\\__next.about.__PAGE__.txt"
     },
     {
-      "from": "boards\\6-fan-control\\__next.boards\\$d$slug\\__PAGE__.txt",
-      "to": "boards\\6-fan-control\\__next.boards.$d$slug.__PAGE__.txt"
-    },
-    {
-      "from": "boards\\esp32-datalogger\\__next.boards\\$d$slug\\__PAGE__.txt",
-      "to": "boards\\esp32-datalogger\\__next.boards.$d$slug.__PAGE__.txt"
-    },
-    {
-      "from": "boards\\esp32-devkit\\__next.boards\\$d$slug\\__PAGE__.txt",
-      "to": "boards\\esp32-devkit\\__next.boards.$d$slug.__PAGE__.txt"
-    },
-    {
-      "from": "boards\\esp32-plc\\__next.boards\\$d$slug\\__PAGE__.txt",
-      "to": "boards\\esp32-plc\\__next.boards.$d$slug.__PAGE__.txt"
-    },
-    {
-      "from": "boards\\iot-board\\__next.boards\\$d$slug\\__PAGE__.txt",
-      "to": "boards\\iot-board\\__next.boards.$d$slug.__PAGE__.txt"
-    },
-    {
-      "from": "boards\\__next.boards\\__PAGE__.txt",
-      "to": "boards\\__next.boards.__PAGE__.txt"
-    },
-    {
       "from": "capabilities\\__next.capabilities\\__PAGE__.txt",
       "to": "capabilities\\__next.capabilities.__PAGE__.txt"
     },
@@ -96,6 +72,26 @@
     {
       "from": "privacy\\__next.privacy\\__PAGE__.txt",
       "to": "privacy\\__next.privacy.__PAGE__.txt"
+    },
+    {
+      "from": "projects\\6-fan-control\\__next.projects\\$d$slug\\__PAGE__.txt",
+      "to": "projects\\6-fan-control\\__next.projects.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "projects\\esp32-datalogger\\__next.projects\\$d$slug\\__PAGE__.txt",
+      "to": "projects\\esp32-datalogger\\__next.projects.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "projects\\esp32-devkit\\__next.projects\\$d$slug\\__PAGE__.txt",
+      "to": "projects\\esp32-devkit\\__next.projects.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "projects\\esp32-plc\\__next.projects\\$d$slug\\__PAGE__.txt",
+      "to": "projects\\esp32-plc\\__next.projects.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "projects\\iot-board\\__next.projects\\$d$slug\\__PAGE__.txt",
+      "to": "projects\\iot-board\\__next.projects.$d$slug.__PAGE__.txt"
     },
     {
       "from": "workflow\\__next.workflow\\__PAGE__.txt",

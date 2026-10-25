@@ -1,2 +1,7 @@
-/** Owner-approved example document; replace with Hoàng Duy's own CV later. */
-export const resumeConfig={url:(process.env.NEXT_PUBLIC_RESUME_URL||'/assets/resume/demo-hardware-engineer.pdf').trim(),demo:!process.env.NEXT_PUBLIC_RESUME_URL};
+export const resumeConfig={url:(process.env.NEXT_PUBLIC_RESUME_URL||'/assets/resume/ho-hoang-duy-cv.pdf').trim(),demo:false};
+
+export const resumeProjects = [
+ {name:'ESP32-Based Industrial IoT Controller',description:'An ESP32 industrial controller combining power conversion, environmental sensing, data logging and remote relay control.',features:['Designed conversion from 220 VAC to 24 VDC, 5 VDC and 3.3 VDC.','Integrated SHT31 sensing over I2C, RTC timekeeping, EEPROM and SD card storage.','Implemented RS485, Wi-Fi and LoRa connectivity, with relay control for industrial contactors through IoT Vision.'],scope:['Power','Sensing','Control'],techStack:['KiCad','ESP32','I2C','RS485','Wi-Fi','LoRa']},
+ {name:'IoT Gateway & IoT Node Board',description:'A custom STM32F407 platform connecting industrial interfaces, Ethernet and cellular/GNSS modules.',features:['Designed 12 V, 5 V, 4 V, 3.3 V and 1.8 V power supplies.','Integrated 2× CAN, RS485, 2× RS232, Ethernet and SIM7600/GNSS.','Selected components and developed schematics and PCB layout, including RTC, EEPROM, SD card, relays and buzzer.'],scope:['STM32F407','Industrial I/O','Connectivity'],techStack:['KiCad','STM32','CAN Bus','RS485','RS232','Ethernet','SIM7600']},
+ {name:'ThingsBoard IoT Platform',description:'A privately deployed ThingsBoard server connecting embedded hardware to real-time monitoring dashboards.',features:['Deployed and managed a private IoT server at duyhohoang.io.vn.','Configured MQTT and HTTP communication between devices and the server.','Designed real-time dashboards for connected device monitoring.'],scope:['Device Data','IoT Server','Dashboards'],techStack:['ThingsBoard','MQTT','HTTP','IoT']},
+];

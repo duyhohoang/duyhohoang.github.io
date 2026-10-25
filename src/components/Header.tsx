@@ -6,9 +6,9 @@ import { transientAnimation, motionTiming } from '@/lib/animations';
 import { useActiveSection } from '@/hooks/useActiveSection';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
 
-const navigation=['About','Case Studies','Projects','Boards','Resume','Contact'];
+const navigation=['About','Case Studies','Projects','Resume','Contact'];
 const sectionId=(name:string)=>name.toLowerCase().replace(' ','-');
-const sectionHref=(name:string)=>name==='Boards'?'/boards/':'/#'+sectionId(name);
+const sectionHref=(name:string)=>'/#'+sectionId(name);
 
 export function Header(){
   const pathname=usePathname();
@@ -72,7 +72,7 @@ export function Header(){
   return <header className="site-header"><div className="header-inner">
     <Link href="/" className="brand" title="Hoàng Duy home"><span className="brand-wordmark"><em>H</em>oàng <em>D</em>uy</span></Link>
     <nav aria-label="Main navigation" className="desktop-nav">
-      {navigation.map(name=><Link aria-current={name==='Boards'&&pathname.startsWith('/boards')?'page':pathname==='/'&&active===sectionId(name)?'location':undefined} key={name} href={sectionHref(name)}>{name}</Link>)}
+      {navigation.map(name=><Link aria-current={pathname==='/'&&active===sectionId(name)?'location':undefined} key={name} href={sectionHref(name)}>{name}</Link>)}
       <Link href="/#contact" className="nav-hire">Hire Me</Link>
     </nav>
     <button ref={trigger} className="menu-trigger" aria-haspopup="dialog" aria-expanded={menuOpen} aria-controls={menuId} aria-label="Open navigation menu" onClick={open}>Menu <span aria-hidden="true">☰</span></button>

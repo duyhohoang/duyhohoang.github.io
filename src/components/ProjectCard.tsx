@@ -4,7 +4,7 @@ import type {Board} from '@/lib/projects';
 
 /** Shared by Home, Boards and related projects to keep presentation identical. */
 export function ProjectCard({board}:{board:Board}){
-  return <Link className="project-card" href={`/boards/${board.slug}/`}>
+  return <Link className="project-card" href={`/projects/${board.slug}/`}>
     <div className={`ref-project-image project-visual${board.slug==='esp32-datalogger'?' project-visual-datalogger':''}`}>
       <Image src={board.heroImage.src} alt={board.heroImage.alt} width={600} height={400} loading="lazy"/>
     </div>
