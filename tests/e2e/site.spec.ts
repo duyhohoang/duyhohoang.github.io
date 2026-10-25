@@ -18,16 +18,16 @@ test('detail gallery, keyboard tabs and missing data are truthful', async ({ pag
   for (const slug of ['iot-board', 'esp32-plc', '6-fan-control']) {
     const response = await page.goto(`/projects/${slug}/`); expect(response?.status()).toBe(200);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
-    await expect(page.getByRole('tab', { name: 'Components', exact: true })).toHaveCount(0);
-    await expect(page.getByRole('tab', { name: 'Stackup', exact: true })).toHaveCount(0);
+    await expect(page.getByRole('tab', { name: 'BOM', exact: true })).toHaveCount(1);
+    await expect(page.getByRole('tab', { name: 'Stackup', exact: true })).toHaveCount(1);
   }
   await expect(page.locator('.gallery figcaption')).toContainText('PERSONAL PROJECT');
-  await page.getByRole('tab', { name: 'Overview', exact: true }).focus();
+  await page.getByRole('tab', { name: 'Key Features', exact: true }).focus();
   await page.keyboard.press('ArrowRight');
-  await expect(page.getByRole('tab', { name: 'Features', exact: true })).toBeFocused();
+  await expect(page.getByRole('tab', { name: 'Block Diagram', exact: true })).toBeFocused();
   await page.keyboard.press('End');
-  await expect(page.getByRole('tab', { name: 'Files', exact: true })).toHaveAttribute('aria-selected', 'true');
-  await expect(page.getByRole('tabpanel')).toContainText('No project files have been released');
+  await expect(page.getByRole('tab', { name: 'BOM', exact: true })).toHaveAttribute('aria-selected', 'true');
+  await expect(page.getByRole('tabpanel')).toContainText('not the project’s actual components');
   await expect(page.locator('a[download]')).toHaveCount(0);
   const response = await page.goto('/projects/unknown-board/'); expect(response?.status()).toBe(404);
 });
