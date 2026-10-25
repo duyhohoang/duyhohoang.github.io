@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useId, useRef, useState, type KeyboardEvent } from 'react';
+import { useEffect, useId, useRef, useState, type KeyboardEvent } from 'react';
 import { label, type Board } from '@/lib/projects';
 
 export function BoardGallery({ board }: { board: Board }) {
@@ -15,6 +15,45 @@ export function BomTable({ components }: { components: NonNullable<Board['compon
   const rows = [...components].sort((a, b) => a.designator.localeCompare(b.designator, 'en', { numeric: true }) * (ascending ? 1 : -1));
   return <div className="table-scroll"><table><caption className="sr-only">Project bill of materials</caption><thead><tr><th scope="col" aria-sort={ascending ? 'ascending' : 'descending'}><button onClick={() => setAscending(value => !value)}>Designator {ascending ? '↑' : '↓'}</button></th>{['Quantity', 'Manufacturer', 'MPN', 'Description'].map(title => <th scope="col" key={title}>{title}</th>)}</tr></thead><tbody>{rows.map(row => <tr key={row.designator}><th scope="row">{row.designator}</th><td>{row.quantity}</td><td>{row.manufacturer || 'Not specified'}</td><td>{row.mpn || 'Not specified'}</td><td>{row.description}</td></tr>)}</tbody></table></div>;
 }
+export function InteractiveBom({bom}:{bom:NonNullable<Board['interactiveBom']>}) {
+  const viewer=useRef<HTMLDivElement>(null);
+  const frame=useRef<HTMLIFrameElement>(null);
+  useEffect(()=>{
+    const iframe=frame.current;
+    if(!iframe)return;
+    let lastMobile:boolean|undefined;
+    function adapt(){
+      const doc=iframe?.contentDocument;
+      if(!doc?.getElementById('tb-btn'))return;
+      if(!doc.getElementById('portfolio-bom-responsive')){
+        const style=doc.createElement('style');
+        style.id='portfolio-bom-responsive';
+        style.textContent='@media(max-width:699px){#bomtable{min-width:640px}#bomdiv{overflow:auto}}';
+        doc.head.appendChild(style);
+      }
+      const mobile=iframe!.clientWidth<700;
+      if(mobile!==lastMobile){
+        if(mobile)doc.getElementById('tb-btn')?.click();
+        else if(lastMobile===true)doc.getElementById('lr-btn')?.click();
+        lastMobile=mobile;
+      }
+    }
+    iframe.addEventListener('load',adapt);
+    const observer=new ResizeObserver(adapt);
+    observer.observe(iframe);
+    return ()=>{iframe.removeEventListener('load',adapt);observer.disconnect();};
+  },[bom.src]);
+  const [fullscreenError,setFullscreenError]=useState(false);
+  async function fullscreen(){
+    try{await viewer.current?.requestFullscreen();setFullscreenError(false);}catch{setFullscreenError(true);}
+  }
+  return <div className="interactive-bom" ref={viewer}>
+    <div className="interactive-bom-toolbar"><div><span>INTERACTIVE BOM</span><strong>{bom.title}</strong></div><div className="interactive-bom-actions"><button type="button" onClick={fullscreen}>Fullscreen ↗</button><a href={bom.src} target="_blank" rel="noopener noreferrer">Open separately ↗</a></div></div>
+    {fullscreenError&&<p className="interactive-bom-help" role="status">Fullscreen is unavailable. Use Open separately for a larger view.</p>}
+    <iframe ref={frame} src={bom.src} title={bom.title} loading="lazy" sandbox="allow-scripts allow-same-origin allow-downloads" allow="fullscreen" allowFullScreen/>
+  </div>;
+}
+
 function DemoNote({children}:{children:React.ReactNode}) {
   return <div className="board-demo-note"><span>Demo</span><p>{children}</p></div>;
 }
@@ -59,6 +98,6 @@ export function FeatureTabs({ board }: { board: Board }) {
     {title==='Block Diagram'&&(diagram?<figure className="board-diagram"><Image src={diagram.src} width={1000} height={600} alt={diagram.alt}/><figcaption>{diagram.alt}</figcaption></figure>:<DemoBlockDiagram board={board}/>)}
     {title==='Stackup'&&<>{!board.stackup?.length&&<DemoNote>Example 4-layer stackup for layout preview. Actual layer count, materials and thickness are not specified yet.</DemoNote>}<div className="stackup">{layers.map(layer=><div key={layer.layer}><span><b>{layer.layer}</b> · {layer.type}</span><span>{[layer.material,'thicknessMm' in layer&&layer.thicknessMm!==undefined?String(layer.thicknessMm)+' mm':undefined].filter(Boolean).join(' / ')}</span></div>)}</div></>}
     {title==='Preview'&&<div className="board-preview"><BoardGallery board={board}/>{!!board.files?.length&&<div className="board-file-links">{board.files.map(file=><a key={file.href} className="button" href={file.href} download>{file.label} ↓</a>)}</div>}</div>}
-    {title==='BOM'&&<>{!board.components?.length&&<DemoNote>Sample parts for layout preview. These are not the project’s actual components or purchasing quantities.</DemoNote>}<BomTable components={board.components?.length?board.components:demoBom}/></>}
+    {title==='BOM'&&(board.interactiveBom?<InteractiveBom bom={board.interactiveBom}/>:<>{!board.components?.length&&<DemoNote>Sample parts for layout preview. These are not the project’s actual components or purchasing quantities.</DemoNote>}<BomTable components={board.components?.length?board.components:demoBom}/></>)}
   </div></section>;
 }

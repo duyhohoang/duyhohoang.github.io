@@ -3,7 +3,8 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 const root = path.resolve('out');
 function walk(directory) { return fs.readdirSync(directory,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?walk(path.join(directory,entry.name)):[path.join(directory,entry.name)]); }
-const pages=walk(root).filter(file=>file.endsWith('.html'));
+// Standalone HTML tools under assets keep their own document structure.
+const pages=walk(root).filter(file=>file.endsWith('.html')&&!path.relative(root,file).split(path.sep).includes('assets'));
 for(const file of walk(root).filter(file=>file.endsWith('.txt'))){
   const parts=path.relative(root,file).split(path.sep),index=parts.findIndex(part=>part.startsWith('__next.'));
   if(index>=0&&index<parts.length-1)assert(fs.existsSync(path.join(root,...parts.slice(0,index),parts.slice(index).join('.'))),'Missing flat prefetch alias for '+file);
@@ -15,7 +16,7 @@ for(const file of pages){
   assert.equal((html.match(/<main(?:\s|>)/g)||[]).length,1,file+' main landmark');
   assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1,file+' primary heading');
   assert(!html.includes('contact@antmicro.com'),file+' reference contact');
-  for(const match of html.matchAll(/<(?:a|img|script|link)\b[^>]*\b(?:href|src)="([^"]+)"[^>]*>/g)){
+  for(const match of html.matchAll(/<(?:a|img|script|link|iframe)\b[^>]*\b(?:href|src)="([^"]+)"[^>]*>/g)){
     const value=match[1].replaceAll('&amp;','&');
     assert(value!=='#','Fake CTA');
     if(value.startsWith('#')){assert(html.includes(`id="${value.slice(1)}"`),'Missing anchor '+value);continue;}

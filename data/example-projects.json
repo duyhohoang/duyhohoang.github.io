@@ -23,7 +23,11 @@
       "Personal hardware project",
       "PCB design and component integration",
       "Original project image supplied by Hoàng Duy"
-    ]
+    ],
+    "interactiveBom": {
+      "src": "/assets/projects/personal/esp32-devkit/ibom.html",
+      "title": "ESP32 Devkit · MP1 Interactive BOM"
+    }
   },
   {
     "slug": "iot-board",
