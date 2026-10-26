@@ -156,14 +156,14 @@
   },
   {
     "slug": "iot-board",
-    "name": "IoT Board",
+    "name": "Industrial Pump Controller & Data Logger",
     "status": "design",
     "category": "industrial-iot",
     "published": true,
     "featured": true,
     "personal": true,
-    "summary": "My personal IoT hardware and PCB design project.",
-    "description": "My personal IoT hardware and PCB design project. The supplied project image documents my board design. Detailed specifications and measured test results are not published here.",
+    "summary": "STM32F407-based controller for industrial pump monitoring, VFD control and data logging.",
+    "description": "An STM32F407-based controller for industrial pump monitoring, VFD control and data logging. The board integrates multi-rail power supplies, RTC, EEPROM, SD card, relays and a buzzer, alongside CAN Bus, RS485, RS232, Ethernet and SIM7600/GNSS connectivity.",
     "disclaimer": "Personal project by Hoàng Duy; test results and manufacturing status are not published",
     "scope": [
       "IoT Hardware",
@@ -171,13 +171,19 @@
       "System Integration"
     ],
     "techStack": [
-      "PCB Design",
-      "Embedded Hardware"
+      "STM32F407",
+      "CAN Bus",
+      "RS485",
+      "RS232",
+      "Ethernet",
+      "SIM7600 / GNSS",
+      "PCB Design"
     ],
     "features": [
-      "Personal hardware project",
-      "PCB design and component integration",
-      "Original project image supplied by Hoàng Duy"
+      "Industrial pump monitoring, VFD control and data logging",
+      "12V, 5V, 4V, 3.3V and 1.8V power supplies",
+      "RTC, EEPROM, SD card, relays and buzzer",
+      "2× CAN Bus, RS485, 2× RS232, Ethernet and SIM7600/GNSS"
     ]
   },
   {
