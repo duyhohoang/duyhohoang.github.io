@@ -162,8 +162,8 @@
     "published": true,
     "featured": true,
     "personal": true,
-    "summary": "STM32F407-based controller for industrial pump monitoring, VFD control and data logging.",
-    "description": "An STM32F407-based controller for industrial pump monitoring, VFD control and data logging. The board integrates multi-rail power supplies, RTC, EEPROM, SD card, relays and a buzzer, alongside CAN Bus, RS485, RS232, Ethernet and SIM7600/GNSS connectivity.",
+    "summary": "STM32F407 industrial pump controller hardware with an RS485 interface intended for Modbus RTU VFD control. Schematic and PCB layout completed.",
+    "description": "STM32F407-based hardware for industrial pump monitoring and data logging, with an RS485 interface intended for Modbus RTU-based VFD control. The design includes 12V, 5V, 4V, 3.3V and 1.8V supplies, RTC, EEPROM, SD card, relay outputs, buzzer, CAN Bus, RS232, Ethernet and SIM7600 LTE/GNSS. Schematic and PCB layout were completed in Altium Designer; firmware, hardware testing and deployment completion are not documented.",
     "disclaimer": "Personal project by Hoàng Duy; test results and manufacturing status are not published",
     "scope": [
       "IoT Hardware",
@@ -177,10 +177,10 @@
       "RS232",
       "Ethernet",
       "SIM7600 / GNSS",
-      "PCB Design"
+      "Altium Designer"
     ],
     "features": [
-      "Industrial pump monitoring, VFD control and data logging",
+      "Industrial pump monitoring and data logging hardware; RS485 intended for Modbus RTU VFD control",
       "12V, 5V, 4V, 3.3V and 1.8V power supplies",
       "RTC, EEPROM, SD card, relays and buzzer",
       "2× CAN Bus, RS485, 2× RS232, Ethernet and SIM7600/GNSS"

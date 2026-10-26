@@ -30,7 +30,7 @@ test('resume-aligned introduction, projects, education and PDF download',async({
   await page.locator('#about').scrollIntoViewIfNeeded();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  }
  await page.goto('/projects/iot-board/');
- await expect(page.locator('.detail-summary h1')).toHaveText('Industrial Pump Controller & Data Logger');
+ await expect(page.locator('.detail-summary h1')).toHaveText('STM32F407-Based Industrial Pump Controller & Data Logger');
  const boardImage=page.locator('.gallery img');await boardImage.evaluate(image=>(image as HTMLImageElement).decode());
  const imageResponse=await request.get('/assets/projects/personal/iot-board.webp');expect(imageResponse.ok()).toBe(true);
  expect(hash(await imageResponse.body())).toBe(hash(readFileSync('public/assets/projects/personal/iot-board.webp')));

@@ -4,6 +4,10 @@ import dynamic from 'next/dynamic';
 import { useEffect, useId, useRef, useState, type KeyboardEvent } from 'react';
 import { label, type Board } from '@/lib/projects';
 import { ESP32BlockDiagram, ESP32Deployment } from './ESP32Architecture';
+import {getCaseStudy} from '@/data/case-studies';
+import {CaseStudyDocumentation, TechnicalMetadata} from './technical/CaseStudyDocumentation';
+import {BoardStackup} from './technical/BoardStackup';
+import {DocumentationPending} from './technical/TechnicalGallery';
 
 const PCBViewer=dynamic(()=>import('./pcb-viewer/PCBViewer'),{ssr:false,loading:()=> <p className="pcb-viewer-notice" role="status">Loading PCB viewer…</p>});
 
@@ -63,18 +67,19 @@ function DemoNote({children}:{children:React.ReactNode}) {
 }
 
 export function BoardProjectDetails({board}:{board:Board}) {
+  const study=getCaseStudy(board.slug);
   const [revision,setRevision]=useState('main');
   const isDemo=revision!=='main';
   const status=isDemo?(revision==='rev-1-1'?'prototype':'design'):board.status;
   return <>
     <div className="board-toolbar">
       <label className="board-revision">Revision<select value={revision} onChange={event=>setRevision(event.target.value)} aria-label="Select board revision"><option value="main">Main · Current</option><option value="rev-1-1">Rev 1.1 · Demo</option><option value="rev-1-0">Rev 1.0 · Demo</option></select></label>
-      <div className="board-state"><span>Board status</span><strong data-status={status}><i aria-hidden="true"/>{label(status)}{isDemo&&<small>Demo</small>}</strong></div>
+      <div className="board-state"><span>Board status</span><strong data-status={status}><i aria-hidden="true"/>{!isDemo&&study?study.status:label(status)}{isDemo&&<small>Demo</small>}</strong></div>
     </div>
     {isDemo&&<p className="revision-demo-message" role="status">Demo revision metadata. The board image and documentation below are shared previews.</p>}
-    <div className="detail-hero"><div className="detail-summary"><h1>{board.name}</h1><section className="board-overview" aria-labelledby="board-overview-title"><h2 id="board-overview-title">Overview</h2>{board.overview?.length?board.overview.map((paragraph,index)=><p key={index}>{paragraph.title&&<strong>{paragraph.title}: </strong>}{paragraph.text}</p>):<p>{board.description}</p>}</section><div className="notice">{board.disclaimer}</div>{board.specs.length>0&&<dl className="specs">{board.specs.map(spec=><div key={spec.label}><dt>{spec.label}</dt><dd>{spec.value}</dd></div>)}</dl>}{board.repoUrl&&<a className="button" href={board.repoUrl} target="_blank" rel="noopener noreferrer">Project repository ↗</a>}</div><BoardGallery board={board}/></div>
-    <FeatureTabs board={board}/>
-    {board.slug==='esp32-devkit'&&<ESP32Deployment/>}
+    <div className="detail-hero"><div className="detail-summary"><h1>{study?.title||board.name}</h1><section className="board-overview" aria-labelledby="board-overview-title"><h2 id="board-overview-title">Overview</h2>{study&&<span className="technical-overview-index">A / PROJECT OVERVIEW</span>}{board.overview?.length?board.overview.map((paragraph,index)=><p key={index}>{paragraph.title&&<strong>{paragraph.title}: </strong>}{paragraph.text}</p>):<p>{board.description}</p>}</section>{study&&<TechnicalMetadata study={study}/>}<div className="notice">{board.disclaimer}</div>{board.specs.length>0&&<dl className="specs">{board.specs.map(spec=><div key={spec.label}><dt>{spec.label}</dt><dd>{spec.value}</dd></div>)}</dl>}{board.repoUrl&&<a className="button" href={board.repoUrl} target="_blank" rel="noopener noreferrer">Project repository ↗</a>}</div><BoardGallery board={board}/></div>
+    {study?<CaseStudyDocumentation board={board} study={study}><FeatureTabs board={board}/></CaseStudyDocumentation>:<FeatureTabs board={board}/>}
+    {board.slug==='esp32-devkit'&&<><p className="technical-caption">Deployment concept from the supplied project description; firmware completion and field validation are not documented.</p><ESP32Deployment/></>}
   </>;
 }
 
@@ -102,10 +107,10 @@ export function FeatureTabs({ board }: { board: Board }) {
   return <section className="project-documentation" aria-label="Project documentation"><div className="tablist" role="tablist" aria-label="Engineering sections">{tabs.map((tab,index)=><button ref={element=>{buttons.current[index]=element;}} key={tab} role="tab" id={id+'-tab-'+index} aria-controls={id+'-panel-'+index} aria-selected={active===index} tabIndex={active===index?0:-1} onClick={()=>selectTab(index)} onKeyDown={event=>keyboard(event,index)}>{tab}</button>)}</div><div className="tabpanel" role="tabpanel" tabIndex={0} id={id+'-panel-'+active} aria-labelledby={id+'-tab-'+active}>
     <h2>{title}</h2>
     {title==='Key Features'&&(board.featureCards?.length?<div className="board-feature-cards">{board.featureCards.map(feature=><article key={feature.title}><span className="feature-icon" aria-hidden="true"><FeatureIcon kind={feature.icon}/></span><div><h3>{feature.title}</h3><p>{feature.text}</p></div></article>)}</div>:<ul className="board-feature-list">{board.features.map(feature=><li key={feature}>{feature}</li>)}</ul>)}
-    {title==='Block Diagram'&&(board.slug==='esp32-devkit'?<ESP32BlockDiagram/>:diagram?<figure className="board-diagram"><Image src={diagram.src} width={1000} height={600} alt={diagram.alt}/><figcaption>{diagram.alt}</figcaption></figure>:<DemoBlockDiagram board={board}/>)}
-    {title==='Stackup'&&<>{board.stackupDetails&&<><div className="stackup-summary"><span><strong>{board.stackupDetails.copperLayers}</strong> copper layers</span><span><strong>{board.stackupDetails.totalThicknessMm} mm</strong> total thickness</span><span>Impedance control: <strong>{board.stackupDetails.impedanceControlled?'enabled in KiCad':'disabled'}</strong></span></div>{board.stackupDetails.note&&<p className="stackup-source-note">{board.stackupDetails.note}</p>}<div className="table-scroll stackup-table"><table><caption className="sr-only">{board.name} PCB stackup, from top to bottom</caption><thead><tr>{['Layer','Type','Material','Thickness','Epsilon R','Loss Tan'].map(column=><th scope="col" key={column}>{column}</th>)}</tr></thead><tbody>{board.stackup?.map(layer=><tr key={layer.layer} data-kind={layer.type.toLowerCase()}><th scope="row">{layer.layer}</th><td>{layer.type}</td><td>{layer.material||'Not specified'}</td><td>{layer.thicknessMm!==undefined?layer.thicknessMm+' mm':'—'}</td><td>{layer.epsilonR??'—'}</td><td>{layer.lossTan??'—'}</td></tr>)}</tbody></table></div></>}{!board.stackup?.length&&<DemoNote>Example 4-layer stackup for layout preview. Actual layer count, materials and thickness are not specified yet.</DemoNote>}{!board.stackupDetails&&<div className="stackup">{layers.map(layer=><div key={layer.layer}><span><b>{layer.layer}</b> · {layer.type}</span><span>{[layer.material,'thicknessMm' in layer&&layer.thicknessMm!==undefined?String(layer.thicknessMm)+' mm':undefined].filter(Boolean).join(' / ')}</span></div>)}</div>}</>}
+    {title==='Block Diagram'&&(board.slug==='esp32-devkit'?<ESP32BlockDiagram/>:diagram?<figure className="board-diagram"><Image src={diagram.src} width={1000} height={600} alt={diagram.alt}/><figcaption>{diagram.alt}</figcaption></figure>:getCaseStudy(board.slug)?<DocumentationPending>A verified block diagram has not been supplied for this project.</DocumentationPending>:<DemoBlockDiagram board={board}/>)}
+    {title==='Stackup'&&(board.stackup?.length||getCaseStudy(board.slug)?<BoardStackup board={board}/>:<><DemoNote>Example 4-layer stackup for layout preview. Actual layer count, materials and thickness are not specified yet.</DemoNote><div className="stackup">{layers.map(layer=><div key={layer.layer}><span><b>{layer.layer}</b> · {layer.type}</span><span>{layer.material}</span></div>)}</div></>)}
     {(title==='Preview'||previewVisited)&&<div className="pcb-preview-panel" hidden={title!=='Preview'}>{board.pcbSource?<PCBViewer source={board.pcbSource} active={title==='Preview'}/>:<div className="pcb-source-missing"><h3>PCB source not available yet</h3><p>A KiCad PCB file has not been supplied for this project.</p></div>}{!!board.files?.length&&<div className="board-file-links">{board.files.map(file=><a key={file.href} className="button" href={file.href} download>{file.label} ↓</a>)}</div>}</div>}
-    {title==='BOM'&&(board.interactiveBom?<InteractiveBom bom={board.interactiveBom}/>:<>{!board.components?.length&&<DemoNote>Sample parts for layout preview. These are not the project’s actual components or purchasing quantities.</DemoNote>}<BomTable components={board.components?.length?board.components:demoBom}/></>)}
+    {title==='BOM'&&(board.interactiveBom?<InteractiveBom bom={board.interactiveBom}/>:getCaseStudy(board.slug)?<DocumentationPending>An Interactive BOM has not been supplied for this project.</DocumentationPending>:<>{!board.components?.length&&<DemoNote>Sample parts for layout preview. These are not the project’s actual components or purchasing quantities.</DemoNote>}<BomTable components={board.components?.length?board.components:demoBom}/></>)}
   </div></section>;
 }
 

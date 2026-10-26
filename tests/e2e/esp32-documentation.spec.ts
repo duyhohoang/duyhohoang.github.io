@@ -14,9 +14,9 @@ test('ESP32 documentation matches supplied content and remains responsive',async
  await expect(page.getByRole('img',{name:'ESP32 Devkit system block diagram'})).toBeVisible();
  await expect(page.locator('.esp32-block-diagram')).toContainText('RS485');
  await page.getByRole('tab',{name:'Stackup',exact:true}).click();
- await expect(page.locator('.stackup-table tbody tr')).toHaveCount(9);
- await expect(page.locator('.stackup-table')).toContainText('1.501 mm');
- await expect(page.locator('.stackup-summary')).toContainText('1.60148 mm');
+ await expect(page.locator('.project-documentation .stackup-table tbody tr')).toHaveCount(9);
+ await expect(page.locator('.project-documentation .stackup-table')).toContainText('1.501 mm');
+ await expect(page.locator('.project-documentation .stackup-summary')).toContainText('1.60148 mm');
  await expect(page.locator('.board-demo-note')).toHaveCount(0);
  await page.screenshot({path:'.wrangler/pcb-viewer-qa/stackup-desktop.png',fullPage:true});
  await page.setViewportSize({width:390,height:844});
