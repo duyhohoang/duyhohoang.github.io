@@ -5,7 +5,7 @@ test('PLC documentation, real four-layer PCB and interactive BOM',async({page})=
  const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message));
  await page.goto('/projects/esp32-plc/');
  await expect(page.locator('.board-overview')).toContainText('ESP32-S3');
- await expect(page.locator('.board-feature-cards article')).toHaveCount(3);
+ await expect(page.locator('.board-feature-cards article')).toHaveCount(6);
  await page.getByRole('tab',{name:'Stackup',exact:true}).click();
  await expect(page.locator('.stackup-table tbody tr')).toHaveCount(13);
  await expect(page.locator('.stackup-table')).toContainText('1.065 mm');
@@ -21,4 +21,14 @@ test('PLC documentation, real four-layer PCB and interactive BOM',async({page})=
  await page.getByRole('tab',{name:'Preview',exact:true}).click();await expect(page.locator('kc-board-viewer canvas')).toBeVisible();
  expect(errors).toEqual([]);
  console.log('PLC model',JSON.stringify(model));
+});
+
+test('six-fan controller documents supplied specifications on desktop and mobile',async({page})=>{
+ await page.goto('/projects/6-fan-control/');
+ await expect(page.locator('.detail-summary h1')).toHaveText('6 Fan Controller');
+ await expect(page.locator('.board-overview')).toContainText('STM32F070');
+ await expect(page.locator('.board-feature-cards article')).toHaveCount(20);
+ for(const text of ['128 steps','up to 4A','16 DS18B20','32.768kHz','5–18V','2.5-inch'])await expect(page.locator('.board-feature-cards')).toContainText(text);
+ await page.setViewportSize({width:390,height:844});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });

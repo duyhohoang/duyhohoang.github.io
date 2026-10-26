@@ -233,34 +233,59 @@
       "Digital I/O",
       "4–20 mA",
       "Modbus RS485",
+      "SD Card",
+      "RTC",
+      "Wi-Fi",
+      "Bluetooth",
       "KiCad"
     ],
     "features": [
       "Digital I/O",
-      "Analog 4–20 mA interface",
-      "Modbus RS485 communication"
+      "Analog 4–20 mA Interface",
+      "Modbus RS485 Communication",
+      "SD Card Storage",
+      "RTC (Real-Time Clock)",
+      "Wi-Fi and Bluetooth"
     ],
     "overview": [
       {
-        "title": "ESP32-S3 Based PLC System",
         "text": "This project presents a Programmable Logic Controller (PLC) built on the ESP32-S3 microcontroller. The system is designed for industrial automation and IoT applications, combining powerful processing capabilities with versatile connectivity options."
+      },
+      {
+        "title": "Applications",
+        "text": "Industrial process control, data acquisition systems, smart agriculture, environmental monitoring, and custom automation projects."
       }
     ],
     "featureCards": [
       {
         "title": "Digital I/O",
-        "text": "Multiple digital inputs and outputs for controlling relays, sensors, and actuators.",
+        "text": "Supports multiple digital inputs and outputs for controlling relays, sensors, and actuators.",
         "icon": "relay"
       },
       {
-        "title": "Analog 4–20 mA interface",
+        "title": "Analog 4–20 mA Interface",
         "text": "Compatible with standard industrial sensors and transmitters.",
         "icon": "sensor"
       },
       {
-        "title": "Modbus RS485 communication",
-        "text": "Reliable data exchange with industrial devices and other PLCs.",
+        "title": "Modbus RS485 Communication",
+        "text": "Enables reliable data exchange with industrial devices and other PLCs.",
         "icon": "radio"
+      },
+      {
+        "title": "SD Card Storage",
+        "text": "Provides local data logging and system configuration storage.",
+        "icon": "storage"
+      },
+      {
+        "title": "RTC (Real-Time Clock)",
+        "text": "Maintains accurate timing for scheduling and event recording, even during power loss.",
+        "icon": "clock"
+      },
+      {
+        "title": "Wi-Fi and Bluetooth",
+        "text": "Built-in wireless connectivity for IoT integration and remote monitoring.",
+        "icon": "wifi"
       }
     ],
     "stackupDetails": {
@@ -360,28 +385,161 @@
   },
   {
     "slug": "6-fan-control",
-    "name": "6 Fan Control",
+    "name": "6 Fan Controller",
     "status": "design",
     "category": "power",
     "published": true,
     "featured": false,
     "personal": true,
-    "summary": "My personal six-fan control board and PCB design.",
-    "description": "My personal six-fan control board and PCB design. The supplied project image documents my board design. Detailed specifications and measured test results are not published here.",
-    "disclaimer": "Personal project by Hoàng Duy; test results and manufacturing status are not published",
+    "summary": "STM32F070-based intelligent PC fan controller with six PWM channels, four adjustable-voltage channels and USB control.",
+    "description": "An intelligent controller for up to six PC fans, based on the STM32F070 microcontroller. All six fans support PWM control, while four channels also provide supply-voltage adjustment for three-wire or two-wire fans.",
+    "disclaimer": "Personal project by Hoàng Duy. Specifications describe the design; manufacturing and qualification results are not published.",
     "scope": [
       "6 Fan Outputs",
       "Control Hardware",
       "PCB Layout"
     ],
     "techStack": [
-      "PCB Design",
-      "Embedded Hardware"
+      "STM32F070",
+      "PWM",
+      "DC-DC",
+      "P-channel MOSFET",
+      "DS18B20",
+      "USB",
+      "IPS 240×240",
+      "Windows"
     ],
     "features": [
-      "Personal hardware project",
-      "PCB design and component integration",
-      "Original project image supplied by Hoàng Duy"
+      "6 PWM-controlled fans",
+      "4 adjustable-voltage channels",
+      "128 linear voltage steps",
+      "P-channel MOSFET power stages",
+      "Full DC-DC shutdown",
+      "Up to 4A per DC-DC output",
+      "Continued operation on MCU failure",
+      "Voltage monitoring",
+      "Up to 16 DS18B20 sensors",
+      "On-board temperature sensing",
+      "PC temperature monitoring",
+      "Indicators & alarm buzzer",
+      "240×240 IPS display",
+      "Accurate fan speed measurement",
+      "USB connection",
+      "Windows control software",
+      "Flexible power options",
+      "Automatic fan detection",
+      "USB firmware updates",
+      "2.5-inch HDD mounting"
+    ],
+    "overview": [
+      {
+        "text": "An intelligent controller for up to six PC fans, based on the STM32F070 microcontroller. All six fans support PWM control, while four channels also provide supply-voltage adjustment for three-wire or two-wire fans."
+      },
+      {
+        "text": "The system combines configurable DC-DC power stages, temperature monitoring, fan speed measurement, a 240×240 IPS display and USB connectivity. Control software initially targets Windows, with the exchange protocol and other sources planned for release."
+      }
+    ],
+    "featureCards": [
+      {
+        "icon": "relay",
+        "title": "6 PWM-controlled fans",
+        "text": "All six fans are controlled by PWM."
+      },
+      {
+        "icon": "power",
+        "title": "4 adjustable-voltage channels",
+        "text": "Four channels support supply-voltage adjustment for three-wire or two-wire fans."
+      },
+      {
+        "icon": "power",
+        "title": "128 linear voltage steps",
+        "text": "128 steps of smooth, linear voltage adjustment."
+      },
+      {
+        "icon": "power",
+        "title": "P-channel MOSFET power stages",
+        "text": "P-channel MOSFETs in the DC-DC converters allow almost lossless power transmission to the fans at 100% duty cycle."
+      },
+      {
+        "icon": "power",
+        "title": "Full DC-DC shutdown",
+        "text": "Each DC-DC converter can be fully shut down."
+      },
+      {
+        "icon": "power",
+        "title": "Up to 4A per DC-DC output",
+        "text": "DC-DC output currents up to 4A, with more than 15W per channel."
+      },
+      {
+        "icon": "relay",
+        "title": "Continued operation on MCU failure",
+        "text": "Designed for continued operation even when the microcontrollers fail."
+      },
+      {
+        "icon": "sensor",
+        "title": "Voltage monitoring",
+        "text": "Sensors monitor both the DC-DC supply voltage and output voltage."
+      },
+      {
+        "icon": "sensor",
+        "title": "Up to 16 DS18B20 sensors",
+        "text": "Two buses for digital temperature sensors, supporting up to 16 DS18B20 sensors."
+      },
+      {
+        "icon": "sensor",
+        "title": "On-board temperature sensing",
+        "text": "Temperature sensors are built into the digital potentiometers and microcontroller."
+      },
+      {
+        "icon": "sensor",
+        "title": "PC temperature monitoring",
+        "text": "Control software tracks the PC’s built-in motherboard, CPU, GPU and HDD temperature sensors."
+      },
+      {
+        "icon": "relay",
+        "title": "Indicators & alarm buzzer",
+        "text": "Power and error indicators plus an alarm buzzer."
+      },
+      {
+        "icon": "display",
+        "title": "240×240 IPS display",
+        "text": "An IPS display with 240×240 resolution provides a local interface."
+      },
+      {
+        "icon": "clock",
+        "title": "Accurate fan speed measurement",
+        "text": "A 32.768kHz crystal supports accurate fan speed measurement."
+      },
+      {
+        "icon": "radio",
+        "title": "USB connection",
+        "text": "USB connectivity between the fan controller and PC."
+      },
+      {
+        "icon": "display",
+        "title": "Windows control software",
+        "text": "Control software initially targets Windows. The exchange protocol and other sources are planned for release."
+      },
+      {
+        "icon": "power",
+        "title": "Flexible power options",
+        "text": "Molex (12V + 5V), 12V power + USB, Molex + 12V power, or a single 5–18V power supply."
+      },
+      {
+        "icon": "relay",
+        "title": "Automatic fan detection",
+        "text": "Automatic configuration and detection of connected fans."
+      },
+      {
+        "icon": "storage",
+        "title": "USB firmware updates",
+        "text": "Firmware can be updated via USB."
+      },
+      {
+        "icon": "relay",
+        "title": "2.5-inch HDD mounting",
+        "text": "Mounting holes are compatible with a 2.5-inch HDD holder."
+      }
     ]
   }
 ]
