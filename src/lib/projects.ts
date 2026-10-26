@@ -11,7 +11,7 @@ export const boardSchema = z.object({
   specs: z.array(z.object({ label: z.string(), value: z.string() })), features: z.array(z.string()),
   overview: z.array(z.object({title:z.string().optional(),text:z.string()})).optional(),
   featureCards: z.array(z.object({title:z.string(),text:z.string(),icon:z.enum(['wifi','radio','sensor','display','clock','relay','storage','power'])})).optional(),
-  stackupDetails: z.object({copperLayers:z.number(),impedanceControlled:z.boolean(),totalThicknessMm:z.number()}).optional(),
+  stackupDetails: z.object({copperLayers:z.number(),impedanceControlled:z.boolean(),totalThicknessMm:z.number(),note:z.string().optional()}).optional(),
   components: z.array(z.object({ designator: z.string(), quantity: z.number().int().positive(), manufacturer: z.string().optional(), mpn: z.string().optional(), description: z.string() })).optional(),
   stackup: z.array(z.object({ layer: z.string(), type: z.string(), thicknessMm: z.number().positive().optional(), material: z.string().optional(),epsilonR:z.number().optional(),lossTan:z.number().optional() })).optional(),
   files: z.array(z.object({ label: z.string(), href: localAsset, kind: z.enum(['pdf', 'zip', 'step', 'gerber', 'other']) })).optional(),

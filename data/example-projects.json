@@ -214,23 +214,143 @@
     "published": true,
     "featured": false,
     "personal": true,
-    "summary": "My personal ESP32-based PLC hardware design.",
-    "description": "My personal ESP32-based PLC hardware design. The supplied project image documents my board design. Detailed specifications and measured test results are not published here.",
-    "disclaimer": "Personal project by Hoàng Duy; test results and manufacturing status are not published",
+    "summary": "ESP32-S3 based PLC for industrial automation and IoT, with digital I/O, 4–20 mA analog interfaces and Modbus RS485.",
+    "description": "This project presents a Programmable Logic Controller (PLC) built on the ESP32-S3 microcontroller. The system is designed for industrial automation and IoT applications, combining powerful processing capabilities with versatile connectivity options.",
+    "disclaimer": "Personal project by Hoàng Duy. Specifications describe the design; manufacturing and qualification results are not published.",
     "scope": [
       "ESP32",
       "PLC Hardware",
       "PCB Layout"
     ],
     "techStack": [
-      "ESP32",
-      "PCB Design"
+      "ESP32-S3",
+      "Digital I/O",
+      "4–20 mA",
+      "Modbus RS485",
+      "KiCad"
     ],
     "features": [
-      "Personal hardware project",
-      "PCB design and component integration",
-      "Original project image supplied by Hoàng Duy"
-    ]
+      "Digital I/O",
+      "Analog 4–20 mA interface",
+      "Modbus RS485 communication"
+    ],
+    "overview": [
+      {
+        "title": "ESP32-S3 Based PLC System",
+        "text": "This project presents a Programmable Logic Controller (PLC) built on the ESP32-S3 microcontroller. The system is designed for industrial automation and IoT applications, combining powerful processing capabilities with versatile connectivity options."
+      }
+    ],
+    "featureCards": [
+      {
+        "title": "Digital I/O",
+        "text": "Multiple digital inputs and outputs for controlling relays, sensors, and actuators.",
+        "icon": "relay"
+      },
+      {
+        "title": "Analog 4–20 mA interface",
+        "text": "Compatible with standard industrial sensors and transmitters.",
+        "icon": "sensor"
+      },
+      {
+        "title": "Modbus RS485 communication",
+        "text": "Reliable data exchange with industrial devices and other PLCs.",
+        "icon": "radio"
+      }
+    ],
+    "stackupDetails": {
+      "copperLayers": 4,
+      "impedanceControlled": true,
+      "totalThicknessMm": 1.60148,
+      "note": "Stackup follows the supplied design screenshot. The PCB in Preview has four copper layers but retains older thickness metadata; the original file is preserved."
+    },
+    "stackup": [
+      {
+        "layer": "F.Silkscreen",
+        "type": "Top Silk Screen"
+      },
+      {
+        "layer": "F.Paste",
+        "type": "Top Solder Paste"
+      },
+      {
+        "layer": "F.Mask",
+        "type": "Top Solder Mask",
+        "thicknessMm": 0.01524,
+        "epsilonR": 3.3,
+        "lossTan": 0
+      },
+      {
+        "layer": "L1-SIG.Cu",
+        "type": "Copper",
+        "material": "Copper",
+        "thicknessMm": 0.035
+      },
+      {
+        "layer": "Dielectric 1",
+        "type": "PrePreg",
+        "material": "FR4",
+        "thicknessMm": 0.2028,
+        "epsilonR": 4.4,
+        "lossTan": 0.02
+      },
+      {
+        "layer": "L2-GND.Cu",
+        "type": "Copper",
+        "material": "Copper",
+        "thicknessMm": 0.0152
+      },
+      {
+        "layer": "Dielectric 2",
+        "type": "Core",
+        "material": "FR4",
+        "thicknessMm": 1.065,
+        "epsilonR": 4.43,
+        "lossTan": 0.02
+      },
+      {
+        "layer": "L3-PWR.Cu",
+        "type": "Copper",
+        "material": "Copper",
+        "thicknessMm": 0.0152
+      },
+      {
+        "layer": "Dielectric 3",
+        "type": "PrePreg",
+        "material": "FR4",
+        "thicknessMm": 0.2028,
+        "epsilonR": 4.4,
+        "lossTan": 0.02
+      },
+      {
+        "layer": "L4-SIG.Cu",
+        "type": "Copper",
+        "material": "Copper",
+        "thicknessMm": 0.035
+      },
+      {
+        "layer": "B.Mask",
+        "type": "Bottom Solder Mask",
+        "thicknessMm": 0.01524,
+        "epsilonR": 3.3,
+        "lossTan": 0
+      },
+      {
+        "layer": "B.Paste",
+        "type": "Bottom Solder Paste"
+      },
+      {
+        "layer": "B.Silkscreen",
+        "type": "Bottom Silk Screen"
+      }
+    ],
+    "interactiveBom": {
+      "src": "/assets/projects/personal/esp32-plc/ibom.html",
+      "title": "ESP32 PLC · Interactive BOM"
+    },
+    "pcbSource": {
+      "src": "/assets/projects/personal/esp32-plc/ESP32PLC.kicad_pcb",
+      "title": "ESP32 PLC · ESP32-S3"
+    }
   },
   {
     "slug": "6-fan-control",
