@@ -28,7 +28,7 @@
       "Wi-Fi & IoT-Cloud",
       "Local LoRa network",
       "I2C sensors · 3.3V & 5V",
-      "UART & HMI interface",
+      "UART sensor interface",
       "Battery-backed RTC",
       "2 ON/OFF relay channels",
       "microSD data logging",
@@ -72,8 +72,8 @@
       },
       {
         "icon": "display",
-        "title": "UART & HMI interface",
-        "text": "Dedicated 5V / Rx / Tx / GND connector for a serial HMI display or UART sensor."
+        "title": "UART sensor interface",
+        "text": "Dedicated 5V / Rx / Tx / GND connector for serial sensors and UART communication."
       },
       {
         "icon": "clock",
