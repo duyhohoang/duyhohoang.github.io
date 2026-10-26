@@ -15,7 +15,8 @@ export type KiCanvasController = {
   toggleLayers: () => void;
   dispose: () => void;
 };
-const SCRIPT_URL='/assets/vendor/kicanvas/kicanvas.js';
+const SCRIPT_PATH='/assets/vendor/kicanvas/kicanvas.js';
+const SCRIPT_URL=SCRIPT_PATH+'?v=20261025-exposed-tracks';
 let modulePromise: Promise<void>|undefined;
 
 function loadModule():Promise<void>{
@@ -70,7 +71,7 @@ export async function mountKiCanvas(host:HTMLElement,source:PCBSource,signal:Abo
       function cleanup(){window.clearInterval(interval);window.clearTimeout(timeout);embed.removeEventListener('kicanvas:load',check,true);embed.removeEventListener('kicanvas:error',error);window.removeEventListener('unhandledrejection',rejection);signal.removeEventListener('abort',cancel);}
       function check(){if(boardViewer(embed)){cleanup();resolve();}}
       function error(){cleanup();reject(new Error('KiCanvas could not render this PCB. Its format may not yet be supported.'));}
-      function rejection(event:PromiseRejectionEvent){const stack=event.reason instanceof Error?event.reason.stack||'':'';if(stack.includes(SCRIPT_URL)){event.preventDefault();error();}}
+      function rejection(event:PromiseRejectionEvent){const stack=event.reason instanceof Error?event.reason.stack||'':'';if(stack.includes(SCRIPT_PATH)){event.preventDefault();error();}}
       function cancel(){cleanup();reject(abortError());}
       embed.addEventListener('kicanvas:load',check,true);embed.addEventListener('kicanvas:error',error);
       window.addEventListener('unhandledrejection',rejection);signal.addEventListener('abort',cancel,{once:true});
