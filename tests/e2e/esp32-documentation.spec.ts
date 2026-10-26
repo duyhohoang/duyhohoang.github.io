@@ -1,0 +1,21 @@
+import {test,expect} from '@playwright/test';
+test('ESP32 documentation matches supplied content and remains responsive',async({page})=>{
+ await page.goto('/projects/esp32-devkit/');
+ await expect(page.locator('.board-overview p')).toHaveCount(3);
+ await expect(page.locator('.board-overview')).toContainText('220VAC');
+ await expect(page.locator('.board-feature-cards article')).toHaveCount(8);
+ await expect(page.locator('.board-feature-cards')).toContainText('2 ON/OFF relay channels');
+ await page.screenshot({path:'.wrangler/pcb-viewer-qa/documentation-desktop.png',fullPage:true});
+ await page.getByRole('tab',{name:'Stackup',exact:true}).click();
+ await expect(page.locator('.stackup-table tbody tr')).toHaveCount(9);
+ await expect(page.locator('.stackup-table')).toContainText('1.501 mm');
+ await expect(page.locator('.stackup-summary')).toContainText('1.60148 mm');
+ await expect(page.locator('.board-demo-note')).toHaveCount(0);
+ await page.screenshot({path:'.wrangler/pcb-viewer-qa/stackup-desktop.png',fullPage:true});
+ await page.setViewportSize({width:390,height:844});
+ await page.getByRole('tab',{name:'Key Features',exact:true}).click();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.screenshot({path:'.wrangler/pcb-viewer-qa/documentation-mobile.png',fullPage:true});
+ await page.getByRole('tab',{name:'Stackup',exact:true}).click();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});

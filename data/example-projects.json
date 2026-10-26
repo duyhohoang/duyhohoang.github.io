@@ -7,9 +7,9 @@
     "published": true,
     "featured": true,
     "personal": true,
-    "summary": "My personal ESP32 development-board design.",
-    "description": "My personal ESP32 development-board design. The supplied project image documents my board design. Detailed specifications and measured test results are not published here.",
-    "disclaimer": "Personal project by Hoàng Duy; test results and manufacturing status are not published",
+    "summary": "Integrated ESP32 IoT board with LoRa, RTC, microSD and two relay channels, powered by 220VAC.",
+    "description": "A single integrated board combining an ESP32 microcontroller (Wi-Fi/Bluetooth), a long-range LoRa module, a battery-backed Real-Time Clock (RTC), an I2C interface with selectable 3.3V or 5V levels, two relay channels for controlling AC/DC electrical devices, and a microSD card slot for data logging.",
+    "disclaimer": "Personal project by Hoàng Duy. Specifications describe the design; manufacturing and qualification results are not published.",
     "scope": [
       "ESP32",
       "Development Board",
@@ -17,12 +17,22 @@
     ],
     "techStack": [
       "ESP32",
-      "PCB Design"
+      "Wi-Fi / Bluetooth",
+      "LoRa",
+      "I2C",
+      "RTC",
+      "microSD",
+      "KiCad"
     ],
     "features": [
-      "Personal hardware project",
-      "PCB design and component integration",
-      "Original project image supplied by Hoàng Duy"
+      "Wi-Fi & IoT-Cloud",
+      "Local LoRa network",
+      "I2C sensors · 3.3V & 5V",
+      "UART & HMI interface",
+      "Battery-backed RTC",
+      "2 ON/OFF relay channels",
+      "microSD data logging",
+      "220VAC power input"
     ],
     "interactiveBom": {
       "src": "/assets/projects/personal/esp32-devkit/ibom.html",
@@ -31,7 +41,118 @@
     "pcbSource": {
       "src": "/assets/projects/personal/esp32-devkit/MP1.kicad_pcb",
       "title": "ESP32 Devkit · MP1"
-    }
+    },
+    "overview": [
+      {
+        "text": "A single integrated board combining an ESP32 microcontroller (Wi-Fi/Bluetooth), a long-range LoRa module, a battery-backed Real-Time Clock (RTC), an I2C interface with selectable 3.3V or 5V levels, two relay channels for controlling AC/DC electrical devices, and a microSD card slot for data logging."
+      },
+      {
+        "text": "The entire board operates from a single 220VAC power input, featuring a high-power switching power supply, surge and transient voltage protection, and fuse protection. The integrated supply supports laboratory and field applications without an additional external power module."
+      },
+      {
+        "title": "Key Design Highlight",
+        "text": "The I2C interface is accessible through a stacked USB-A connector, allowing users to connect I2C sensors using a standard USB cable without requiring specialized connectors. The I2C supply voltage can be selected between 3.3V and 5V using a jumper, enabling direct connection to 3.3V sensors (SHT31, BME280, SEN66, etc.) and compatible 5V sensors without an external level-shifting module. This connector carries I2C signals; it is not a standard USB data port."
+      }
+    ],
+    "featureCards": [
+      {
+        "icon": "wifi",
+        "title": "Wi-Fi & IoT-Cloud",
+        "text": "Dual-core ESP32 with 2.4GHz Wi-Fi and Bluetooth for sending sensor data to an IoT cloud platform."
+      },
+      {
+        "icon": "radio",
+        "title": "Local LoRa network",
+        "text": "Long-range LoRa communication. Reported lab-area testing: 1–1.5 km in an urban environment with trees and buildings; theoretical range: 10–15 km, depending on conditions."
+      },
+      {
+        "icon": "sensor",
+        "title": "I2C sensors · 3.3V & 5V",
+        "text": "VCC / SCL / SDA / GND on a stacked USB-A connector. Select the 3.3V or 5V supply with a jumper for compatible sensors."
+      },
+      {
+        "icon": "display",
+        "title": "UART & HMI interface",
+        "text": "Dedicated 5V / Rx / Tx / GND connector for a serial HMI display or UART sensor."
+      },
+      {
+        "icon": "clock",
+        "title": "Battery-backed RTC",
+        "text": "DS3231M real-time clock with a CR1220 backup battery to retain time when main power is lost."
+      },
+      {
+        "icon": "relay",
+        "title": "2 ON/OFF relay channels",
+        "text": "Omron G5NB-1A relays with optocoupler isolation for controlling AC/DC electrical devices."
+      },
+      {
+        "icon": "storage",
+        "title": "microSD data logging",
+        "text": "On-board microSD slot for logging and storing data, including while the network connection is unavailable."
+      },
+      {
+        "icon": "power",
+        "title": "220VAC power input",
+        "text": "Integrated switching supply with surge and transient suppression and fuse protection."
+      }
+    ],
+    "stackupDetails": {
+      "copperLayers": 2,
+      "impedanceControlled": true,
+      "totalThicknessMm": 1.60148
+    },
+    "stackup": [
+      {
+        "layer": "F.Silkscreen",
+        "type": "Top Silk Screen"
+      },
+      {
+        "layer": "F.Paste",
+        "type": "Top Solder Paste"
+      },
+      {
+        "layer": "F.Mask",
+        "type": "Top Solder Mask",
+        "thicknessMm": 0.01524,
+        "epsilonR": 3.3,
+        "lossTan": 0
+      },
+      {
+        "layer": "L1-SIG.Cu",
+        "type": "Copper",
+        "material": "Copper",
+        "thicknessMm": 0.035
+      },
+      {
+        "layer": "Dielectric 1",
+        "type": "Core",
+        "material": "FR4",
+        "thicknessMm": 1.501,
+        "epsilonR": 4.4,
+        "lossTan": 0.02
+      },
+      {
+        "layer": "L2-SIG.Cu",
+        "type": "Copper",
+        "material": "Copper",
+        "thicknessMm": 0.035
+      },
+      {
+        "layer": "B.Mask",
+        "type": "Bottom Solder Mask",
+        "thicknessMm": 0.01524,
+        "epsilonR": 3.3,
+        "lossTan": 0
+      },
+      {
+        "layer": "B.Paste",
+        "type": "Bottom Solder Paste"
+      },
+      {
+        "layer": "B.Silkscreen",
+        "type": "Bottom Silk Screen"
+      }
+    ]
   },
   {
     "slug": "iot-board",
