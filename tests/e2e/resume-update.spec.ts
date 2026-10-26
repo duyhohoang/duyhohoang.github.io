@@ -10,7 +10,7 @@ test('resume-aligned introduction, projects, education and PDF download',async({
  await expect(page.locator('.reference-home')).not.toContainText('ThingsBoard');
  await expect(page.locator('#about .ref-checks li')).toHaveCount(4);
  await page.locator('#about').scrollIntoViewIfNeeded();
- await expect(page.locator('#about')).toContainText('Embedded Hardware');
+ await expect(page.locator('#about')).toContainText(/Embedded\s*Hardware/);
  await page.screenshot({path:'.wrangler/pcb-viewer-qa/cv-about-desktop.png'});
  await page.getByRole('tab',{name:'Education',exact:true}).click();
  await expect(page.locator('#career-panel')).toContainText('Technology and Engineering');
