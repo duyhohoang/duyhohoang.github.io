@@ -2,7 +2,7 @@ import {contactConfig} from './contact';
 import {isContactEmail} from '@/lib/contact';
 export const site = {
   name: 'Hồ Hoàng Duy',
-  description: 'Hoang Duy — PCB Design Engineer focused on schematic design, 2–4 layer PCB layout and power electronics.',
+  description: 'Hoang Duy — Hardware Design Engineer focused on schematic design, 2–4 layer PCB layout, power supplies and industrial electronics.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
   email: isContactEmail(contactConfig.email) ? contactConfig.email : '',
   contactPlaceholder: 'Contact email coming soon',

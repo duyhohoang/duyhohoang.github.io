@@ -1,7 +1,7 @@
 import {ReferenceIcon} from './ReferenceIcon';
 const skills=[
- {icon:'⌕',title:'PCB Design & Tools',description:'Schematic design, component selection and 2–4 layer PCB layout.',tags:['KiCad','Altium','PCB Toolkit','Stackup','Routing','BOM']},
- {icon:'▱',title:'Power Supply Design',description:'AC/DC and DC/DC supply fundamentals and power conversion.',tags:['AC/DC','Buck','Boost','LDO','Power Rails']},
+ {icon:'⌕',title:'PCB Design & Tools',description:'Schematic design, component selection, 2–4 layer layout and design-for-manufacturing basics.',tags:['KiCad','Altium','PCB Toolkit','Stackup','Routing','BOM','EMI/EMC basics']},
+ {icon:'▱',title:'Power Supply Design',description:'Power conversion fundamentals and PCB design for multi-rail systems.',tags:['AC/DC','Buck','Boost','LDO','Power Rails','EMI/EMC basics']},
  {icon:'↔',title:'Communication Interfaces',description:'Industrial and board-level communication protocols.',tags:['I2C','SPI','UART','CAN Bus','RS232','RS485','Ethernet','USB']},
  {icon:'♧',title:'Testing & Design Review',description:'Hands-on electrical testing and troubleshooting.',tags:['Multimeter','Oscilloscope','Troubleshooting']},
  {icon:'◎',title:'IoT & Connectivity',description:'Wired and wireless connectivity used across board projects.',tags:['Ethernet','LoRa','Wi-Fi','4G','GNSS']},

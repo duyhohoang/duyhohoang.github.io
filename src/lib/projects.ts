@@ -7,7 +7,7 @@ const image = z.object({ src: localAsset, alt: z.string().min(10), type: z.enum(
 export const boardSchema = z.object({
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/), name: z.string().min(3), summary: z.string().min(10), description: z.string().min(20),
   category: z.enum(categories), status: z.enum(statuses), featured: z.boolean(), published: z.boolean(), disclaimer: z.string(),
-  heroImage: image, gallery: z.array(image).min(1), personal: z.boolean().default(false), scope: z.array(z.string()).default([]), techStack: z.array(z.string()).default([]),
+  heroImage: image, gallery: z.array(image).min(1), personal: z.boolean().default(false), scope: z.array(z.string()).default([]), result: z.array(z.string()).default(['Design completed']), techStack: z.array(z.string()).default([]),
   specs: z.array(z.object({ label: z.string(), value: z.string() })), features: z.array(z.string()),
   overview: z.array(z.object({title:z.string().optional(),text:z.string()})).optional(),
   featureCards: z.array(z.object({title:z.string(),text:z.string(),icon:z.enum(['wifi','radio','sensor','display','clock','relay','storage','power'])})).optional(),
