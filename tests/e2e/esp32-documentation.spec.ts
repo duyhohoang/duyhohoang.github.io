@@ -11,7 +11,7 @@ test('ESP32 documentation matches supplied content and remains responsive',async
  await expect(page.locator('.board-feature-cards')).toContainText('2 ON/OFF relay channels');
  await page.screenshot({path:'.wrangler/pcb-viewer-qa/documentation-desktop.png',fullPage:true});
  await page.getByRole('tab',{name:'Block Diagram',exact:true}).click();
- await expect(page.getByRole('img',{name:'ESP32 Devkit system block diagram'})).toBeVisible();
+ await expect(page.getByRole('img',{name:'IoT Node and Gateway system block diagram'})).toBeVisible();
  await expect(page.locator('.esp32-block-diagram')).toContainText('RS485');
  await page.getByRole('tab',{name:'Stackup',exact:true}).click();
  await expect(page.locator('.stackup-table tbody tr')).toHaveCount(9);

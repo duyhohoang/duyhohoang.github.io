@@ -27,5 +27,5 @@ test('personal CV, social links and integrated projects',async({page})=>{
  }
  await page.locator('#projects .project-card').first().click();
  await expect(page).toHaveURL(/\/projects\/esp32-devkit\//);
- await expect(page.getByRole('heading',{level:1})).toHaveText('ESP32 Devkit');
+ await expect(page.getByRole('heading',{level:1})).toHaveText('IoT Node and Gateway');
 });
