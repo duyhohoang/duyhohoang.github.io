@@ -200,3 +200,25 @@ html{color-scheme:dark}body{background:#111;color:#f5f5f5;font-family:'Reference
 .reference-home .ref-projects .project-card h3{font-size:19px}
 .reference-home .ref-projects .project-card p{font-size:14px}
 @media(max-width:799px){.reference-home .ref-hero h1{font-size:26px}}
+.tech-stack-heading{text-align:center;margin-bottom:30px}
+.tech-stack-heading>span{display:block;color:#f5f5f5;font-size:13px;font-weight:700;margin-bottom:14px}
+.tech-stack-heading h2{font-size:34px;font-weight:400}
+.tech-stack-heading a{display:inline-block;color:#ff0055;font-size:15px;margin-top:12px}
+.tech-stack-heading a b{font-size:18px}
+.reference-home .ref-tools{align-items:center;gap:34px;flex-wrap:wrap;margin:20px 0 52px}
+.tech-logo{display:flex;align-items:center;gap:9px;color:#ddd;font-size:16px;white-space:nowrap}
+.tech-logo>b{font-weight:600}
+.tech-logo small{display:block;font-size:9px;font-weight:500;color:#999fa9}
+.tech-kicad-mark{position:relative;display:grid;place-items:center;width:34px;height:28px;border-radius:5px;background:#2589b8;color:white;font-size:14px;font-weight:800;letter-spacing:-1px}
+.tech-kicad-mark i{position:absolute;width:8px;height:8px;right:-2px;top:-2px;border-radius:50%;background:#f39832}
+.tech-altium-mark{width:34px;height:34px;fill:none;stroke:#f24c35;stroke-width:3;stroke-linejoin:round}
+.tech-pcb-mark{width:32px;height:32px;fill:none;stroke:#83c67a;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tech-st-mark{width:34px;height:34px;fill:#1574bd}
+.tech-st-mark text{fill:#fff;font-size:12px;font-weight:800;font-family:Arial,sans-serif}
+.tech-arduino-mark{width:38px;height:30px;fill:none;stroke:#00a9c7;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
+.background-group{margin-top:30px}
+.background-group-title{font-size:23px!important;margin:0 0 24px!important;color:#f5f5f5}
+.ref-timeline i{font-size:17px}
+.ref-timeline i svg{width:18px;height:18px}
+@media(max-width:799px){.reference-home .ref-tools{justify-content:center;gap:20px 26px}.tech-stack-heading h2{font-size:30px}.background-group{margin-top:24px}}
+@media(max-width:480px){.reference-home .ref-tools{align-items:flex-start;justify-content:flex-start;gap:18px 22px}.tech-logo{font-size:14px}.tech-stack-heading h2{font-size:27px}.background-group-title{font-size:21px!important}}

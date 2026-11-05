@@ -6,15 +6,16 @@ test('personal CV, social links and integrated projects',async({page})=>{
  await expect(page.getByRole('navigation',{name:'Main navigation'}).getByRole('link',{name:'Boards',exact:true})).toHaveCount(0);
  await expect(page.locator('.ref-socials').first().getByRole('link',{name:'LinkedIn',exact:true})).toHaveAttribute('href','https://www.linkedin.com/in/duy-h%E1%BB%93-ho%C3%A0ng-778955433/');
  const cv=page.getByRole('link',{name:/Download Resume/}).first();
- await expect(cv).toHaveAttribute('href','/assets/resume/ho-hoang-duy-cv.pdf');
+ await expect(cv).toHaveAttribute('href',/^\/assets\/resume\/ho-hoang-duy-cv\.pdf/);
  expect((await page.request.get('/assets/resume/ho-hoang-duy-cv.pdf')).status()).toBe(200);
  await page.getByRole('searchbox',{name:'Search projects'}).fill('6 Fan');
  await expect(page.locator('#projects .project-card')).toHaveCount(1);
  expect(new URL(page.url()).hash).toBe('#projects');
  await page.getByRole('button',{name:'Clear filters'}).click();
  await expect(page.locator('#projects .project-card')).toHaveCount(5);
- await page.getByRole('tab',{name:'Education'}).click();
- await expect(page.getByRole('tabpanel')).toContainText('HCMUTE');
+ await expect(page.locator('#resume .background-group').first()).toContainText('Ho Chi Minh City University of Technology and Engineering');
+ await expect(page.locator('#resume .background-group').first()).toContainText('3DVisionLab');
+ await expect(page.locator('#resume .background-group').nth(1)).toContainText('ST Engineering Solution JSC');
  for(const width of [1440,768,390]){
   await page.setViewportSize({width,height:900});
   const geometry=await page.evaluate(()=>{
