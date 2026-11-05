@@ -4,7 +4,7 @@ export const portrait = {
   alt: 'Hoàng Duy with folded arms, monochrome portrait based on the supplied photograph',
   width: 1024,
   height: 1536,
-  caption: 'Hoàng Duy · PCB Design, Embedded Systems & IoT',
+  caption: 'Hoàng Duy · PCB Design',
 };
 export const aboutPortrait = {...portrait, src: '/assets/portraits/hoang-duy-about.webp', alt: 'Hoàng Duy smiling and giving a thumbs-up, monochrome portrait based on the supplied photograph'};
 export const projectIllustrations: Record<string, string> = {

@@ -1,7 +1,7 @@
 [
   {
     "slug": "esp32-devkit",
-    "name": "ESP32 Devkit",
+    "name": "IoT Node and Gateway",
     "status": "design",
     "category": "embedded",
     "published": true,
@@ -36,11 +36,11 @@
     ],
     "interactiveBom": {
       "src": "/assets/projects/personal/esp32-devkit/ibom.html",
-      "title": "ESP32 Devkit · MP1 Interactive BOM"
+      "title": "IoT Node and Gateway · MP1 Interactive BOM"
     },
     "pcbSource": {
       "src": "/assets/projects/personal/esp32-devkit/MP1.kicad_pcb",
-      "title": "ESP32 Devkit · MP1"
+      "title": "IoT Node and Gateway · MP1"
     },
     "overview": [
       {

@@ -4,6 +4,6 @@ export const portfolio = [
  {slug:'schematics',title:'Schematics',description:'Readable circuits that explain the power, processing and interfaces behind each board.',image:'schematics'},
  {slug:'kicad',title:'KiCad',description:'Schematic capture, footprint work and PCB layout in a connected design environment.',image:'layout'},
  {slug:'altium',title:'Altium Designer',description:'Exploring board design, design rules and manufacturing outputs in an integrated workspace.',image:'altium'},
- {slug:'firmware',title:'Embedded firmware',description:'The software layer that brings a board to life: interfaces, device behavior and diagnostics.',image:'firmware'},
+ {slug:'firmware',title:'Embedded fundamentals',description:'Basic C/C++ and microcontroller familiarity supporting PCB projects.',image:'firmware'},
  {slug:'dashboard',title:'Dashboard interfaces',description:'Clear interfaces for viewing device information, understanding state and exploring controls.',image:'dashboard'},
 ] as const;
