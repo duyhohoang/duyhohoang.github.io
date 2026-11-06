@@ -1,7 +1,7 @@
 'use client';
 import {useEffect,type RefObject} from 'react';
 
-/** Clip the lower arms inside the pink ring, while allowing the head above it.
+/** Clip the lower arms inside the blue ring, while allowing the head above it.
  * Measure layout only on resize, never during scrolling/animation frames. */
 export function usePortraitClip(scope:RefObject<HTMLDivElement|null>){
   useEffect(()=>{
