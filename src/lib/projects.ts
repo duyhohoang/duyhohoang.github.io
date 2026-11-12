@@ -22,7 +22,7 @@ export const boardSchema = z.object({
 export type Board = z.infer<typeof boardSchema>;
 export const boards: Board[] = seeds.map(seed => {
   const media = { src: `/assets/projects/personal/${seed.slug}.webp`, alt: `${seed.name}: original PCB project image supplied by Hoàng Duy`, type: 'render' as const };
-  return boardSchema.parse({ ...seed, heroImage: media, gallery: [media], specs: [] });
+  return boardSchema.parse({ ...seed, heroImage: media, gallery: [media, ...(seed.gallery ?? [])], specs: [] });
 }).filter(board => board.published);
 if (new Set(boards.map(board => board.slug)).size !== boards.length) throw new Error('Duplicate board slug');
 export function getBoard(slug: string) { return boards.find(board => board.slug === slug); }

@@ -8,6 +8,13 @@
     "featured": true,
     "personal": true,
     "result": ["Prototype completed", "PCBA completed"],
+    "gallery": [
+      {
+        "src": "/assets/projects/personal/esp32-devkit-photo.png",
+        "alt": "Photo of the assembled IoT Node and Gateway prototype on a green cutting mat.",
+        "type": "photo"
+      }
+    ],
     "summary": "Integrated ESP32 IoT board with LoRa, RTC, microSD and two relay channels, powered by 220VAC.",
     "description": "A single integrated board combining an ESP32 microcontroller (Wi-Fi/Bluetooth), a long-range LoRa module, a battery-backed Real-Time Clock (RTC), an I2C interface with selectable 3.3V or 5V levels, two relay channels for controlling AC/DC electrical devices, and a microSD card slot for data logging.",
     "disclaimer": "Personal project by Hoàng Duy. Prototype and PCBA completed.",
