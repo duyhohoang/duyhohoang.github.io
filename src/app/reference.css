@@ -132,6 +132,7 @@ html{color-scheme:dark}body{background:#030817;color:#f5f5f5;font-family:'Refere
 .ref-projects .project-card p{color:#999fa9;font-size:13px;line-height:1.85}
 .ref-projects>a>div.project-visual{position:relative;background:radial-gradient(ellipse at center,#18243a,#091324 75%);border:1px solid #18243a;border-radius:5px;isolation:isolate}
 .ref-projects .project-visual img{padding:12px;object-fit:contain}
+.ref-projects .project-visual-photo{aspect-ratio:1.2!important}.ref-projects .project-visual-photo img{padding:0;object-fit:cover;object-position:center}
 .ref-projects .project-visual-datalogger img{position:absolute;width:184%;height:auto;max-width:none;aspect-ratio:auto;left:-38%;top:-50%;padding:0}
 .board-catalog [data-scroll-reveal="true"]{transition:opacity .48s ease,translate .48s ease,transform .22s ease,background-color .22s ease,box-shadow .22s ease}
 .board-catalog [data-scroll-state="hidden"]{opacity:0;translate:0 24px}
