@@ -73,6 +73,7 @@ export function Header(){
     <Link href="/" className="brand" title="Hoàng Duy home"><span className="brand-wordmark"><em>H</em>oàng <em>D</em>uy</span></Link>
     <nav aria-label="Main navigation" className="desktop-nav">
       {navigation.map(name=><Link aria-current={pathname==='/'&&active===sectionId(name)?'location':undefined} key={name} href={sectionHref(name)}>{name}</Link>)}
+      <Link aria-current={pathname.startsWith('/documentation')?'page':undefined} href="/documentation/">Documentation</Link>
       <Link href="/#contact" className="nav-hire">Hire Me</Link>
     </nav>
     <button ref={trigger} className="menu-trigger" aria-haspopup="dialog" aria-expanded={menuOpen} aria-controls={menuId} aria-label="Open navigation menu" onClick={open}>Menu <span aria-hidden="true">☰</span></button>
@@ -82,6 +83,7 @@ export function Header(){
       onClick={event=>{if(event.target===event.currentTarget)close();}}>
       <div className="menu-content"><button className="menu-close" onClick={close}>Close <span aria-hidden="true">×</span></button>
         <nav aria-label="Mobile navigation">{['Home',...navigation].map((name,index)=><Link key={name} onClick={close} href={index===0?'/':sectionHref(name)}><span>0{index+1}</span>{name}<span aria-hidden="true">↗</span></Link>)}
+          <Link href="/documentation/" onClick={close}><span>08</span>Documentation<span aria-hidden="true">↗</span></Link>
           <Link href="/#contact" onClick={close} className="nav-hire">Hire Me</Link>
         </nav><p>HARDWARE / FIRMWARE / INTERFACES</p>
       </div>

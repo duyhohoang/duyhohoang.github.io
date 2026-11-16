@@ -1,0 +1,28 @@
+export type DocumentationCategory = { id: string; title: string; short: string; description: string; icon: string; topics: string[] };
+export type DocumentationArticle = { slug: string; title: string; category: string; group: string; description: string; level: string; updated: string; readTime: string; file: string; featured?: boolean };
+
+export const documentationCategories: DocumentationCategory[] = [
+  { id: 'theory', title: 'Theory & Engineering Design', short: 'THEORY', description: 'Circuit behavior, power conversion, signal integrity and practical engineering analysis.', icon: '∿', topics: ['Linear power supply', 'Switching power supply', 'Buck converter', 'Boost converter', 'Buck-boost converter', 'LDO regulator', 'Flyback converter', 'Power sequencing', 'Power distribution', 'Voltage and current', 'AC and DC analysis', 'Transient response', 'Frequency response', 'RC, RL and RLC circuits', 'Feedback control', 'Voltage divider', 'Filtering circuits', 'Signal integrity', 'Return current path', 'Crosstalk', 'Grounding techniques', 'Switching noise', 'EMI / EMC design', 'Decoupling techniques'] },
+  { id: 'schematic', title: 'Schematic Design', short: 'SCHEMATIC', description: 'Translate requirements into clear, reviewable circuits and component choices.', icon: '⌘', topics: ['Schematic design workflow', 'Reading electronic schematics', 'Circuit blocks', 'Power tree', 'Grounding and net naming', 'Design rules', 'Power supply circuit', 'MCU minimum system', 'Reset and boot circuit', 'Clock circuit', 'ADC / DAC interface', 'UART, SPI and I2C', 'CAN and RS485', 'USB interface', 'Protection circuits', 'Datasheet reading', 'IC selection', 'MOSFET selection', 'Capacitor selection', 'Inductor selection', 'Resistor selection', 'Connector selection', 'ERC checking', 'Component verification', 'Power integrity review', 'Design checklist'] },
+  { id: 'layout', title: 'PCB Layout Design', short: 'PCB LAYOUT', description: 'Placement, stack-up and routing practices for robust, manufacturable boards.', icon: '▦', topics: ['PCB design workflow', 'PCB layers', 'PCB stack-up', 'Copper thickness', 'Track width', 'Via and pad', 'Design rules', 'Component placement strategy', 'Power component placement', 'Decoupling capacitor placement', 'MCU placement', 'Connector placement', 'Thermal considerations', 'Signal routing', 'Power routing', 'Ground plane', 'Differential pair routing', 'High-speed routing', 'Return path', 'Via optimization', 'Buck converter layout', 'Boost converter layout', 'MCU layout', 'Analog and digital ground', 'EMI reduction', 'Thermal management', 'DFM and DRC'] },
+  { id: 'components', title: 'Electronic Components Fundamentals', short: 'COMPONENTS', description: 'Understand component operation, datasheets, selection and use in real circuits.', icon: '◈', topics: ['Resistor', 'Capacitor', 'Inductor', 'Transformer', 'Potentiometer', 'Crystal oscillator', 'Diode', 'Zener diode', 'Schottky diode', 'LED', 'BJT', 'MOSFET', 'JFET', 'IGBT', 'TVS diode', 'Operational amplifier', 'Comparator', 'Voltage regulator', 'Buck controller', 'Boost controller', 'Gate driver', 'ADC / DAC', 'MCU', 'Fuse', 'PTC', 'MOV', 'ESD protection IC'] },
+];
+
+export const documentationArticles: DocumentationArticle[] = [
+  { slug: 'buck-converter-design', title: 'Buck Converter: Operating Principle and Design', category: 'theory', group: 'Power Electronics', description: 'A practical introduction to step-down conversion, the switching cycle, first-pass calculations and layout priorities.', level: 'Foundations', updated: '2026-11-16', readTime: '8 min', file: 'theory/buck-converter.md', featured: true },
+  { slug: 'mosfet-datasheet', title: 'How to Read a MOSFET Datasheet', category: 'components', group: 'Semiconductor Components', description: 'Find the limits and switching parameters that matter when selecting a MOSFET for a real design.', level: 'Foundations', updated: '2026-11-16', readTime: '7 min', file: 'components/mosfet-datasheet.md', featured: true },
+  { slug: 'pcb-stackup', title: 'PCB Stack-up and Layer Configuration', category: 'layout', group: 'PCB Fundamentals', description: 'Understand copper and dielectric layers, return paths, thickness and the trade-offs behind a stack-up.', level: 'Foundations', updated: '2026-11-16', readTime: '6 min', file: 'layout/pcb-stackup.md', featured: true },
+  { slug: 'resistor-fundamentals', title: 'Resistor Fundamentals and Applications', category: 'components', group: 'Passive Components', description: 'A concise guide to resistance, power, tolerance and common resistor uses in electronic circuits.', level: 'Foundations', updated: '2026-11-16', readTime: '5 min', file: 'components/resistor-fundamentals.md', featured: true },
+];
+
+export function getDocumentationArticle(slug: string) { return documentationArticles.find(article => article.slug === slug); }
+export function categoryFor(id: string) { return documentationCategories.find(category => category.id === id); }
+export function articleHref(slug: string) { return `/documentation/article/${slug}/`; }
+export function searchDocumentation(query: string) {
+  const normalized = query.trim().toLowerCase();
+  if (!normalized) return documentationArticles;
+  const direct = documentationArticles.filter(article => `${article.title} ${article.description} ${article.group} ${categoryFor(article.category)?.title}`.toLowerCase().includes(normalized));
+  if (direct.length) return direct;
+  const relatedCategories = documentationCategories.filter(category => category.topics.some(topic => topic.toLowerCase().includes(normalized))).map(category => category.id);
+  return documentationArticles.filter(article => relatedCategories.includes(article.category));
+}

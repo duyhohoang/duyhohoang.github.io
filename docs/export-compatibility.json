@@ -38,6 +38,26 @@
       "to": "dashboard\\__next.dashboard.__PAGE__.txt"
     },
     {
+      "from": "documentation\\article\\buck-converter-design\\__next.documentation\\article\\$d$slug\\__PAGE__.txt",
+      "to": "documentation\\article\\buck-converter-design\\__next.documentation.article.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "documentation\\article\\mosfet-datasheet\\__next.documentation\\article\\$d$slug\\__PAGE__.txt",
+      "to": "documentation\\article\\mosfet-datasheet\\__next.documentation.article.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "documentation\\article\\pcb-stackup\\__next.documentation\\article\\$d$slug\\__PAGE__.txt",
+      "to": "documentation\\article\\pcb-stackup\\__next.documentation.article.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "documentation\\article\\resistor-fundamentals\\__next.documentation\\article\\$d$slug\\__PAGE__.txt",
+      "to": "documentation\\article\\resistor-fundamentals\\__next.documentation.article.$d$slug.__PAGE__.txt"
+    },
+    {
+      "from": "documentation\\__next.documentation\\__PAGE__.txt",
+      "to": "documentation\\__next.documentation.__PAGE__.txt"
+    },
+    {
       "from": "firmware\\__next.firmware\\__PAGE__.txt",
       "to": "firmware\\__next.firmware.__PAGE__.txt"
     },
